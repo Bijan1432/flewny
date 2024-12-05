@@ -1,0 +1,52 @@
+# Node.js dependencies (if using npm or yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build directories (e.g., for Webpack, Vite, or similar tools)
+dist/
+build/
+
+# Temporary files and logs
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+
+# Cache directories
+.cache/
+.vscode/
+.idea/
+*.eslintcache
+*.prettiercache
+
+# OS-specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Local server files
+*.pid
+*.seed
+*.pid.lock
+
+# Git-specific files
+*.orig
+*.rej
+
+# SASS/SCSS cache (if using SASS/SCSS)
+.sass-cache/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Other
+*.min.js
+*.min.css
+./ASSETS

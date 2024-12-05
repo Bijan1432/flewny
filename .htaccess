@@ -1,0 +1,80 @@
+RewriteEngine On
+
+# Handle requests for blog posts
+RewriteRule ^blogs/([a-zA-Z0-9-]+)/?$ ./blogs/blog-full-view.php?id=$1 [L,QSA]
+
+# Redirect /index to /
+RewriteRule ^index$ / [R=301,L]
+
+# Rule to remove .php extension from URLs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]
+
+
+# Redirect any URL to index.php if no other file matches
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteRule ^$ /index [L]
+
+
+
+
+
+
+
+# =========================
+
+
+
+# <IfModule mod_rewrite.c>
+
+#     RewriteEngine On
+#     #RewriteCond %{REQUEST_FILENAME} !-f
+#     #RewriteRule ^([^\.]+)$ $1.php [NC,L]
+    
+#     RewriteCond %{HTTP_HOST} ^www.flewny.com [NC]
+#     RewriteRule ^index$ https://www.flewny.com [R=301,L]
+    
+#     #Http to https redirection
+#     RewriteCond %{HTTP_HOST} ^flewny\.com [NC]
+#     RewriteCond %{SERVER_PORT} 80
+#     RewriteRule ^(.*)$ https://www.flewny.com/$1 [R=301,L]
+#     #Http to https redirection
+    
+#     #Http to https redirection
+#     RewriteCond %{HTTP_HOST} ^flewny\.com [NC]
+#     RewriteCond %{SERVER_PORT} 443
+#     RewriteRule ^(.*)$ https://www.flewny.com/$1 [R=301,L]
+#     #Http to https redirection
+    
+#     #non-www to www redirection
+#     RewriteCond %{HTTP_HOST} ^www.flewny.com$ [NC]
+#     RewriteCond %{SERVER_PORT} 80
+#     RewriteRule (.*) https://www.flewny.com/$1 [R=301,L] 
+#     #non-www to www redirection
+    
+#    # remove .php from url, excluding mail.php
+# RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+# RewriteCond %{REQUEST_URI} !^/mail\.php [NC]
+# RewriteRule ^ /%1 [NC,L,R]
+
+# RewriteCond %{REQUEST_FILENAME}.php -f
+# RewriteRule ^(.*)$ $1.php  [NC,L]
+
+
+    
+
+
+
+    
+    
+# </IfModule>
+
+# ErrorDocument 404 /404
+
+
+# <Files ~ "^.*\.([Hh][Tt][Aa])">
+#     # Protect htacess file
+#     order allow,deny
+#     deny from all
+# </Files>

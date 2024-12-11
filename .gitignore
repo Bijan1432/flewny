@@ -46,7 +46,5 @@ Desktop.ini
 .env.test.local
 .env.production.local
 
-# Other
-*.min.js
-*.min.css
+
 ./ASSETS

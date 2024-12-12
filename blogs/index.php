@@ -31,21 +31,37 @@ $query = mysqli_query($connection, $sql);
 <link rel="stylesheet" href="../css/responsive.css" />
 <!-- ===========================main contect start================= -->
 
-<!-- //gallery -->
 
-
-
-
-
-
-<section class="blog-banner">
 <!-- <section class="about-banner"> -->
+<section class="blog-banner">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12 df">
-				<h1>Blog</h1>
-				<p>Dive into a world of knowledge with our curated articles, expert insights, and valuable resources designed to keep you informed and inspired.</p>
+		<div class="row h-100">
+			<div class="col-md-12 d-flex justify-content-center">
+				<div class="blog-banner__content">
+					<h1 class="blog-banner__title">Blog</h1>
+					<p class="blog-banner__text">Dive into a world of knowledge with our curated articles, expert insights, and valuable resources designed to keep you informed and inspired.</p>
+					<a href="" class="primary-btn"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
+<section class="">
+	<div class="container blog-list-section">
+		<h2>All Blogs</h2>
+		<div class="d-flex flex-wrap gap-3">
+			<a class="blog-category">All</a>
+		</div>
+		<div class="blog-list">
+			<div class="blog-card">
+				<img src="" alt="">
+				<div class="d-flex"></div>
+				<h3 class="blog-card__title"></h3>
+				<div class="d-flex">
+					<a href="#" class="blog-card__btn">Read More <span><img src="" alt=""></span></a>
+				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -53,7 +69,7 @@ $query = mysqli_query($connection, $sql);
 
 
 
-<section class="blog p-top p-bot">
+<!-- <section class="blog p-top p-bot">
 	<div class="container">
 
 		<?php
@@ -92,15 +108,16 @@ $query = mysqli_query($connection, $sql);
 
 	</div>
 	</div>
-</section>
-<div class="container">
+</section> -->
+
+<!-- <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<div class="line-blog"></div>
 		</div>
 	</div>
-</div>
-<section class="blog-list p-top p-bot">
+</div> -->
+<!-- <section class="blog-list p-top p-bot">
 	<div class="container">
 		<div class="row">
 			<?php
@@ -138,7 +155,7 @@ $query = mysqli_query($connection, $sql);
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 
 

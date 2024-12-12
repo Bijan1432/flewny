@@ -2076,35 +2076,35 @@ footer {
   border-top: 2px solid #000;
 }
 
-.blog-list {
-  .blog-card {
-    margin-bottom: 3rem;
+// .blog-list {
+//   .blog-card {
+//     margin-bottom: 3rem;
 
-    img {
-      height: 250px;
-      width: 100%;
-      object-fit: cover;
-    }
+//     img {
+//       height: 250px;
+//       width: 100%;
+//       object-fit: cover;
+//     }
 
-    .date {
-      background-color: #ddd;
-      padding: 5px 8px;
-      display: inline-block;
-      margin-bottom: 12px;
-    }
+//     .date {
+//       background-color: #ddd;
+//       padding: 5px 8px;
+//       display: inline-block;
+//       margin-bottom: 12px;
+//     }
 
-    h2 {
-      margin: 12px 0;
-      font-size: 1.5em;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
-  }
-}
+//     h2 {
+//       margin: 12px 0;
+//       font-size: 1.5em;
+//       overflow: hidden;
+//       text-overflow: ellipsis;
+//       display: -webkit-box;
+//       -webkit-line-clamp: 3;
+//       line-clamp: 3;
+//       -webkit-box-orient: vertical;
+//     }
+//   }
+// }
 
 .blog-full-banner {
   position: relative;
@@ -2516,7 +2516,59 @@ footer {
 }
 
 // ===== blog ===== //
-.blog-page {
-}
 .blog-banner {
+  height: 100vh;
+  max-height: 900px;
+  display: flex;
+  margin: auto;
+  background-image: url('../img/blog-banner-bg.png');
+  &__content {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__title {
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+}
+.blog-list-section {
+  background-color: #aeea17;
+  padding: 3rem 1.5rem;
+  border-radius: 2rem;
+  h2 {
+    text-transform: uppercase;
+  }
+}
+.blog-list {
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  &__img {
+  }
+  &__catehory {
+  }
+  &__date {
+  }
+  &__title {
+  }
+  &__btn {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    border: 1px solid #000;
+    border-radius: 10rem;
+    span {
+    }
+    img {
+      height: auto;
+    }
+  }
 }

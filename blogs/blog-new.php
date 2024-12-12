@@ -16,7 +16,6 @@
     </section>
 
 
-
     <section class="blog p-top p-bot">
         <div class="container">
             <div class="row">

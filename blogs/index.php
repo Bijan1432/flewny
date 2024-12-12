@@ -38,12 +38,14 @@ $query = mysqli_query($connection, $sql);
 
 
 
-<section class="about-banner">
+<section class="blog-banner">
+<!-- <section class="about-banner"> -->
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<h1>Blogs Listing</h1>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ut, ab necessitatibus earum voluptates nihil sed impedit ratione, ea consequuntur quam quos tenetur deleniti?</p>
+			<div class="col-md-12 df">
+				<h1>Blog</h1>
+				<p>Dive into a world of knowledge with our curated articles, expert insights, and valuable resources designed to keep you informed and inspired.</p>
+
 			</div>
 		</div>
 	</div>

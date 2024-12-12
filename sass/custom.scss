@@ -21,13 +21,13 @@ $secondary-color-deep: #cb00f5;
 $secondary-color-deep2: #2e12ef;
 $secondary-color-deep3: #aeea17;
 $outer-color: #3c3c3c;
-$priamry-font: "Inter", sans-serif !important;
+$priamry-font: 'Inter', sans-serif !important;
 $priamry-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 h2 {
   font-size: 3.8rem;
   line-height: 1;
-  font-family: "Inter", sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-weight: 700;
 
   @media only screen and (max-width: 520px) {
@@ -40,7 +40,7 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Inter", sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
 }
 
 p {
@@ -54,7 +54,7 @@ p {
 
 a,
 button {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .h2-top-txt {
@@ -201,9 +201,11 @@ body {
       right: 12px;
       top: 99%;
       z-index: 999;
-      background: radial-gradient(circle at 1% 100%,
-          rgba(255, 255, 255, 0) 69%,
-          rgb(60, 60, 60) 71%);
+      background: radial-gradient(
+        circle at 1% 100%,
+        rgba(255, 255, 255, 0) 69%,
+        rgb(60, 60, 60) 71%
+      );
       // .box {
       //   height: 100%;
       //   width: 100%;
@@ -220,9 +222,11 @@ body {
       right: 99.7%;
       top: 12px;
       z-index: 999;
-      background: radial-gradient(circle at 1% 97%,
-          rgba(255, 255, 255, 0) 69%,
-          rgb(60, 60, 60) 71%);
+      background: radial-gradient(
+        circle at 1% 97%,
+        rgba(255, 255, 255, 0) 69%,
+        rgb(60, 60, 60) 71%
+      );
 
       .box {
         display: none;
@@ -252,9 +256,11 @@ body {
       left: 11px;
       top: 11px;
       z-index: 999;
-      background: radial-gradient(circle at -3% 100%,
-          rgba(255, 255, 255, 0) 69%,
-          rgb(60, 60, 60) 71%);
+      background: radial-gradient(
+        circle at -3% 100%,
+        rgba(255, 255, 255, 0) 69%,
+        rgb(60, 60, 60) 71%
+      );
       -webkit-transform: rotate(269deg);
       transform: rotate(269deg);
 
@@ -287,9 +293,11 @@ body {
       z-index: 999;
       -webkit-transform: rotate(92deg);
       transform: rotate(90deg);
-      background: radial-gradient(circle at 1% 100%,
-          rgba(255, 255, 255, 0) 69%,
-          rgb(60, 60, 60) 71%);
+      background: radial-gradient(
+        circle at 1% 100%,
+        rgba(255, 255, 255, 0) 69%,
+        rgb(60, 60, 60) 71%
+      );
     }
 
     .left-box {
@@ -300,9 +308,11 @@ body {
       transform: rotate(180deg);
       bottom: 93%;
       z-index: 999;
-      background: radial-gradient(circle at 1% 100%,
-          rgba(255, 255, 255, 0) 69%,
-          rgb(60, 60, 60) 71%);
+      background: radial-gradient(
+        circle at 1% 100%,
+        rgba(255, 255, 255, 0) 69%,
+        rgb(60, 60, 60) 71%
+      );
     }
   }
 }
@@ -437,7 +447,6 @@ body {
           }
         }
       }
-
     }
 
     .heading {
@@ -491,9 +500,6 @@ body {
               font-size: 12px;
             }
           }
-
-
-
         }
       }
     }
@@ -637,7 +643,7 @@ body {
     }
 
     .oval {
-      background: url("../img/serv.jpg") center/cover;
+      background: url('../img/serv.jpg') center/cover;
       width: 70%;
       margin-left: auto;
       height: 6rem;
@@ -712,13 +718,13 @@ body {
     padding: 7rem 1rem;
 
     @media only screen and (max-width: 520px) {
-      padding: 4rem .6rem;
+      padding: 4rem 0.6rem;
     }
 
     &::after {
-      content: "Services";
+      content: 'Services';
       color: #000;
-      font-family: "Inter", sans-serif !important;
+      font-family: 'Inter', sans-serif !important;
       top: 10px;
       right: 48px;
       font-size: 2rem;
@@ -742,7 +748,6 @@ body {
       }
 
       .img-card {
-
         overflow: hidden;
         border-radius: 16px;
 
@@ -754,7 +759,6 @@ body {
             height: 8rem;
           }
         }
-
       }
 
       .card-body {
@@ -843,7 +847,7 @@ body {
 
       &:nth-child(2) {
         &::after {
-          content: "";
+          content: '';
           position: absolute;
           left: -46%;
           top: 30%;
@@ -853,7 +857,7 @@ body {
         }
 
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           right: -46%;
           top: 30%;
@@ -1026,7 +1030,7 @@ body {
 
     @media only screen and (max-width: 520px) {
       width: 90%;
-      padding: .5rem;
+      padding: 0.5rem;
       padding-top: 1rem;
       padding-bottom: 2rem;
     }
@@ -1064,8 +1068,6 @@ body {
       }
 
       .box {
-
-
         p {
           font-size: 13px;
           margin-bottom: 2rem;
@@ -1096,7 +1098,6 @@ body {
 
             color: #000;
             font-size: 13px;
-
           }
 
           a {
@@ -1133,7 +1134,6 @@ body {
         @media only screen and (max-width: 520px) {
           font-size: 1rem;
           line-height: 1.2;
-
         }
       }
 
@@ -1234,8 +1234,6 @@ footer {
       @media only screen and (max-width: 520px) {
         row-gap: 6px;
       }
-
-
 
       a {
         font-size: 16px;
@@ -1361,7 +1359,6 @@ footer {
     line-height: 1;
 
     @media only screen and (max-width: 520px) {
-
       font-size: 16vw;
     }
   }
@@ -1392,20 +1389,15 @@ footer {
 // ======================banner section end================
 //value start========================
 .about-our-values {
-
   @media only screen and (max-width: 520px) {
-
     margin-top: 3rem;
   }
 
   .row {
-
     @media only screen and (max-width: 520px) {
       flex-direction: column-reverse;
       margin-top: 20px;
     }
-
-
   }
 }
 
@@ -1429,7 +1421,6 @@ footer {
     text-transform: uppercase;
 
     @media only screen and (max-width: 520px) {
-
       font-size: 2rem;
     }
   }
@@ -1449,7 +1440,6 @@ footer {
     .btn-primary {
       margin-top: 2rem;
     }
-
   }
 
   h1 {
@@ -1458,7 +1448,6 @@ footer {
     line-height: 1;
 
     @media only screen and (max-width: 520px) {
-
       font-size: 3em;
     }
 
@@ -1468,7 +1457,6 @@ footer {
       margin-left: 40px;
 
       @media only screen and (max-width: 520px) {
-
         height: 50px;
         width: 100%;
         margin-left: auto;
@@ -1504,7 +1492,6 @@ footer {
         font-size: 13px;
         margin-left: 0;
       }
-
     }
 
     button {
@@ -1571,8 +1558,6 @@ footer {
       padding: 0rem;
       flex-direction: column;
       padding-bottom: 1.8rem;
-
-
     }
 
     .name {
@@ -1580,7 +1565,6 @@ footer {
       flex-basis: 40%;
 
       h3 {
-
         font-size: 7rem;
         font-weight: 400;
       }
@@ -1627,8 +1611,6 @@ footer {
       }
     }
   }
-
-
 }
 
 // ======================service list end================
@@ -1653,7 +1635,7 @@ footer {
       width: 40%;
       flex-shrink: 0;
       padding: 50px 40px;
-      background: url("../img/saas.jpg"), #b6b4b3;
+      background: url('../img/saas.jpg'), #b6b4b3;
       background-blend-mode: multiply;
       display: flex;
       flex-direction: column;
@@ -1739,7 +1721,7 @@ footer {
     }
 
     &::after {
-      content: "";
+      content: '';
       background-color: #fff;
       width: 80%;
       height: 1.5px;
@@ -1802,12 +1784,11 @@ footer {
   }
 
   h1 {
-    font-family: $priamry-font
+    font-family: $priamry-font;
   }
 
   * {
     color: #fff;
-
   }
 
   p {
@@ -2044,7 +2025,6 @@ footer {
       border-radius: 10pc;
       border: 1px solid;
       padding: 0px;
-
     }
   }
 
@@ -2154,7 +2134,6 @@ footer {
     background: #fff;
     padding: 23px;
 
-
     img {
       height: 50px;
       width: 50px;
@@ -2162,7 +2141,6 @@ footer {
       border-radius: 10pc;
       border: 1px solid;
       padding: 0px;
-
     }
   }
 }
@@ -2195,10 +2173,14 @@ footer {
 }
 
 .portfolios-list {
-
   .portfoliocard {
     height: 70vh;
-    background: linear-gradient(271deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.815) 70%), url("../img/meeting.webp");
+    background: linear-gradient(
+        271deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.815) 70%
+      ),
+      url('../img/meeting.webp');
     background-position: center;
     background-size: cover;
     padding: 2rem;
@@ -2219,11 +2201,8 @@ footer {
         padding: 0;
         line-height: 1;
         // font-weight: 700;
-
       }
     }
-
-
 
     @media only screen and (max-width: 520px) {
       height: 35vh;
@@ -2243,7 +2222,13 @@ footer {
       content: '';
       height: 0px;
       width: 0px;
-      background-image: linear-gradient(45deg, rgb(254, 254, 254) 0%, rgb(242, 242, 242) 49%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%);
+      background-image: linear-gradient(
+        45deg,
+        rgb(254, 254, 254) 0%,
+        rgb(242, 242, 242) 49%,
+        rgb(255, 255, 255) 50%,
+        rgb(255, 255, 255) 100%
+      );
       background-size: cover;
       background-repeat: no-repeat;
       box-sizing: 5px 5px 10px #dddddd;
@@ -2252,18 +2237,18 @@ footer {
       top: 0;
       right: 0;
       border-left-width: 1px;
-      border-left-color: #DDDDDD;
+      border-left-color: #dddddd;
       border-left-style: solid;
       border-bottom-width: 1px;
-      border-bottom-color: #DDDDDD;
+      border-bottom-color: #dddddd;
       border-bottom-style: solid;
       box-shadow: -5px 5px 10px #dddddd;
-      transition: all .3s;
+      transition: all 0.3s;
     }
 
     &:hover {
       &::after {
-        transition: all .3s;
+        transition: all 0.3s;
 
         height: 150px;
         width: 150px;
@@ -2284,31 +2269,56 @@ footer {
   }
 
   .card1 {
-    background: linear-gradient(271deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.815) 70%), url("../img/saas.jpg");
+    background: linear-gradient(
+        271deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.815) 70%
+      ),
+      url('../img/saas.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .card2 {
-    background: linear-gradient(271deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.815) 70%), url("../img/website.jpg");
+    background: linear-gradient(
+        271deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.815) 70%
+      ),
+      url('../img/website.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .card3 {
-    background: linear-gradient(271deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.815) 70%), url("../img/seodigit.jpg");
+    background: linear-gradient(
+        271deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.815) 70%
+      ),
+      url('../img/seodigit.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .card3 {
-    background: linear-gradient(271deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.815) 70%), url("../img/seodigit.jpg");
+    background: linear-gradient(
+        271deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.815) 70%
+      ),
+      url('../img/seodigit.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .card4 {
-    background: linear-gradient(271deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.815) 70%), url("../img/social2.jpg");
+    background: linear-gradient(
+        271deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.815) 70%
+      ),
+      url('../img/social2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2338,12 +2348,10 @@ footer {
   }
 }
 
-
 .list {
   .lists {
     div:nth-child(even) {
       .lists-card {
-
         margin-top: 6em;
       }
     }
@@ -2455,12 +2463,15 @@ footer {
 
 //thank you page   =========================end
 
-
 .bijan {
   position: fixed;
   z-index: 99;
   background: rgb(0, 0, 0);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5439425770308124) 8%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5439425770308124) 8%,
+    rgba(255, 255, 255, 0) 100%
+  );
 
   .menu-container {
     background: transparent !important;
@@ -2481,7 +2492,11 @@ footer {
     backdrop-filter: blur(20px);
     float: right;
     background: rgb(255 255 255 / 0%);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0) 0%, rgb(247 247 247 / 47%) 100%);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 0) 0%,
+      rgb(247 247 247 / 47%) 100%
+    );
     border-top-left-radius: 15px;
     border-bottom-left-radius: 16px;
   }
@@ -2494,4 +2509,14 @@ footer {
 
 .main-container .row-container .row-parent {
   padding-top: 0 !important;
+}
+
+// ====== edited by sayan ====== //
+.primary-btn {
+}
+
+// ===== blog ===== //
+.blog-page {
+}
+.blog-banner {
 }

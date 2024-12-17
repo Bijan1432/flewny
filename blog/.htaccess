@@ -1,0 +1,22 @@
+RewriteEngine On
+
+# this is only for localhost xampp
+# RewriteBase /flewny/blog/
+
+RewriteBase /blog/
+
+# Check if the requested file with a .php extension exists
+RewriteCond %{REQUEST_FILENAME}.php -f
+# Redirect to the existing .php file
+RewriteRule ^([^/]+)$ $1.php [L]
+
+# Redirect requests with a slug to single.php
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/category/ [NC]  # Exclude slugs that start with 'category/'
+RewriteRule ^([^/]+)$ single.php?slug=$1 [L,QSA]
+
+# Redirect requests without a slug to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ index.php [L]

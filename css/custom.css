@@ -1,209 +1,209 @@
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("/flewny/fonts/chandler-mountain/ChandlerMountain-Bold.woff2") format("woff2"), url("/flewny/fonts/chandler-mountain/ChandlerMountain-Bold.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Bold.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family";
-  src: url("ChandlerMountain-Black.woff2") format("woff2"), url("ChandlerMountain-Black.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Black.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-BlackSlanted.woff2") format("woff2"), url("ChandlerMountain-BlackSlanted.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-BlackSlanted.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-BlackSlanted.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family Slant";
-  src: url("ChandlerMountain-BoldSlanted.woff2") format("woff2"), url("ChandlerMountain-BoldSlanted.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-BoldSlanted.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-BoldSlanted.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family Black Slant";
-  src: url("ChandlerMountain-BlackSlanted.woff2") format("woff2"), url("ChandlerMountain-BlackSlanted.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-BlackSlanted.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-BlackSlanted.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-BoldSlanted.woff2") format("woff2"), url("ChandlerMountain-BoldSlanted.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-BoldSlanted.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-BoldSlanted.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-Black.woff2") format("woff2"), url("ChandlerMountain-Black.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Black.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family";
-  src: url("ChandlerMountain-Bold.woff2") format("woff2"), url("ChandlerMountain-Bold.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Bold.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family ExtBd Slant";
-  src: url("ChandlerMountain-ExtBdSlant.woff2") format("woff2"), url("ChandlerMountain-ExtBdSlant.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-ExtBdSlant.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-ExtBdSlant.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-ExtraLight.woff2") format("woff2"), url("ChandlerMountain-ExtraLight.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-ExtraLight.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family Med";
-  src: url("ChandlerMountain-Medium.woff2") format("woff2"), url("ChandlerMountain-Medium.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Medium.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-Medium.woff2") format("woff2"), url("ChandlerMountain-Medium.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Medium.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family Light Slant";
-  src: url("ChandlerMountain-LightSlanted.woff2") format("woff2"), url("ChandlerMountain-LightSlanted.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-LightSlanted.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-LightSlanted.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family ExtBd";
-  src: url("ChandlerMountain-ExtraBold.woff2") format("woff2"), url("ChandlerMountain-ExtraBold.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-ExtraBold.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family ExtLt";
-  src: url("ChandlerMountain-ExtraLight.woff2") format("woff2"), url("ChandlerMountain-ExtraLight.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-ExtraLight.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-LightSlanted.woff2") format("woff2"), url("ChandlerMountain-LightSlanted.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-LightSlanted.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-LightSlanted.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family Med Slant";
-  src: url("ChandlerMountain-MedSlant.woff2") format("woff2"), url("ChandlerMountain-MedSlant.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-MedSlant.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-MedSlant.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-MedSlant.woff2") format("woff2"), url("ChandlerMountain-MedSlant.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-MedSlant.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-MedSlant.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-ExtBdSlant.woff2") format("woff2"), url("ChandlerMountain-ExtBdSlant.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-ExtBdSlant.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-ExtBdSlant.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-ExtLtSlant.woff2") format("woff2"), url("ChandlerMountain-ExtLtSlant.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-ExtLtSlant.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-ExtLtSlant.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-ExtraBold.woff2") format("woff2"), url("ChandlerMountain-ExtraBold.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-ExtraBold.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family";
-  src: url("ChandlerMountain-Light.woff2") format("woff2"), url("ChandlerMountain-Light.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Light.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-Regular.woff2") format("woff2"), url("ChandlerMountain-Regular.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Regular.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family ExtLt Slant";
-  src: url("ChandlerMountain-ExtLtSlant.woff2") format("woff2"), url("ChandlerMountain-ExtLtSlant.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-ExtLtSlant.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-ExtLtSlant.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family";
-  src: url("ChandlerMountain-Thin.woff2") format("woff2"), url("ChandlerMountain-Thin.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Thin.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-SemBdSlant.woff2") format("woff2"), url("ChandlerMountain-SemBdSlant.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-SemBdSlant.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-SemBdSlant.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-Slanted.woff2") format("woff2"), url("ChandlerMountain-Slanted.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-Slanted.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-Slanted.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family SemBd";
-  src: url("ChandlerMountain-SemiBold.woff2") format("woff2"), url("ChandlerMountain-SemiBold.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-SemiBold.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Mega Family SemBd Slant";
-  src: url("ChandlerMountain-SemBdSlant.woff2") format("woff2"), url("ChandlerMountain-SemBdSlant.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-SemBdSlant.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-SemBdSlant.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Chandler Mountain";
-  src: url("ChandlerMountain-SemiBold.woff2") format("woff2"), url("ChandlerMountain-SemiBold.woff") format("woff");
+  src: url("../fonts/chandler-mountain/ChandlerMountain-SemiBold.woff2") format("woff2"), url("../fonts/chandler-mountain/ChandlerMountain-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -226,7 +226,7 @@ body {
 h2 {
   font-size: 3.8rem;
   line-height: 1;
-  font-family: "Inter", sans-serif !important;
+  font-family: "Inter", sans-serif;
   font-weight: 700;
 }
 @media only screen and (max-width: 520px) {
@@ -1095,242 +1095,6 @@ body {
   .contact-big textarea {
     margin-bottom: 2rem;
   }
-}
-
-.foter-form-section {
-  background: #cb00f5;
-  padding: 8rem 0;
-}
-.foter-form-section .main-body {
-  width: 75%;
-  margin: 0 auto;
-  background: #fff;
-  padding: 6rem;
-}
-@media only screen and (max-width: 520px) {
-  .foter-form-section .main-body {
-    width: 90%;
-    padding: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-}
-.foter-form-section .main-body .big-txt {
-  font-size: 3.5rem;
-  text-align: center;
-  margin-bottom: 3rem;
-  font-weight: 500;
-  font-family: "Inter", sans-serif !important;
-}
-@media only screen and (max-width: 520px) {
-  .foter-form-section .main-body .big-txt {
-    font-size: 1.8rem;
-    line-height: 1.2;
-  }
-}
-.foter-form-section .main-body .div-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-@media only screen and (max-width: 520px) {
-  .foter-form-section .main-body .div-body {
-    flex-direction: column;
-    row-gap: 1.6rem;
-  }
-}
-.foter-form-section .main-body .div-body .line {
-  width: 1px;
-  flex-basis: 1px;
-  background-color: #686868;
-  height: 8rem;
-  margin: 0 3rem;
-}
-.foter-form-section .main-body .div-body .box p {
-  font-size: 13px;
-  margin-bottom: 2rem;
-}
-.foter-form-section .main-body .div-body .box .name {
-  font-weight: 600;
-  font-family: "Inter", sans-serif !important;
-}
-.foter-form-section .main-body .div-body .box .dsg {
-  font-style: italic;
-  font-size: 14px;
-  font-family: "Inter", sans-serif !important;
-}
-.foter-form-section .main-body .div-body .box .btn-email {
-  padding: 12px 17px;
-  border: 1px solid #000;
-  margin-top: 2rem;
-  border-radius: 12rem;
-  text-decoration: none;
-  color: #000;
-}
-@media only screen and (max-width: 520px) {
-  .foter-form-section .main-body .div-body .box .btn-email {
-    padding: 7px 10px;
-    border: 1px solid #000;
-    color: #000;
-    font-size: 13px;
-  }
-}
-.foter-form-section .main-body .div-body .box .btn-email a {
-  color: #000;
-  text-decoration: none;
-}
-.foter-form-section .main-body-down {
-  width: 75%;
-  margin: 0 auto;
-  background: #ebeaea;
-  padding: 6rem;
-}
-@media only screen and (max-width: 520px) {
-  .foter-form-section .main-body-down {
-    width: 90%;
-    padding: 1rem;
-    padding-top: 2rem;
-  }
-}
-.foter-form-section .main-body-down .block {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-}
-.foter-form-section .main-body-down .block p {
-  font-size: 2rem;
-  margin: 0;
-}
-@media only screen and (max-width: 520px) {
-  .foter-form-section .main-body-down .block p {
-    font-size: 1rem;
-    line-height: 1.2;
-  }
-}
-.foter-form-section .main-body-down .block input {
-  font-size: 18px;
-  padding: 12px;
-  font-weight: 600;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #787878;
-  line-height: 1;
-  padding: 8px 0;
-  flex-basis: 63%;
-}
-.foter-form-section .main-body-down .block input::-moz-placeholder {
-  color: #000;
-}
-.foter-form-section .main-body-down .block input::placeholder {
-  color: #000;
-}
-@media only screen and (max-width: 520px) {
-  .foter-form-section .main-body-down .block input {
-    font-size: 1rem;
-    line-height: 1.2;
-    width: 80%;
-    flex-basis: 73%;
-  }
-}
-.foter-form-section .main-body-down .form-check {
-  font-size: 15px;
-}
-.foter-form-section .main-body-down .form-check input {
-  border-radius: 0;
-}
-.foter-form-section .main-body-down p.below {
-  font-size: 14px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.foter-form-section .main-body-down .submit {
-  border-radius: 20vw;
-  padding: 12px 18px;
-  border: 1px solid;
-}
-
-footer {
-  padding: 4rem 0;
-  background: #000;
-}
-footer * {
-  color: #e6e6e6;
-}
-footer svg {
-  filter: invert(1);
-}
-footer ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-@media only screen and (max-width: 520px) {
-  footer ul {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-}
-footer ul * {
-  font-size: 24px;
-  font-family: "Inter", sans-serif !important;
-  font-weight: 600;
-  text-decoration: none;
-}
-footer .links-im {
-  border-block: 1px solid #c4c4c4;
-  margin: 2rem 0;
-  padding: 2rem 0;
-}
-footer .links-im ul {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-@media only screen and (max-width: 520px) {
-  footer .links-im ul {
-    row-gap: 6px;
-  }
-}
-footer .links-im ul a {
-  font-size: 16px;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  color: #ddd;
-}
-footer .links-im ul a .arrow {
-  border-radius: 50pc;
-  background-color: #3b3b3b;
-  height: 25px;
-  width: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-}
-footer .copy {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-footer .copy p {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
 }
 
 .modal {
@@ -2331,6 +2095,8 @@ footer .copy p {
   text-align: center;
 }
 .blog-banner__title {
+  font-family: "Chandler Mountain" !important;
+  font-weight: bold;
   font-size: 4rem;
   text-transform: uppercase;
 }
@@ -2342,6 +2108,8 @@ footer .copy p {
   border-radius: 2rem;
 }
 .blog-list-section h2 {
+  font-family: "Chandler Mountain";
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -2494,18 +2262,18 @@ footer .copy p {
 .cta-section {
   background-image: url("../img/cta-bg.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 34px;
   border-radius: 22px;
+  width: 100%;
+  max-width: 850px;
 }
 .cta-section h2 {
   font-family: "Chandler Mountain";
-  font-weight: bold;
-  width: 100%;
-  max-width: 850px;
+  font-weight: 600;
   line-height: 2.4rem;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   text-align: center;
   font-size: 2rem;
   color: #fff;
@@ -2518,10 +2286,10 @@ footer .copy p {
   transform: rotate(314deg);
 }
 
-.blog-fullview-banner {
+.blog-single-banner {
   margin-bottom: 40px;
 }
-.blog-fullview-banner-img {
+.blog-single-banner-img {
   width: 100%;
   height: 100vh;
   max-height: 460px;
@@ -2529,10 +2297,282 @@ footer .copy p {
   background-color: #0f0f0f;
   border-radius: 20px;
 }
-.blog-fullview__heading {
+.blog-single__heading {
   font-size: 38px;
   font-weight: 700;
   text-transform: uppercase;
   max-width: 700px;
   margin-top: 20px;
+}
+.blog-single__body {
+  margin-block: 50px;
+}
+.blog-single__body__contents {
+  position: sticky;
+  top: 10px;
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f3;
+}
+.blog-single__body__contents h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.blog-single__body__contents__list {
+  color: #81818c;
+  font-size: 14px;
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.blog-single__body__contents__list li {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dadada;
+}
+.blog-single__body__contents__list li.active {
+  color: #000;
+}
+
+.foter-form-section {
+  background: #cb00f5;
+  padding: 8rem 0;
+}
+.foter-form-section .main-body {
+  width: 75%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 6rem;
+}
+@media only screen and (max-width: 520px) {
+  .foter-form-section .main-body {
+    width: 90%;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+}
+.foter-form-section .main-body .big-txt {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif !important;
+}
+@media only screen and (max-width: 520px) {
+  .foter-form-section .main-body .big-txt {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+}
+.foter-form-section .main-body .div-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media only screen and (max-width: 520px) {
+  .foter-form-section .main-body .div-body {
+    flex-direction: column;
+    row-gap: 1.6rem;
+  }
+}
+.foter-form-section .main-body .div-body .line {
+  width: 1px;
+  flex-basis: 1px;
+  background-color: #686868;
+  height: 8rem;
+  margin: 0 3rem;
+}
+.foter-form-section .main-body .div-body .box p {
+  font-size: 13px;
+  margin-bottom: 2rem;
+}
+.foter-form-section .main-body .div-body .box .name {
+  font-weight: 600;
+  font-family: "Inter", sans-serif !important;
+}
+.foter-form-section .main-body .div-body .box .dsg {
+  font-style: italic;
+  font-size: 14px;
+  font-family: "Inter", sans-serif !important;
+}
+.foter-form-section .main-body .div-body .box .btn-email {
+  padding: 12px 17px;
+  border: 1px solid #000;
+  margin-top: 2rem;
+  border-radius: 12rem;
+  text-decoration: none;
+  color: #000;
+}
+@media only screen and (max-width: 520px) {
+  .foter-form-section .main-body .div-body .box .btn-email {
+    padding: 7px 10px;
+    border: 1px solid #000;
+    color: #000;
+    font-size: 13px;
+  }
+}
+.foter-form-section .main-body .div-body .box .btn-email a {
+  color: #000;
+  text-decoration: none;
+}
+.foter-form-section .main-body-down {
+  width: 75%;
+  margin: 0 auto;
+  background: #ebeaea;
+  padding: 6rem;
+}
+@media only screen and (max-width: 520px) {
+  .foter-form-section .main-body-down {
+    width: 90%;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+}
+.foter-form-section .main-body-down .block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.foter-form-section .main-body-down .block p {
+  font-size: 2rem;
+  margin: 0;
+}
+@media only screen and (max-width: 520px) {
+  .foter-form-section .main-body-down .block p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+.foter-form-section .main-body-down .block input {
+  font-size: 18px;
+  padding: 12px;
+  font-weight: 600;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #787878;
+  line-height: 1;
+  padding: 8px 0;
+  flex-basis: 63%;
+}
+.foter-form-section .main-body-down .block input::-moz-placeholder {
+  color: #000;
+}
+.foter-form-section .main-body-down .block input::placeholder {
+  color: #000;
+}
+@media only screen and (max-width: 520px) {
+  .foter-form-section .main-body-down .block input {
+    font-size: 1rem;
+    line-height: 1.2;
+    width: 80%;
+    flex-basis: 73%;
+  }
+}
+.foter-form-section .main-body-down .form-check {
+  font-size: 15px;
+}
+.foter-form-section .main-body-down .form-check input {
+  border-radius: 0;
+}
+.foter-form-section .main-body-down p.below {
+  font-size: 14px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.foter-form-section .main-body-down .submit {
+  border-radius: 20vw;
+  padding: 12px 18px;
+  border: 1px solid;
+}
+
+footer {
+  padding: 4rem 0;
+  background: #000;
+}
+footer * {
+  color: #e6e6e6;
+}
+footer svg {
+  filter: invert(1);
+}
+footer p {
+  font-size: 20px;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+footer ul li {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 520px) {
+  footer ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+}
+footer ul * {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Inter", sans-serif !important;
+  text-decoration: none;
+}
+footer .links-im {
+  border-block: 1px solid #c4c4c4;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+footer .links-im ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 520px) {
+  footer .links-im ul {
+    row-gap: 6px;
+  }
+}
+footer .links-im ul a {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  color: #ddd;
+}
+footer .links-im ul a .arrow {
+  border-radius: 50pc;
+  background-color: #3b3b3b;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+footer .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+footer .copy p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
 }

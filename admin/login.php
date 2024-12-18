@@ -1,36 +1,12 @@
 <?php ob_start();
-session_start();
-
-
 
 // LOGIN SCRIPT
-
-
 /* DATABASE CONNECTION*/
-
-
-$db['db_host'] = 'localhost';
-$db['db_user'] = 'root';
-$db['db_pass'] = '';
-$db['db_name'] = 'Company';
-
-foreach ($db as $key => $value) {
-    define(strtoupper($key), $value);
-}
-global $conn;
-$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-if (!$conn) {
-    die("Cannot Establish A Secure Connection To The Host Server At The Moment!");
-}
-
-try {
-    $db = new PDO('mysql:dbhost=localhost;dbname=Company;charset=utf8', 'root', '');
-} catch (Exception $e) {
-
-    die('Cannot Establish A Secure Connection To The Host Server At The Moment!');
-}
-
+require_once "functions/db.php";
 /*DATABASE CONNECTION */
+
+// Initialize the session
+session_start();
 
 
 // Define variables and initialize with empty values
@@ -76,67 +52,88 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($email_err) && empty($password_err)) {
 
         // Prepare a select statement
+
         $sql = "SELECT email, password FROM admin WHERE email = ?";
 
-        if ($stmt = mysqli_prepare($conn, $sql)) {
+
+
+        if ($stmt = mysqli_prepare($connection, $sql)) {
 
             // Bind variables to the prepared statement as parameters
+
             mysqli_stmt_bind_param($stmt, "s", $param_email);
 
             // Set parameters
+
             $param_email = $email;
 
             // Attempt to execute the prepared statement
+
             if (mysqli_stmt_execute($stmt)) {
 
                 // Store result
+
                 mysqli_stmt_store_result($stmt);
 
                 // Check if email exists, if yes then verify password
+
                 if (mysqli_stmt_num_rows($stmt) == 1) {
 
+
                     // Bind result variables
+
                     mysqli_stmt_bind_result($stmt, $email, $hashed_password);
 
                     if (mysqli_stmt_fetch($stmt)) {
 
+                        // verify password with store password
                         if (password_verify($password, $hashed_password)) {
 
-                            /* Password is correct, so start a new session and
-                               save the email to the session */
-                            session_start();
+                            //  Password is correct, so start a new session and save the email to the session 
                             $_SESSION['email'] = $email;
 
-                            // Close statement
-                            mysqli_stmt_close($stmt);
+                            // $sql = "SELECT department FROM employees WHERE email='$email'" ;
+                            // $statement = mysqli_query($connection, $sql);
 
-                            // Redirect to the index page
                             header("Location: index.php");
-                            exit;
+
+                            // Close statement
+
+                            //mysqli_stmt_close($statement);
+
+                            //header("location: sales");
+
                         } else {
-                            // Display an error message if the password is not valid
+
+                            // Display an error message if password is not valid
+
                             $password_err = 'The password you entered was not valid. Please try again.';
                         }
                     }
                 } else {
-                    // Display an error message if the email doesn't exist
+
+                    // Display an error message if email doesn't exist
+
                     $email_err = 'No account found with that email. Please recheck and try again.';
                 }
             } else {
+
                 echo "Oops! Something went wrong. Please try again later.";
             }
-
-            // Close statement
-            mysqli_stmt_close($stmt);
         }
-    }
 
+
+
+        // Close statement
+
+        mysqli_stmt_close($stmt);
+    }
 
 
 
     // Close connection
 
-    mysqli_close($conn);
+    mysqli_close($connection);
 }
 
 
@@ -156,11 +153,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="../plugins/images/icon.png">
-    <title>Company Admin</title>
+    <link rel="icon" type="image/png" href="../asset/image/fav.ico" />
+    <title>Marko & Brando Admin</title>
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
+    <link href="./plugins/bower_components/bootstrap-extension/css/bootstrap-extension.css" rel="stylesheet">
     <!-- animation CSS -->
     <link href="css/animate.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -236,13 +233,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </section>
     <!-- jQuery -->
-    <script src="../plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./plugins/bower_components/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="bootstrap/dist/js/tether.min.js"></script>
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
+    <script src="./plugins/bower_components/bootstrap-extension/js/bootstrap-extension.min.js"></script>
     <!-- Menu Plugin JavaScript -->
-    <script src="../plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <script src="./plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
     <!--slimscroll JavaScript -->
     <script src="js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
@@ -250,7 +247,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.min.js"></script>
     <!--Style Switcher -->
-    <script src="../plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="./plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script>
 </body>
 
 </html>

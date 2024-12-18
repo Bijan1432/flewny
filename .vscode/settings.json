@@ -28,5 +28,9 @@
     //   "generateMap": false
     // }
   ],
-  "liveSassCompile.settings.excludeList": ["/.vscode/**", "/admin/**"]
+  "liveSassCompile.settings.excludeList": [
+    "/.vscode/**",
+    "/admin/**",
+    "/admin-old/**"
+  ]
 }

@@ -27,9 +27,9 @@ $query = mysqli_query($connection, $sql);
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="../css/bootstrap.min.css" />
 <link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
-<link rel="stylesheet" href="/flewny/css/custom.css" />
+<link rel="stylesheet" href="../css/custom.css" />
 <link rel="stylesheet" href="../css/responsive.css" />
-<!-- ===========================main contect start================= -->
+<!-- ===========================main start================= -->
 
 
 <!-- <section class="about-banner"> -->
@@ -202,7 +202,7 @@ $query = mysqli_query($connection, $sql);
 	</div>
 </section>
 
-<section class="container my-3 my-md-5">
+<section class="container d-flex justify-content-center my-3 my-md-5">
 	<div class="cta-section d-flex flex-column align-items-center">
 		<h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
 		<a href="#" class="blog-btn">Explore Now<span><img src="../icons/btn-arrow.svg" alt=""></span></a>

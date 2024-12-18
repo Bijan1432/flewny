@@ -1,5 +1,5 @@
 <!-- ================================ footer contacts =========================== -->
-<section class="foter-form-section">
+<!-- <section class="foter-form-section">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -79,9 +79,9 @@
                             <label class="form-check-label" for="flexCheckDefault">
                                 Yes, I would like to receive e-mail communications from Flewny. I can unsubscribe at any time. </label>
                         </div>
-                        <!-- <p class="below">
+                        <p class="below">
                             By providing us with your personal data, you agree to the processing of this information by Flewny as described in our <a href="">Privacy Notice</a>.
-                        </p> -->
+                        </p>
                         <div class="text-center mt-3" data-aos="fade-up" data-aos-delay="120">
 
                             <button type="submit" class="submit btn">-> Submit</button>
@@ -92,13 +92,8 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- ================================ footer contacts ===========================  -->
-
-
-
-
-
 
 
 
@@ -106,6 +101,44 @@
 <!-- ======================footer start=========================== -->
 
 <footer>
+    <div class="container">
+        <img src="" alt="">
+        <div class="row">
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2>FLEWNY</h2>
+                        <p>copyright@2024</p>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <ul>
+                            <li><a href="#">Behance</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><a href="#">bijanmondal1432@gmail.com</a></li>
+                            <li><a href="#">info@flewny.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3"></div>
+        </div>
+    </div>
+</footer>
+
+<!-- <footer>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -167,24 +200,6 @@
                                                 <div class="arrow">-></div>
                                             </a>
                                         </li>
-                                        <!-- <li>
-                            <a href="#">
-                              Privacy Policy
-                              <div class="arrow">-></div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              Privacy Policy
-                              <div class="arrow">-></div>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              Privacy Policy
-                              <div class="arrow">-></div>
-                            </a>
-                          </li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -204,7 +219,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 <!-- ==================achieve list end============== -->
 </div>
 <!-- ===========outer box end================= -->
@@ -243,6 +258,7 @@
         </div>
     </div>
 </div>
+
 <!-- =====================modal end=================== -->
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

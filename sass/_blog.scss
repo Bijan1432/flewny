@@ -218,11 +218,11 @@
   max-width: 850px;
   h2 {
     font-family: 'Chandler Mountain';
+    font-size: 2rem;
     font-weight: 600;
     line-height: 2.4rem;
     margin-bottom: 32px;
     text-align: center;
-    font-size: 2rem;
     color: #fff;
   }
   .blog-btn {
@@ -230,6 +230,14 @@
     border: none;
     span {
       transform: rotate(314deg);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    padding: 24px 16px;
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.7rem;
+      margin-bottom: 24px;
     }
   }
 }

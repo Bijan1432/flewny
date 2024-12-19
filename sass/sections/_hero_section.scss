@@ -1,0 +1,85 @@
+// ===========================hero banner start=====================
+.hero-banner {
+  // height: calc(100vh - 100px);
+  margin-bottom: 80px;
+
+  &__block {
+    position: relative;
+    margin-top: 140px;
+  }
+  &__heading {
+    font-family: $secondary-font;
+    // font-size: 120px;
+    font-size: clamp(1rem, 9.5vw, 7.5rem);
+    font-weight: 600;
+    line-height: 1.15;
+    text-transform: uppercase;
+    .small-text {
+      display: inline-block;
+      font-family: $priamry-font;
+      font-size: 14px;
+      font-weight: normal;
+      text-transform: capitalize;
+      max-width: 190px;
+    }
+    .blue {
+      color: $secondary-color-deep2;
+    }
+  }
+  .scroll-btn {
+    font-size: 16px;
+    color: #949497;
+    padding: 8px;
+    span {
+      margin-left: 3px;
+    }
+  }
+}
+
+// ===========================hero banner end=====================
+
+.video-box {
+  position: relative;
+  margin-bottom: 80px;
+
+  iframe {
+    border-radius: 18px;
+
+    @media only screen and (max-width: 520px) {
+      height: 238px;
+    }
+  }
+
+  .round {
+    background-color: $secondary-color-deep2;
+    color: $secondary-color-deep3;
+    border: none;
+    font-size: 6rem;
+    font-weight: 700;
+    height: 200px;
+    line-height: 0;
+    width: 200px;
+    position: absolute;
+    z-index: 100;
+    top: -16%;
+    transform: rotate(319deg);
+    right: 3%;
+    border-radius: 50pc;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: 520px) {
+      font-weight: 700;
+      height: 139px;
+      line-height: 0;
+      width: 140px;
+      position: absolute;
+      z-index: 100;
+      top: -9%;
+    }
+
+    &:hover {
+      background-color: $priamry-color;
+      color: $priamry-text-color;
+    }
+  }
+}

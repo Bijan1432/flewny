@@ -2,205 +2,266 @@
 
 
 <!-- ===================hero banner start============== -->
-
 <section class="hero-banner" id="home">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="banner-block">
-          <div class="big-txt">
-            <h1 data-aos="fade-right" data-aos-delay="100">
-              Crafting Digital <br /> Solutions: From<span> Websites </span> <br />to<span> Marketing</span> Success
-            </h1>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Custom Software, Website Development, and Data-Driven Digital Marketing to Elevate Your Brand.
-            </p>
+        <div class="hero-banner__block">
+          <h1 class="hero-banner__heading" data-aos="fade-right" data-aos-delay="100">
+            Crafting Seamless <span><img src="./img/heading-img1.png" alt=""></span><span><img src="./img/heading-img2.png" alt=""></span><span class="blue">Experiences</span> for The <span class="blue">Digital</span> World <span class="small-text">Custom Software Development & Data-Driven Digital Marketing to Elevate Your Brand. Tailored solutions & targeted strategies for growth.</span>
+          </h1>
+
+          <div class="d-flex gap-2 gap-md-5 flex-column justify-content-center align-items-center mt-3 mt-md-5 pt-2 pt-md-4">
+            <a href="#" class="primary-btn">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></a>
+            <a href="#" class="scroll-btn">Scroll<span><img src="./icons/scroll-btn-icon.svg" alt=""></span></a>
           </div>
-          <div class="video-box">
-            <button class="round" data-bs-toggle="modal" data-bs-target="#exampleModal" data-aos="flip-left" data-aos-delay="300">
-              <- </button>
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/h6MntF4OxCk?si=tHmxZCl3AnUmiYsU&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-in" data-aos-delay="450"></iframe>
-          </div>
+          
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- ===================hero banner end============== -->
+
+<!-- =================== video start============== -->
+ <section class="video-section" id="videoSection">
+    <div class="container">
+      <div class="video-box">
+            <iframe width="100%" height="500" src="https://www.youtube.com/embed/h6MntF4OxCk?si=tHmxZCl3AnUmiYsU&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-in" data-aos-delay="450"></iframe>
+          </div>
+    </div>
+ </section>
+<!-- =================== video end============== -->
+
 <!-- ===================about start============== -->
-<section class="m-top p-top p-bot about-us" id="about">
+<section class="about-us" id="about">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h2 data-aos="fade-up" data-aos-delay="30">
-          Crafting digital success. Software, websites, apps, SEO, ads—our
-          expertise speaks for itself. Elevate your brand with us.
-        </h2>
+      <div class="col-xl-5 d-flex justify-content-center">
+        <img src="./img/about-img.png" alt="" class="img-fluid">
       </div>
-
-      <div class="col-md-6">
-        <div class="points">
-          <div class="point" data-aos="fade-down" data-aos-delay="30">
-            <div class="bold">
-              24+
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 32 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 5 6 L 5 19.5625 L 2.71875 21.876953 C 2.26575 22.328953 2 22.95275 2 23.59375 C 2 24.91375 3.08625 26 4.40625 26 L 27.59375 26 C 28.91375 26 30 24.91375 30 23.59375 C 30 22.95275 29.73425 22.328 29.28125 21.875 L 27 19.5625 L 27 6 L 5 6 z M 7 8 L 25 8 L 25 19 L 7 19 L 7 8 z M 16 9 L 14.5 18 L 16 18 L 17.5 9 L 16 9 z M 12.085938 11 L 10.367188 13.068359 L 10 13.5 L 10.367188 13.931641 L 12.085938 16 L 13.171875 15.136719 L 11.810547 13.5 L 13.171875 11.863281 L 12.085938 11 z M 19.914062 11 L 18.828125 11.863281 L 20.189453 13.5 L 18.828125 15.136719 L 19.914062 16 L 21.632812 13.931641 L 22 13.5 L 21.632812 13.068359 L 19.914062 11 z M 6.4375 21 L 25.5625 21 L 27.875 23.28125 C 27.953 23.35925 28 23.48375 28 23.59375 C 28 23.83575 27.83575 24 27.59375 24 L 4.40625 24 C 4.16425 24 4 23.83575 4 23.59375 C 4 23.48475 4.047 23.36025 4.125 23.28125 L 6.4375 21 z"></path>
-              </svg>
-            </div>
-            <p>Technology stack</p>
+      <div class="col-xl-7">
+        <div class="row mb-2 mb-md-4">
+          <div class="col-md-6 d-flex align-items-center overflow-hidden mt-3 mb-4 mb-md-0 mt-md-0">
+            <h2><span><marquee behavior="" direction="">About The Company</marquee></span></h2>
           </div>
-          <div class="point" data-aos="fade-left" data-aos-delay="80">
-            <div class="bold">
-              4.8+
-              <svg <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M239.37,70.1A13.16,13.16,0,0,0,227.9,61l-37.22-3.15L176.16,24a13.24,13.24,0,0,0-24.31,0L137.33,57.86,100.1,61a13.13,13.13,0,0,0-7.49,23.06l28.16,24-8.43,35.73a13.1,13.1,0,0,0,5,13.58,13.25,13.25,0,0,0,14.63.7l32-19,32,19a13.25,13.25,0,0,0,14.63-.7,13.09,13.09,0,0,0,5-13.58l-8.43-35.73,28.15-24A13.07,13.07,0,0,0,239.37,70.1Zm-43.86,27a13.06,13.06,0,0,0-4.26,13l7.31,31-27.78-16.51a13.24,13.24,0,0,0-13.56,0L129.44,141l7.31-31a13,13,0,0,0-4.25-13L108.24,76.38l32.09-2.72a13.16,13.16,0,0,0,11-7.94L164,36.24l12.64,29.48a13.18,13.18,0,0,0,11,7.94l32.09,2.72ZM85.66,125.66l-56,56a8,8,0,0,1-11.32-11.32l56-56a8,8,0,0,1,11.32,11.32Zm16,56-56,56a8,8,0,0,1-11.32-11.32l56-56a8,8,0,0,1,11.32,11.32Zm72-11.32a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32-11.32l56-56A8,8,0,0,1,173.66,170.34Z"></path>
-              </svg>
-            </div>
-            <p>Top Rated in Google</p>
+          <div class="col-md-6"><p class="about-us__text">Crafting Digital Success: We specialize in creating custom software, stunning websites, seamless apps, and powerful SEO strategies that drive results. Our expertise in digital marketing and targeted ads ensures your brand stands out in a crowded marketplace. Let us help you elevate your brand, boost visibility, and achieve long-term growth with our comprehensive solutions tailored to your unique business needs.</p></div>
+        </div>
+        <div class="about-us__counter-block">
+          <div class="about-us__counter">
+            <h4 class="about-us__counter-number">68%</h4>
+            <p class="about-us__counter-txt">Business Growth</p>
           </div>
-          <div class="point" data-aos="fade-right" data-aos-delay="150">
-            <div class="bold">
-              68%
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 416v64M80 32h192a32 32 0 0132 32v412a4 4 0 01-4 4H48h0V64a32 32 0 0132-32zm240 160h112a32 32 0 0132 32v256h0-160 0V208a16 16 0 0116-16z"></path>
-                <path d="M98.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm80 240a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm80 320a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79z"></path>
-                <ellipse cx="256" cy="176" rx="15.95" ry="16.03" transform="rotate(-45 255.99 175.996)"></ellipse>
-                <path d="M258.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM400 400a16 16 0 1016 16 16 16 0 00-16-16zm0-80a16 16 0 1016 16 16 16 0 00-16-16zm0-80a16 16 0 1016 16 16 16 0 00-16-16zm-64 160a16 16 0 1016 16 16 16 0 00-16-16zm0-80a16 16 0 1016 16 16 16 0 00-16-16zm0-80a16 16 0 1016 16 16 16 0 00-16-16z"></path>
-              </svg>
-            </div>
-            <p>Business Growth</p>
+          <div class="about-us__counter">
+            <h4 class="about-us__counter-number">10k+</h4>
+            <p class="about-us__counter-txt">Interested People</p>
           </div>
-          <div class="point" data-aos="fade-up" data-aos-delay="200">
-            <div class="bold">
-              10K+
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"></path>
-              </svg>
-            </div>
-            <p>Intersted People</p>
+          <div class="about-us__counter">
+            <h4 class="about-us__counter-number">20+</h4>
+            <p class="about-us__counter-txt">Technology Stack</p>
+          </div>
+          <div class="about-us__counter">
+            <h4 class="about-us__counter-number">4.8+</h4>
+            <p class="about-us__counter-txt">Top Rated in Google</p>
           </div>
         </div>
-        <button class="round" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <- </button>
+
+        
       </div>
     </div>
   </div>
 </section>
 <!-- ===================about end============== -->
+
 <!-- ========================our servives====================== -->
-<section class="m-top service" id="services">
+<section class="our-service" id="services">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <h2 data-aos="fade-up" data-aos-delay="30">
-          Our Service is not limited. Simply reach out, and we'll tailor a
-          precise solution to meet your unique needs
+          Our <span>Services</span>
         </h2>
+        <ul class="our-service-list">
+          <li class="our-service__item active"><span class="our-service__item-number">01</span> Google Ads <span class="ms-auto"><div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div></span></li>
+          <li class="our-service__item"><span class="our-service__item-number">02</span> Web Development <span class="ms-auto"><div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div></span></li>
+          <li class="our-service__item"><span class="our-service__item-number">03</span> CRm <span class="ms-auto"><div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div></span></li>
+          <li class="our-service__item"><span class="our-service__item-number">04</span> SEo <span class="ms-auto"><div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div></span></li>
+          
+        </ul>
       </div>
-      <div class="col-md-6">
-        <div class="slider" data-aos="fade-left" data-aos-delay="130">
-          <div class="slider-service">
-            <div class="slid-card">
-              <div class="img-card">
-                <img data-lazy="./img/modal.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-head">Web Development</div>
-                <div class="card-text">
-                  From Classic desgin to advance aniamtion.
-                </div>
-              </div>
-            </div>
-            <div class="slid-card">
-              <div class="img-card">
-                <img data-lazy="./img/crm.png" class="img-fluid" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-head">CRM Development</div>
-                <div class="card-text">
-                  Our Experts are the Best in Maing CRM or ERP
-                </div>
-              </div>
-            </div>
-            <div class="slid-card">
-              <div class="img-card">
-                <img data-lazy="./img/seo.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-head">SEO Optimizaiton</div>
-                <div class="card-text">
-                  From Website desgin to SEO we have every solotuion.
-                </div>
-              </div>
-            </div>
-            <div class="slid-card">
-              <div class="img-card">
-                <img data-lazy="./img/ads.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-head">Google Ads</div>
-                <div class="card-text">
-                  We run all kinds of ads.From Facebook to Reddit.
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="col-lg-6 mt-5 mt-lg-0">
+        <div class="our-service__card ms-lg-auto mx-auto mx-lg-0 ">
+          <img src="./img/service-card-img.png" alt="" class="our-service__card-img img-fluid">
+          <h3 class="our-service__card-title">Expertly crafted ads for measurable growth</h3>
+          <p class="our-service__card-txt"><b>At Flewny</b>, we offer a comprehensive suite of services designed to drive your business forward in the digital age. Our expertise spans across multiple domains to cater to all your digital needs.</p>
         </div>
+
       </div>
     </div>
   </div>
 </section>
 <!-- ========================our servives====================== -->
+
 <!-- ===================achieve list start============== -->
-<section class="achieve m-top m-bot">
+<section class="container d-flex justify-content-center my-0 my-md-5">
+	<div class="cta-section d-flex flex-column align-items-center">
+		<h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
+		<a href="#" class="primary-btn primary-btn-white">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></a>
+	</div>
+</section>
+<!-- ===================achieve list end============== -->
+
+<!-- ===================blog section start============== -->
+ <section class="blog-section-bg">
+  <div class="container g-0">
+    <div class="blog-section">
+      <div class="d-flex justify-content-between align-items-center mb-3 mb-md-5 mt-2">
+        <h2>Recent blogs</h2>
+        <div class="d-flex">
+          <a href="#" class="blog-section__load-more-btn d-none d-md-block">Load More</a>
+        </div>
+      </div>
+      <div class="d-flex gap-4">
+        
+        <div class="blog-card">
+          <img src="./img/blog-img1.webp" alt="" class="blog-card__img">
+          <div class="d-flex gap-2">
+            <div class="blog-card__category">Digital Marketing</div>
+            <div class="blog-card__date">
+              <span><img src="./icons/calendar.svg" alt=""></span>Oct 17,2024
+            </div>
+          </div>
+          <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
+          <div class="d-flex">
+            <a href="#" class="blog-btn">Read More <span><img src="./icons/btn-arrow.svg" alt=""></span></a>
+          </div>
+          <div class="blog-card__cutout"></div>
+        </div>
+			
+        <div class="blog-card d-none d-md-block">
+          <img src="./img/blog-img2.webp" alt="" class="blog-card__img">
+          <div class="d-flex gap-2">
+            <div class="blog-card__category">Digital Marketing</div>
+            <div class="blog-card__date">
+              <span><img src="./icons/calendar.svg" alt=""></span>Oct 17,2024
+            </div>
+          </div>
+          <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
+          <div class="d-flex">
+            <a href="#" class="blog-btn">Read More <span><img src="./icons/btn-arrow.svg" alt=""></span></a>
+          </div>
+          <div class="blog-card__cutout"></div>
+        </div>
+
+        <div class="blog-card d-none d-md-block">
+          <img src="./img/blog-img3.webp" alt="" class="blog-card__img">
+          <div class="d-flex gap-2">
+            <div class="blog-card__category">Digital Marketing</div>
+            <div class="blog-card__date">
+              <span><img src="./icons/calendar.svg" alt=""></span>Oct 17,2024
+            </div>
+          </div>
+          <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
+          <div class="d-flex">
+            <a href="#" class="blog-btn">Read More <span><img src="./icons/btn-arrow.svg" alt=""></span></a>
+          </div>
+          <div class="blog-card__cutout"></div>
+        </div>
+      </div>
+    </div>  
+  </div>
+ </section>
+<!-- ===================blog section end============== -->
+
+<!-- ===================review section start============== -->
+<section class="review-section">
   <div class="container">
-    <div class="row">
-      <div class="col-md-10">
-        <p class="mid-txt" data-aos="fade-in" data-aos-delay="30">
-          Unleashing Solutions, Mastering Challenges — Our Goal: Adding
-          Value to Your Business!
+    <div class="">
+      <h2>Real Stories, <br>Real <span>Results</span></h2>
+      <div class="d-flex"></div>
+    </div>
+    <div class="d-flex gap-3 my-5">
+      <div class="review-card active">
+        <p class="review-card-message ">
+          Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
         </p>
+        <p class="review-card-user">– Samantha R., Marketing Manager</p>
+        <p class="review-card-number">01</p>
+        <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
       </div>
-      <div class="col-md-2 text-end">
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-          <path d="M253.8 15.56l-79.9 84.11 2.3 58.83 50.6 36.2 31.9 182 10.8-26.9 11.8-235.4 18.7 1-9.1 181 28.3-70.8 8.2-108 .9-17.93zm139 50.57l-46.6 50.77-3.9 51.1 10.6-26.2 30.4-13.7c3.2-20.6 6.3-41.3 9.5-61.97zm60.3 51.17l-85.7 38.4-102.6 255.9 14.6 83.3h7.8l147.6-293.1 16.7 8.4-143.4 284.7h24.4l146.6-291.8zm-340.2 18.9l-54.11 99.1 69.11 259.6h93.6l-51.1-274.8 18.3-3.4 51.8 278.2h19.9l-50.7-289.4zm358.3 260.4l-65.8-5.2-49.8 99.2 69.8-36.7zm-435.96-28l42.47 126.7h30.99L80.6 389.9z"></path>
-        </svg>
+      <div class="review-card">
+        <p class="review-card-message">
+          Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+        </p>
+        <p class="review-card-user">– Samantha R., Marketing Manager</p>
+        <p class="review-card-number">01</p>
+        <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
       </div>
-      <!-- <div class="col-md-6">
-                    <ul>
-                      <li>
-                        <div class="number">563</div>
-                        <div class="txt">successfull sales</div>
-                      </li>
-                      <li>
-                        <div class="number">563</div>
-                        <div class="txt">successfull sales</div>
-                      </li>
-                      <li>
-                        <div class="number">563</div>
-                        <div class="txt">successfull sales</div>
-                      </li>
-                    </ul>
-                  </div> -->
+      <div class="review-card">
+        <p class="review-card-message">
+          Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+        </p>
+        <p class="review-card-user">– Samantha R., Marketing Manager</p>
+        <p class="review-card-number">01</p>
+        <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+      </div>
     </div>
   </div>
 </section>
-<!-- ===================achieve list end============== -->
-<!-- ===================we offer start============== -->
+<!-- ===================review section end============== -->
 
-<section class="m-top we-offer" id="strategy">
+
+<!-- =================== connection section start============== -->
+ 
+<section class="mb-3 mb-md-5">
+  <div class="container connection-section g-0">
+    <div class="connection-block">
+      <h2>MAke a Connection</h2>
+
+      <div class="row my-3 my-md-5">
+        <div class="connection-block__card-wrapper ">
+          <div class="connection-block__card">
+            <h3 class="connection-block__card-title">New Business</h3>
+            <div class="connection-block__card-content">
+              <h4 class="connection-block__card-name">Bijan Mondal <br class="d-block d-md-none"><span>(Chief Executive Officer)</span></h4>
+              <a href="mailto:bijanmondal1432@gmail.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>bijanmondal1432@gmail.com</a>
+            </div>
+          </div> 
+          <div class="connection-block__card">
+            <h3 class="connection-block__card-title">New Business</h3>
+            <div class="connection-block__card-content">
+              <h4 class="connection-block__card-name">Benjamin Frank <br class="d-block d-md-none"><span>(Chief Operating Officer)</span></h4>
+              <a href="mailto:info@flewny.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>info@flewny.com</a>
+            </div>
+          </div> 
+        </div>
+        
+      </div>
+
+      <form class="row connection-block__form " >
+        <div class="col-lg-6 mb-3 mb-md-0">
+          <h3>Let’s Connect</h3>
+          <div class="d-flex gap-3 mt-3">
+            <input type="checkbox" name="" id="Confirmation">
+            <label for="Confirmation">Yes, I would like to receive e-mail communications from Flewny. I can unsubscribe at any time.</label>
+          </div>
+        </div>
+        <div class="col-lg-6 px-2 px-lg-4">
+          <input type="text" name="" id="" placeholder="Your Email">
+          <button type="submit">Submit <span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =================== connection section  end============== -->
+<!-- <section class="m-top we-offer" id="strategy">
   <div class="container">
     <div class="row align-items-end">
       <div class="col-md-6 col-12">
         <h2 data-aos="fade-up" data-aos-delay="30">How we do it — Strategy</h2>
       </div>
-      <!-- <div class="col-md-3 offset-md-3">
-              <div class="text-end">
-                <div class="btn btn-primary">PREVIOUS</div>
-                <div class="btn btn-primary">NEXT</div>
-              </div>
-            </div> -->
     </div>
     <div class="row services align-items-center">
       <div class="col-md-4">
@@ -280,52 +341,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<!-- ===================we offer  end============== -->
-<!-- =================== punch line start ============== -->
-<!-- <section class="punch m-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="punch-block">
-                <p>
-                  ACCEPT <br />NEW <br />
-                  CHALLENGES
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-<!-- ===================punch line end============== -->
-
-<!-- =======================contact form start================= -->
-<section class="m-top contact-big" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 data-aos="fade-up" data-aos-delay="30">We're here in so many ways</h2>
-        <form action="./mail.php" method="post" data-aos="fade-up" data-aos-delay="150">
-          <div class="texts">
-            I am
-            <input type="text" name="name" placeholder="Your Name*" id="" />.
-            My email is
-            <input type="text" name="email" id="" placeholder="Your Email*" />
-            and my phone number is
-            <input type="tel" name="mobile" placeholder="Your Phone Number*" id="" />
-            . And Now tell Us about Your requirements or that crazy idea
-            in your mind ;)
-          </div>
-          <textarea name="message" id="" cols="30" rows="5" placeholder="Your message goes here ....."></textarea>
-          <button type="submit" class="mb-5 mt-5 btn btn-primary d-block">
-            Submit
-          </button>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- =======================contact form end ================= -->
 
 <?php include("./include/footer.php") ?>

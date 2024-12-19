@@ -1,0 +1,77 @@
+//=========================our service start========================
+.our-service {
+  padding-block: 80px;
+  h2 {
+    // font-size: 58px;
+    font-size: clamp(2.5rem, 5vw, 58px);
+    font-family: $secondary-font;
+    font-weight: 600;
+    span {
+      color: $secondary-color-deep2;
+    }
+  }
+  &-list {
+    margin: 0;
+    margin-top: 36px;
+    list-style: none;
+    list-style-type: none;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 40px;
+    color: #000;
+    padding-block: 16px;
+    border-bottom: 1px solid #2b2b3050;
+    &-number {
+      font-weight: 600;
+      color: #2b2b3050;
+      margin-right: 22px;
+    }
+    &:hover,
+    &.active {
+      .arrow-btn {
+        background-color: $priamry-color;
+        border: 0;
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    padding-block: 48px;
+    &-list {
+      margin-top: 14px;
+      padding-left: 8px;
+    }
+    &__item {
+      font-size: 24px;
+    }
+  }
+
+  // card
+  &__card {
+    width: 100%;
+    max-width: 480px;
+    padding: 12px;
+    border: 1px solid #000;
+    border-radius: 24px;
+    // &-img {
+    // }
+    &-title {
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    &-txt {
+      font-size: 16px;
+      font-weight: 300;
+      padding: 16px;
+      margin: 0;
+      border-radius: 12px;
+      background-color: $priamry-color;
+    }
+  }
+}
+
+//=========================our service end========================

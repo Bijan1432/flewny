@@ -26,8 +26,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-    <?php echo basename(__FILE__) ?>
+    
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/responsive.css" />
 </head>

@@ -12,6 +12,7 @@ RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.*)$ $1.php [L]
 
 
+
 # Redirect any URL to index.php if no other file matches
 RewriteCond %{REQUEST_URI} ^/?$
 RewriteRule ^$ /index [L]

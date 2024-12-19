@@ -512,107 +512,7 @@ body {
 // ------------menu---------------
 
 // ===========================nav end =====================
-// ===========================hero banner start=====================
-.hero-banner {
-  // height: calc(100vh - 100px);
 
-  .banner-block {
-    position: relative;
-
-    .video-box {
-      position: relative;
-      margin-top: 2rem;
-
-      iframe {
-        border-radius: 18px;
-
-        @media only screen and (max-width: 520px) {
-          height: 238px;
-        }
-      }
-
-      .round {
-        background-color: $secondary-color-deep2;
-        color: $secondary-color-deep3;
-        border: none;
-        font-size: 6rem;
-        font-weight: 700;
-        height: 200px;
-        line-height: 0;
-        width: 200px;
-        position: absolute;
-        z-index: 100;
-        top: -16%;
-        transform: rotate(319deg);
-        right: 3%;
-        border-radius: 50pc;
-        transition: all 0.3s;
-
-        @media only screen and (max-width: 520px) {
-          font-weight: 700;
-          height: 139px;
-          line-height: 0;
-          width: 140px;
-          position: absolute;
-          z-index: 100;
-          top: -9%;
-        }
-
-        &:hover {
-          background-color: $priamry-color;
-          color: $priamry-text-color;
-        }
-      }
-    }
-  }
-
-  .big-txt {
-    position: relative;
-    margin-top: calc((100vh - 304px) / 2);
-
-    h1 {
-      font-size: 3.5em;
-      text-transform: uppercase;
-      font-weight: 700;
-      line-height: 1.15;
-
-      @media only screen and (max-width: 520px) {
-        font-size: 3.5em;
-      }
-
-      span {
-        color: $secondary-color-deep2;
-        // -webkit-text-stroke: 2px #000;
-      }
-    }
-
-    p {
-      position: absolute;
-      top: 11%;
-      right: 0;
-      width: 20vmax;
-      font-size: 19px;
-      line-height: 1.3;
-
-      @media only screen and (max-width: 520px) {
-        position: relative;
-        width: 80%;
-        font-size: 14px;
-      }
-    }
-  }
-
-  .header-txt {
-    p {
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 1.3;
-      // color: $secondary-text-color;
-    }
-  }
-}
-
-// ===========================hero banner end=====================
 // ===========================we Offer start=====================
 .we-offer {
   h2 {
@@ -700,95 +600,7 @@ body {
 }
 
 // ===========================we Offer  end=====================
-//=========================our service start========================
-.service {
-  // background: url("../img/background2.png") center/cover;
-  // background-size: contain;
-  // min-height: 45rem;
-  // background-repeat: no-repeat;
-  padding-top: 3rem;
 
-  @media only screen and (max-width: 520px) {
-    padding-top: 5rem;
-  }
-
-  .slider {
-    background: url(../img/bacgroud3.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-    background-position: top right;
-    padding: 7rem 1rem;
-
-    @media only screen and (max-width: 520px) {
-      padding: 4rem 0.6rem;
-    }
-
-    &::after {
-      content: 'Services';
-      color: #000;
-      font-family: 'Inter', sans-serif !important;
-      top: 10px;
-      right: 48px;
-      font-size: 2rem;
-      font-weight: 700;
-      position: absolute;
-
-      @media only screen and (max-width: 520px) {
-        right: 30px;
-        font-size: 1.4rem;
-      }
-    }
-
-    .slid-card {
-      padding: 6px;
-      background: #fff;
-      border-radius: 12px;
-      margin: 0 20px;
-
-      @media only screen and (max-width: 520px) {
-        margin-right: 10px;
-      }
-
-      .img-card {
-        overflow: hidden;
-        border-radius: 16px;
-
-        img {
-          height: 14rem;
-          object-fit: cover;
-
-          @media only screen and (max-width: 520px) {
-            height: 8rem;
-          }
-        }
-      }
-
-      .card-body {
-        .card-head {
-          font-size: 1.6rem;
-          font-weight: 700;
-          line-height: 1;
-
-          @media only screen and (max-width: 520px) {
-            font-size: 1rem;
-            line-height: 1.1;
-          }
-        }
-
-        .card-text {
-          font-size: 14px;
-          font-weight: 400;
-          color: #2e2e2e;
-          line-height: 1.1;
-          margin-top: 5px;
-        }
-      }
-    }
-  }
-}
-
-//=========================our service end========================
 // ===========================punch start=====================
 .punch {
   height: 80vh;
@@ -886,88 +698,7 @@ body {
 }
 
 // ===========================achieve end=====================
-// ===========================about us start=====================
-.about-us {
-  background-color: $priamry-color;
-  position: relative;
 
-  .round {
-    background-color: $secondary-color-deep2;
-    color: $secondary-color-deep3;
-    border: none;
-    font-size: 6rem;
-    font-weight: 700;
-    height: 200px;
-    line-height: 0;
-    width: 200px;
-    position: absolute;
-    z-index: 100;
-    bottom: -16%;
-    transform: rotate(137deg);
-    right: 20%;
-    border-radius: 50pc;
-    transition: all 0.3s;
-
-    @media only screen and (max-width: 520px) {
-      height: 139px;
-
-      width: 140px;
-    }
-
-    &:hover {
-      background-color: $outer-color;
-      color: #fff;
-    }
-  }
-
-  h2 {
-    margin-right: 4rem;
-  }
-
-  .points {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 2rem;
-    margin-top: 2rem;
-
-    @media only screen and (max-width: 520px) {
-      row-gap: 1rem;
-    }
-
-    .point {
-      width: 50%;
-
-      .bold {
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin-bottom: 1rem;
-
-        @media only screen and (max-width: 520px) {
-          font-size: 2.8rem;
-          margin-bottom: 0.7rem;
-        }
-      }
-
-      p {
-        color: #000;
-        font-size: 18px;
-
-        @media only screen and (max-width: 520px) {
-          font-size: 15px;
-        }
-      }
-    }
-  }
-}
-
-.about-our-values {
-  .accordion-flush .accordion-item .accordion-button {
-    outline: none !important;
-    box-shadow: none !important;
-  }
-}
-
-// ===========================about us end=====================
 // ===========================big contact start=====================
 .contact-big {
   * {
@@ -2260,5 +1991,10 @@ body {
   padding-top: 0 !important;
 }
 
-@import 'blog'; // blog page design
+@import 'base'; // home
+// pages
+@import 'home'; // home
+@import 'blog'; // blog
+
+// sections
 @import 'footer'; // footer

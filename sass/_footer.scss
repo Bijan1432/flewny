@@ -31,6 +31,10 @@ footer {
       flex-direction: column;
       justify-content: flex-start;
       // align-items: flex-end;
+      li a {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
     }
 
     * {
@@ -40,10 +44,26 @@ footer {
       text-decoration: none;
     }
   }
+  .border {
+    &-right {
+      border-right: 1px solid #e6e6e6;
+    }
+    &-top {
+      border-top: 1px solid #e6e6e6;
+    }
+    @media screen and (max-width: 576px) {
+      &-right {
+        border-right: none !important;
+      }
+      &-top {
+        border-top: none !important;
+      }
+    }
+  }
   .credit {
     position: absolute;
-    bottom: 14px;
-    right: 14px;
+    bottom: 10px;
+    right: 20px;
     font-size: 14px;
     font-weight: 400;
     font-family: $priamry-font;

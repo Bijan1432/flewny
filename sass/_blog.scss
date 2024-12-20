@@ -157,6 +157,35 @@
     margin-top: 16px;
     margin-bottom: 34px;
   }
+  @media screen and (max-width: 576px) {
+    &__title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 16px;
+      margin-bottom: 34px;
+    }
+    &__category {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 4px 14px;
+    }
+    &__date {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 4px;
+      padding-right: 14px;
+      span {
+        font-size: 14px;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        img {
+          width: 14px;
+          height: 14px;
+        }
+      }
+    }
+  }
 }
 
 // blog-btn
@@ -168,10 +197,16 @@
   color: #000;
   padding: 6px;
   padding-left: 24px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 10rem;
   overflow: hidden;
-  span {
+  position: relative;
+  &-txt {
+    // width: max-content;
+    // text-wrap: nowrap;
+    z-index: 2;
+  }
+  &-icon {
     display: grid;
     place-items: center;
     width: 36px;
@@ -180,29 +215,45 @@
     border-radius: 50%;
     background-color: #aeea17;
     transition: 0.4s;
-
-    // &:after {
-    //   z-index: -1;
-    //   position: absolute;
-    //   left: 50%;
-    //   top: 50%;
-    //   transform: translate(-50%, -50%);
-    //   content: '';
-    //   width: 50px;
-    //   height: auto;
-    //   aspect-ratio: 1/1;
-    //   background-color: #aeea17;
-    //   border-radius: 50%;
-    // }
+    z-index: 2;
+  }
+  &::after {
+    z-index: 1;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translate(0px, -50%);
+    content: '';
+    width: 20px;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-color: #aeea17;
+    // background-color: #003cff;
+    border-radius: 50%;
+    transition: 0.4s;
   }
   &:hover {
     color: #000;
-    span {
+    .blog-btn-icon {
       background-color: #000;
       transform: rotate(-90deg);
       img {
         filter: invert(1);
       }
+    }
+    &::after {
+      width: 300px;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    padding: 6px;
+    padding-left: 16px;
+    &-icon {
+      width: 32px;
+      height: 32px;
+      margin-left: 10px;
     }
   }
 }
@@ -225,7 +276,7 @@
     text-align: center;
     color: #fff;
   }
-  .blog-btn {
+  .primary-btn {
     background-color: #fff;
     border: none;
     span {

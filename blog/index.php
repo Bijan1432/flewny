@@ -40,7 +40,7 @@ $query = mysqli_query($connection, $sql);
 				<div class="blog-banner__content">
 					<h1 class="blog-banner__title">Blog</h1>
 					<p class="blog-banner__text">Dive into a world of knowledge with our curated articles, expert insights, and valuable resources designed to keep you informed and inspired.</p>
-					<a href="" class="primary-btn"></a>
+					<a href="#" class="primary-btn primary-btn-white">Explore Now<span><img src="../icons/primary-btn-arrow.svg" alt=""></span></a>
 				</div>
 			</div>
 		</div>
@@ -70,7 +70,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -85,7 +85,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -100,7 +100,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -115,7 +115,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -130,7 +130,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -145,7 +145,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -160,7 +160,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -175,7 +175,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -190,7 +190,7 @@ $query = mysqli_query($connection, $sql);
 				</div>
 				<h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
 				<div class="d-flex">
-					<a href="#" class="blog-btn">Read More <span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+					<a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="../icons/btn-arrow.svg" alt=""></span></a>
 				</div>
 				<div class="blog-card__cutout"></div>
 			</div>
@@ -205,7 +205,7 @@ $query = mysqli_query($connection, $sql);
 <section class="container d-flex justify-content-center my-3 my-md-5">
 	<div class="cta-section d-flex flex-column align-items-center">
 		<h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
-		<a href="#" class="blog-btn">Explore Now<span><img src="../icons/btn-arrow.svg" alt=""></span></a>
+		<a href="#" class="primary-btn primary-btn-white">Explore Now<span><img src="../icons/primary-btn-arrow.svg" alt=""></span></a>
 	</div>
 </section>
 

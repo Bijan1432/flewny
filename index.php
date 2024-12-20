@@ -8,7 +8,7 @@
       <div class="col-md-12">
         <div class="hero-banner__block">
           <h1 class="hero-banner__heading" data-aos="fade-right" data-aos-delay="100">
-            Crafting Seamless <span><img src="./img/heading-img1.png" alt=""></span><span><img src="./img/heading-img2.png" alt=""></span><span class="blue">Experiences</span> for The <span class="blue">Digital</span> World <span class="small-text">Custom Software Development & Data-Driven Digital Marketing to Elevate Your Brand. Tailored solutions & targeted strategies for growth.</span>
+            Crafting Seamless <span><img src="./img/heading-img1.png" alt="" class="hero-banner__heading-img1"></span><span class="d-none d-md-inline-block"><img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2"></span><span class="blue">Experiences</span> for The <span class="d-inline-block d-md-none"><img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2"></span><span class="blue">Digital</span> World <span class="small-text">Custom Software Development & Data-Driven Digital Marketing to Elevate Your Brand. Tailored solutions & targeted strategies for growth.</span>
           </h1>
 
           <div class="d-flex gap-2 gap-md-5 flex-column justify-content-center align-items-center mt-3 mt-md-5 pt-2 pt-md-4">
@@ -111,6 +111,64 @@
 </section>
 <!-- ===================achieve list end============== -->
 
+<!-- ===================we-do section start============== -->
+ <section class="we-do-section">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end">
+      <h2>How we do it, <br> Strategy</h2>
+      <div class="d-flex review-section__btns">
+        <button class="swiper-btn-prev weDoBtn-prev"><img src="./icons/primary-btn-arrow.svg" alt=""></button>
+        <button class="swiper-btn-next weDoBtn-next"><img src="./icons/primary-btn-arrow.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid g-0 mt-3 mt-md-5">
+    <div class="swiper mt-3 mt-md-5s weDoSwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="we-do-card">
+            <div class="we-do-card__left-col">
+              <h3 class="we-do-card__title">Phase One Delivery</h3>
+              <p class="we-do-card__number">01</p>
+              <p class="we-do-card__content">At the forefront of our approach is a dedication to showcasing results swiftly. Upon reaching this stage, we kindly request the release of 20% of the full payment to proceed further in delivering excellence.</p>
+            </div>
+            <div class="we-do-card__right-col">
+              <img src="./img/we-do-img1.png" alt="" class="we-do-card__img">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="we-do-card">
+            <div class="we-do-card__left-col">
+              <h3 class="we-do-card__title">Phase One Delivery</h3>
+              <p class="we-do-card__number">01</p>
+              <p class="we-do-card__content">At the forefront of our approach is a dedication to showcasing results swiftly. Upon reaching this stage, we kindly request the release of 20% of the full payment to proceed further in delivering excellence.</p>
+            </div>
+            <div class="we-do-card__right-col">
+              <img src="./img/we-do-img1.png" alt="" class="we-do-card__img">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="we-do-card">
+            <div class="we-do-card__left-col">
+              <h3 class="we-do-card__title">Phase One Delivery</h3>
+              <p class="we-do-card__number">01</p>
+              <p class="we-do-card__content">At the forefront of our approach is a dedication to showcasing results swiftly. Upon reaching this stage, we kindly request the release of 20% of the full payment to proceed further in delivering excellence.</p>
+            </div>
+            <div class="we-do-card__right-col">
+              <img src="./img/we-do-img1.png" alt="" class="we-do-card__img">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+ </section>
+<!-- ===================we-do section end============== -->
+
 <!-- ===================blog section start============== -->
  <section class="blog-section-bg">
   <div class="container g-0">
@@ -118,7 +176,7 @@
       <div class="d-flex justify-content-between align-items-center mb-3 mb-md-5 mt-2">
         <h2>Recent blogs</h2>
         <div class="d-flex">
-          <a href="#" class="blog-section__load-more-btn d-none d-md-block">Load More</a>
+          <a href="./blog/" class="blog-section__load-more-btn d-none d-md-block">Load More</a>
         </div>
       </div>
       <div class="d-flex gap-4">
@@ -133,7 +191,7 @@
           </div>
           <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
           <div class="d-flex">
-            <a href="#" class="blog-btn">Read More <span><img src="./icons/btn-arrow.svg" alt=""></span></a>
+            <a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
           </div>
           <div class="blog-card__cutout"></div>
         </div>
@@ -148,7 +206,7 @@
           </div>
           <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
           <div class="d-flex">
-            <a href="#" class="blog-btn">Read More <span><img src="./icons/btn-arrow.svg" alt=""></span></a>
+            <a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
           </div>
           <div class="blog-card__cutout"></div>
         </div>
@@ -163,7 +221,7 @@
           </div>
           <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
           <div class="d-flex">
-            <a href="#" class="blog-btn">Read More <span><img src="./icons/btn-arrow.svg" alt=""></span></a>
+            <a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
           </div>
           <div class="blog-card__cutout"></div>
         </div>
@@ -176,40 +234,81 @@
 <!-- ===================review section start============== -->
 <section class="review-section">
   <div class="container">
-    <div class="">
+    <div class="d-flex justify-content-between align-items-end">
       <h2>Real Stories, <br>Real <span>Results</span></h2>
-      <div class="d-flex"></div>
+      <div class="d-flex review-section__btns">
+        <button class="swiper-btn-prev reviewBtn-prev"><img src="./icons/primary-btn-arrow.svg" alt=""></button>
+        <button class="swiper-btn-next reviewBtn-next"><img src="./icons/primary-btn-arrow.svg" alt=""></button>
+      </div>
     </div>
-    <div class="d-flex gap-3 my-5">
-      <div class="review-card active">
-        <p class="review-card-message ">
-          Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
-        </p>
-        <p class="review-card-user">– Samantha R., Marketing Manager</p>
-        <p class="review-card-number">01</p>
-        <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+    <div class="swiper mt-3 mt-md-5s reviewSwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="review-card active">
+            <p class="review-card-message ">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">01</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-card-message">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">01</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-card-message">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">01</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-card-message">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">01</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-card-message">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">01</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
+        </div>
       </div>
-      <div class="review-card">
-        <p class="review-card-message">
-          Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
-        </p>
-        <p class="review-card-user">– Samantha R., Marketing Manager</p>
-        <p class="review-card-number">01</p>
-        <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
-      </div>
-      <div class="review-card">
-        <p class="review-card-message">
-          Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
-        </p>
-        <p class="review-card-user">– Samantha R., Marketing Manager</p>
-        <p class="review-card-number">01</p>
-        <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
-      </div>
+      <!-- If we need pagination -->
+      <!-- <div class="swiper-pagination"></div> -->
+
+      <!-- If we need navigation buttons -->
+      <!-- <div class="swiper-button-prev"></div> -->
+      <!-- <div class="swiper-button-next"></div> -->
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div> -->
     </div>
   </div>
 </section>
 <!-- ===================review section end============== -->
-
 
 <!-- =================== connection section start============== -->
  
@@ -221,7 +320,7 @@
       <div class="row my-3 my-md-5">
         <div class="connection-block__card-wrapper ">
           <div class="connection-block__card">
-            <h3 class="connection-block__card-title">New Business</h3>
+            <h3 class="connection-block__card-title">New Business</h3>  
             <div class="connection-block__card-content">
               <h4 class="connection-block__card-name">Bijan Mondal <br class="d-block d-md-none"><span>(Chief Executive Officer)</span></h4>
               <a href="mailto:bijanmondal1432@gmail.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>bijanmondal1432@gmail.com</a>

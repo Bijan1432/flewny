@@ -9,8 +9,7 @@
   }
   &__heading {
     font-family: $secondary-font;
-    // font-size: 120px;
-    font-size: clamp(1rem, 9.5vw, 7.5rem);
+    font-size: clamp(3.5rem, 9.5vw, 7.5rem);
     font-weight: 600;
     line-height: 1.15;
     text-transform: uppercase;
@@ -25,6 +24,14 @@
     .blue {
       color: $secondary-color-deep2;
     }
+    &-img1 {
+      height: clamp(3.5rem, 9.5vw, 7.5rem);
+      aspect-ratio: 256/161;
+    }
+    &-img2 {
+      height: clamp(3.5rem, 9.5vw, 7.5rem);
+      aspect-ratio: 437/161;
+    }
   }
   .scroll-btn {
     font-size: 16px;
@@ -32,6 +39,31 @@
     padding: 8px;
     span {
       margin-left: 3px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    &__block {
+      margin-top: 120px;
+    }
+    &__heading {
+      margin-bottom: 16px;
+    }
+    //   &-img1 {
+    //     // width: 100%;
+    //     aspect-ratio: 256/161;
+    //     height: auto;
+    //   }
+    //   &-img2 {
+    //     // width: 100%;
+    //     aspect-ratio: 437/161;
+    //     height: auto;
+    //   }
+    .small-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      max-width: 260px;
+      margin-top: 10px;
     }
   }
 }

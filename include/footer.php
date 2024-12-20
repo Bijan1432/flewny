@@ -3,9 +3,9 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-9">
-                <img src="./icons/Lets-talk.svg" alt="" class="img-fluid mb-5">
-                <div class="row pt-lg-5">
+            <div class="col-9 border-right">
+                <img src="./icons/Lets-talk.svg" alt="" class="img-fluid mb-5 pe-md-5 pb-md-4">
+                <div class="row pt-lg-5 border-top">
                     <div class="col-md-4 mb-4 mb-md-0">
                         <h2>FLEWNY</h2>
                         <p>copyright@2024</p>
@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <a href="https://sayanwebwork.site/" class="credit">Developed by sayanwebwork</a>
+    <!-- <a href="https://sayanwebwork.site/" class="credit">Developed by sayanwebwork</a> -->
 </footer>
 
 <!-- ==================footers end============== -->
@@ -88,9 +88,66 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+ <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
     AOS.init({
         duration: 1200 // Increase the duration (in milliseconds)
+    });
+    // Initialize Swiper
+    var swiper = new Swiper(".reviewSwiper", {
+    spaceBetween: 10,
+    centerslides: true,
+    slidesPerView: 1.1,
+    initialSlide: 0,
+    // loop: true,
+    navigation: {
+      nextEl: '.reviewBtn-next',
+      prevEl: '.reviewBtn-prev',
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1   
+      },
+      768: {
+        slidesPerView: 3
+      },
+      900: {
+        slidesPerView: 3.5
+      },
+      1200: {
+        slidesPerView: 3.5
+      }
+    }
+    });
+    // Initialize Swiper
+    var weDoSwiper = new Swiper(".weDoSwiper", {
+    spaceBetween: 10,
+    slidesPerView: 1.1,
+    initialSlide: 1,
+    centeredSlides: true,
+    // loop: true,
+    navigation: {
+      nextEl: '.weDoBtn-next',
+      prevEl: '.weDoBtn-prev',
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1   
+      },
+      768: {
+        slidesPerView: 1
+      },
+      900: {
+        slidesPerView: 1.5
+      },
+      1200: {
+        spaceBetween: 60,
+        slidesPerView: 1.8
+      }
+    }
     });
 </script>
 <script src="js/custom.js"></script>

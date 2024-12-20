@@ -78,3 +78,38 @@ a {
     transform: rotate(-90deg);
   }
 }
+
+//swiper-btn-next
+.swiper-btn {
+  &-next {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-color: #fff;
+    border-radius: 60px;
+    transition: 0.4s;
+  }
+  &-prev {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    border-color: #fff;
+    border-radius: 60px;
+    transition: 0.4s;
+    img {
+      transform: rotate(-180deg);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    &-next {
+      width: 36px;
+      height: 36px;
+    }
+    &-prev {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

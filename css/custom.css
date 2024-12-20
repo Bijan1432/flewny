@@ -2288,7 +2288,7 @@ a {
 @media screen and (max-width: 576px) {
   .blog-section {
     margin-top: 40px;
-    padding: 16px;
+    padding: 12px;
   }
   .blog-section h2 {
     font-size: 32spx;
@@ -2402,7 +2402,7 @@ a {
 }
 @media screen and (max-width: 576px) {
   .connection-section {
-    padding: 18px;
+    padding: 12px;
     margin-top: 34px;
   }
 }

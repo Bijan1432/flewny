@@ -142,7 +142,7 @@
           <div class="we-do-card">
             <div class="we-do-card__left-col">
               <h3 class="we-do-card__title">Phase One Delivery</h3>
-              <p class="we-do-card__number">01</p>
+              <p class="we-do-card__number">02</p>
               <p class="we-do-card__content">At the forefront of our approach is a dedication to showcasing results swiftly. Upon reaching this stage, we kindly request the release of 20% of the full payment to proceed further in delivering excellence.</p>
             </div>
             <div class="we-do-card__right-col">
@@ -154,7 +154,7 @@
           <div class="we-do-card">
             <div class="we-do-card__left-col">
               <h3 class="we-do-card__title">Phase One Delivery</h3>
-              <p class="we-do-card__number">01</p>
+              <p class="we-do-card__number">03</p>
               <p class="we-do-card__content">At the forefront of our approach is a dedication to showcasing results swiftly. Upon reaching this stage, we kindly request the release of 20% of the full payment to proceed further in delivering excellence.</p>
             </div>
             <div class="we-do-card__right-col">
@@ -261,7 +261,7 @@
               Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
             </p>
             <p class="review-card-user">– Samantha R., Marketing Manager</p>
-            <p class="review-card-number">01</p>
+            <p class="review-card-number">02</p>
             <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
           </div>
         </div>
@@ -271,7 +271,7 @@
               Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
             </p>
             <p class="review-card-user">– Samantha R., Marketing Manager</p>
-            <p class="review-card-number">01</p>
+            <p class="review-card-number">03</p>
             <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
           </div>
         </div>
@@ -281,7 +281,7 @@
               Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
             </p>
             <p class="review-card-user">– Samantha R., Marketing Manager</p>
-            <p class="review-card-number">01</p>
+            <p class="review-card-number">04</p>
             <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
           </div>
         </div>
@@ -291,7 +291,7 @@
               Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
             </p>
             <p class="review-card-user">– Samantha R., Marketing Manager</p>
-            <p class="review-card-number">01</p>
+            <p class="review-card-number">05</p>
             <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
           </div>
         </div>

@@ -19,7 +19,7 @@ $intro = $_POST['intro'];
 //image upload
 $file_name = $_FILES['blog_image']['name'];
 $temp_name = $_FILES['blog_image']['tmp_name'];
-$folder = "../../asset/image/blog/" . $file_name; // change "...." with file path  
+$folder = "../../uploads/blog/" . $file_name; // change "...." with file path  
 move_uploaded_file($temp_name, $folder);
 $image_alt = $_POST['blog_image_alt'];
 

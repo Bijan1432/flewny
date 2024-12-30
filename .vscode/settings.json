@@ -32,5 +32,8 @@
     "/.vscode/**",
     "/admin/**",
     "/admin-old/**"
-  ]
+  ],
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+  }
 }

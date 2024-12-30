@@ -1,22 +1,20 @@
 RewriteEngine On
+# RewriteBase /blog/
+RewriteBase /flewny/blog/
 
-# this is only for localhost xampp
-# RewriteBase /flewny/blog/
 
-RewriteBase /blog/
+RewriteCond %{QUERY_STRING} ^page=([01])&limit=10$
+RewriteRule ^$ /blog/? [R=301,L]
 
-# Check if the requested file with a .php extension exists
-RewriteCond %{REQUEST_FILENAME}.php -f
-# Redirect to the existing .php file
-RewriteRule ^([^/]+)$ $1.php [L]
+RewriteCond %{QUERY_STRING} ^page=([0-9]+)&limit=10$
+RewriteRule ^$ /blog/page-%1? [R=301,L]
+
+# redirect /page-(num) to index.php?page=(num)
+RewriteRule ^page-([0-9]+)$ index.php?page=$1 [L,QSA]
 
 # Redirect requests with a slug to single.php
 RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !^/category/ [NC]  # Exclude slugs that start with 'category/'
+RewriteCond %{REQUEST_URI} !^/author/ [NC]  # Exclude slugs that start with 'author/'
 RewriteRule ^([^/]+)$ single.php?slug=$1 [L,QSA]
-
-# Redirect requests without a slug to index.php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^$ index.php [L]
+  

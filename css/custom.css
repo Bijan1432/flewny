@@ -2183,6 +2183,9 @@ a {
   font-family: "Chandler Mountain", sans-serif !important;
   font-weight: 600;
 }
+.we-do-section .swiper-wrapper {
+  height: unset;
+}
 @media screen and (max-width: 576px) {
   .we-do-section {
     padding-block: 30px;
@@ -2554,15 +2557,21 @@ a {
 }
 
 .blog-list-section {
-  background-color: #aeea17;
   padding: 5rem 1.8rem;
   margin-block: 3rem;
   border-radius: 2rem;
+  background-color: #aeea17;
 }
 .blog-list-section h2 {
   font-family: "Chandler Mountain";
   font-weight: bold;
   text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .blog-list-section {
+    padding: 3rem 0.8rem;
+    margin-block: 2rem;
+  }
 }
 
 .blog-category {
@@ -2584,6 +2593,17 @@ a {
   gap: 16px;
   margin: 20px 0 28px;
 }
+@media screen and (max-width: 576px) {
+  .blog-category {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+  .blog-category-list {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 16px 0 24px;
+  }
+}
 
 .blog-list {
   display: grid;
@@ -2601,8 +2621,20 @@ a {
 .blog-list__load-more:hover {
   color: #383838;
 }
+@media screen and (max-width: 992px) {
+  .blog-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 .blog-card {
+  display: flex;
+  flex-direction: column;
   padding: 16px;
   padding-bottom: 20px;
   background-color: #fff;
@@ -2639,6 +2671,10 @@ a {
   height: auto;
   aspect-ratio: 491/300;
   border-radius: 14px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   margin-bottom: 18px;
 }
 .blog-card__category {
@@ -2709,7 +2745,7 @@ a {
 
 .blog-btn {
   width: auto;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: #000;
@@ -2868,6 +2904,18 @@ a {
 }
 .blog-single__table-contents__list li.active {
   color: #000;
+}
+.blog-single-page .blog-section {
+  background-color: #aeea17;
+}
+.blog-single-page .blog-section .blog-card {
+  background-color: #fff;
+}
+.blog-single-page .blog-section .blog-card__cutout {
+  background-color: #aeea17;
+}
+.blog-single-page .blog-section .blog-card__cutout::after, .blog-single-page .blog-section .blog-card__cutout::before {
+  background: radial-gradient(circle at 0% 0%, rgba(255, 255, 255, 0) 69%, rgb(174, 234, 23) 71%);
 }
 
 footer {

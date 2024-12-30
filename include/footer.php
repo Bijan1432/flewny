@@ -40,8 +40,8 @@
     </div>
     <!-- <a href="https://sayanwebwork.site/" class="credit">Developed by sayanwebwork</a> -->
 </footer>
-
 <!-- ==================footers end============== -->
+ 
 </div>
 <!-- ===========outer box end================= -->
 

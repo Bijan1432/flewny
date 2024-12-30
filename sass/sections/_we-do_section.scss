@@ -7,6 +7,10 @@
     font-family: $secondary-font;
     font-weight: 600;
   }
+  .swiper-wrapper {
+    height: unset;
+  }
+
   @media screen and (max-width: 576px) {
     padding-block: 30px;
     margin-block: 30px;

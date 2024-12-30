@@ -1,4 +1,3 @@
-
 <?php
 
 /* DATABASE CONNECTION*/
@@ -24,11 +23,11 @@ $file_name = $_FILES['blog_image']['name'];
 
 if (!$file_name == '') {
   $temp_name = $_FILES['blog_image']['tmp_name'];
-  $folder = "../../asset/image/blog/" . basename($_FILES['blog_image']['name']); // change "...." with file path  
+  $folder = "../../uploads/blog/" . basename($_FILES['blog_image']['name']); // change "...." with file path  
   move_uploaded_file($temp_name, $folder);
 
   // 
-  $file_path = "../../asset/image/blog/" . $_POST['blog_image_name'];
+  $file_path = "../../uploads/blog/" . $_POST['blog_image_name'];
   // Check if the file exists
   if (file_exists($file_path)) {
     // Attempt to delete the file
@@ -60,6 +59,9 @@ $meta_description = $_POST['meta_description'];
 $canonical_link = $_POST['meta_canonical'];
 $tags = $_POST['tags'];
 
+//table of content
+$table_content = $_POST['table_content'];
+
 
 
 if (isset($_POST["submit"])) {
@@ -71,7 +73,7 @@ if (isset($_POST["submit"])) {
        meta_title = :meta_title, meta_keywords = :meta_keywords, 
        meta_description = :meta_description, meta_canonical = :meta_canonical, 
        tags = :tags, published_date = :published_date, modified_date = :modified_date,
-       published_by = :published_by, published_status = :published_status
+       published_by = :published_by, published_status = :published_status, table_content = :table_content
    WHERE id = :id";
 
   // Prepare the statement
@@ -94,6 +96,7 @@ if (isset($_POST["submit"])) {
   $stmt->bindParam(':modified_date', $modified_date);
   $stmt->bindParam(':published_by', $published_by);
   $stmt->bindParam(':published_status', $published_status);
+  $stmt->bindParam(':table_content', $table_content);
   $stmt->bindParam(':id', $blog_id, PDO::PARAM_INT); // Bind the blog ID as an integer
 
   // Execute the query
@@ -105,17 +108,3 @@ if (isset($_POST["submit"])) {
     echo "Error:" . $e; // Get more detailed error information
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>

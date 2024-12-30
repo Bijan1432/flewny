@@ -1,5 +1,4 @@
 // ====== edited by sayan ====== //
-
 // ===== blog-page ===== //
 .blog-banner {
   height: 100vh;
@@ -27,14 +26,18 @@
 }
 
 .blog-list-section {
-  background-color: #aeea17;
   padding: 5rem 1.8rem;
   margin-block: 3rem;
   border-radius: 2rem;
+  background-color: #aeea17;
   h2 {
     font-family: 'Chandler Mountain';
     font-weight: bold;
     text-transform: uppercase;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 3rem 0.8rem;
+    margin-block: 2rem;
   }
 }
 
@@ -57,6 +60,15 @@
     gap: 16px;
     margin: 20px 0 28px;
   }
+  @media screen and (max-width: 576px) {
+    font-size: 14px;
+    padding: 6px 20px;
+    &-list {
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 16px 0 24px;
+    }
+  }
 }
 
 .blog-list {
@@ -74,10 +86,18 @@
       color: #383838;
     }
   }
+  @media screen and (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 // === blog-card ===
 .blog-card {
+  display: flex;
+  flex-direction: column;
   padding: 16px;
   padding-bottom: 20px;
   background-color: #fff;
@@ -113,11 +133,16 @@
       left: -20px;
     }
   }
+  // &__body {
+  //   padding: 4px;
+  // }
   &__img {
     width: 100%;
     height: auto;
     aspect-ratio: 491/300;
     border-radius: 14px;
+    object-fit: cover;
+    object-position: center;
     // background-color: #191919;
     margin-bottom: 18px;
   }
@@ -191,7 +216,7 @@
 // blog-btn
 .blog-btn {
   width: auto;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   color: #000;
@@ -293,7 +318,7 @@
   }
 }
 
-// ===== blog-single ===== //
+// <<<========== blog-single ==========>>> //
 .blog-single {
   &-banner {
     margin-bottom: 40px;
@@ -309,6 +334,7 @@
       border-radius: 20px;
     }
   }
+
   &__heading {
     font-family: $secondary-font;
     font-size: 38px;
@@ -354,6 +380,22 @@
       }
     }
   }
-  // &__body {
-  // }
+
+  &-page .blog-section {
+    background-color: $priamry-color;
+    .blog-card {
+      background-color: #fff;
+      &__cutout {
+        background-color: #aeea17;
+        &::after,
+        &::before {
+          background: radial-gradient(
+            circle at 0% 0%,
+            rgba(255, 255, 255, 0) 69%,
+            rgb(174, 234, 23) 71%
+          );
+        }
+      }
+    }
+  }
 }

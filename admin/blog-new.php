@@ -61,6 +61,33 @@ $author_query = mysqli_query($connection, $author_sql);
     <!-- Import Trumbowyg style -->
     <link rel="stylesheet" href="trumbowyg/dist/ui/trumbowyg.min.css">
     <!--  -->
+    <style>
+        .chip-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        .chip {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .chip span {
+            margin-right: 5px;
+        }
+
+        .chip button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
@@ -192,7 +219,6 @@ $author_query = mysqli_query($connection, $author_sql);
                                     <!-- Publish info -->
                                     <h4 class="">Publish info</h4>
                                     <div class="row">
-
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Published Date</label>
@@ -279,6 +305,25 @@ $author_query = mysqli_query($connection, $author_sql);
                                         </div>
                                     </div>
 
+                                    <!-- Table OF Contents -->
+                                    <h4 class="">Table OF Contents</h4>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <div class="form-group">
+                                                    <label for="exampleMetaTitle">Content</label>
+                                                    <div class="input-group">
+
+                                                        <input type="hidden" name="table_content" id="table-content">
+                                                        <input type="text" class="form-control" id="autocomplete-input" placeholder="Enter contents..." autocomplete="off">
+
+                                                    </div>
+                                                    <div class="chip-container" id="chip-container"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <button type="submit" name="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
                                     <!--<button type="reset" name="submit" class="btn btn-danger waves-effect waves-light m-r-10">Reset</button>-->
                                 </form>
@@ -337,6 +382,42 @@ $author_query = mysqli_query($connection, $author_sql);
     <!-- Import Trumbowyg base64 plugins... -->
     <script src="trumbowyg/dist/plugins/base64/trumbowyg.base64.min.js"></script>
     <script src="js/custom.min.js"></script>
+    <script>
+        // document.addEventListener("DOMContentLoaded", function() {
+        const input = document.getElementById("autocomplete-input");
+        const chipContainer = document.getElementById("chip-container");
+        const tableContent = document.getElementById("table-content");
+        let selectedTags = [];
+
+
+        // add chip on click
+        function addChip(tag) {
+            const chip = document.createElement("div");
+            chip.className = "chip";
+            chip.innerHTML = `<span>${tag}</span><button data-tag="${tag}">&times;</button>`;
+            chip.querySelector("button").addEventListener("click", function(e) {
+                selectedTags = selectedTags.filter(t => t !== tag);
+                chip.remove();
+                tableContent.value = selectedTags.join(", ");
+                e.preventDefault();
+            });
+            chipContainer.appendChild(chip);
+            selectedTags.push(tag);
+        }
+
+
+        input.addEventListener("keypress", (event) => {
+            if (event.key == "Enter") {
+                if (!selectedTags.includes(input.value) && input.value !== " ") {
+                    addChip(input.value);
+                }
+                input.value = "";
+                tableContent.value = selectedTags.join(", ");
+                event.preventDefault();
+            }
+        });
+        // });
+    </script>
     <script type="text/javascript">
         // $('#editor').trumbowyg('html', "<p>Put your content here</p>");
 
@@ -391,8 +472,7 @@ $author_query = mysqli_query($connection, $author_sql);
                 .replace(/^-+|-+$/g, "");
             document.querySelector("#exampleBlogSlug").setAttribute('value', cValue);
         })
-    </script>
-    <script>
+
         Filevalidation = () => {
             const fi = document.getElementById('exampleBlogImage');
             // Check if any file is selected.

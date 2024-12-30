@@ -26,5 +26,5 @@ try {
 
 /*DATABASE CONNECTION */
 
-
-?>
+/* blog image folder path */
+// $blog_img_folder = "../../uploads/blog/";

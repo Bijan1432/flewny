@@ -1,3 +1,4 @@
+<?php require_once "./admin/functions/db.php"; ?>
 <?php include("./include/header.php") ?>
 
 
@@ -15,7 +16,7 @@
             <a href="#" class="primary-btn">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></a>
             <a href="#" class="scroll-btn">Scroll<span><img src="./icons/scroll-btn-icon.svg" alt=""></span></a>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -24,13 +25,13 @@
 <!-- ===================hero banner end============== -->
 
 <!-- =================== video start============== -->
- <section class="video-section" id="videoSection">
-    <div class="container">
-      <div class="video-box">
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/h6MntF4OxCk?si=tHmxZCl3AnUmiYsU&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-in" data-aos-delay="450"></iframe>
-          </div>
+<section class="video-section" id="videoSection">
+  <div class="container">
+    <div class="video-box">
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/h6MntF4OxCk?si=tHmxZCl3AnUmiYsU&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-in" data-aos-delay="450"></iframe>
     </div>
- </section>
+  </div>
+</section>
 <!-- =================== video end============== -->
 
 <!-- ===================about start============== -->
@@ -43,9 +44,13 @@
       <div class="col-xl-7">
         <div class="row mb-2 mb-md-4">
           <div class="col-md-6 d-flex align-items-center overflow-hidden mt-3 mb-4 mb-md-0 mt-md-0">
-            <h2><span><marquee behavior="" direction="">About The Company</marquee></span></h2>
+            <h2><span>
+                <marquee behavior="" direction="">About The Company</marquee>
+              </span></h2>
           </div>
-          <div class="col-md-6"><p class="about-us__text">Crafting Digital Success: We specialize in creating custom software, stunning websites, seamless apps, and powerful SEO strategies that drive results. Our expertise in digital marketing and targeted ads ensures your brand stands out in a crowded marketplace. Let us help you elevate your brand, boost visibility, and achieve long-term growth with our comprehensive solutions tailored to your unique business needs.</p></div>
+          <div class="col-md-6">
+            <p class="about-us__text">Crafting Digital Success: We specialize in creating custom software, stunning websites, seamless apps, and powerful SEO strategies that drive results. Our expertise in digital marketing and targeted ads ensures your brand stands out in a crowded marketplace. Let us help you elevate your brand, boost visibility, and achieve long-term growth with our comprehensive solutions tailored to your unique business needs.</p>
+          </div>
         </div>
         <div class="about-us__counter-block">
           <div class="about-us__counter">
@@ -66,7 +71,7 @@
           </div>
         </div>
 
-        
+
       </div>
     </div>
   </div>
@@ -82,11 +87,19 @@
           Our <span>Services</span>
         </h2>
         <ul class="our-service-list">
-          <li class="our-service__item active"><span class="our-service__item-number">01</span> Google Ads <span class="ms-auto"><div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div></span></li>
-          <li class="our-service__item"><span class="our-service__item-number">02</span> Web Development <span class="ms-auto"><div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div></span></li>
-          <li class="our-service__item"><span class="our-service__item-number">03</span> CRm <span class="ms-auto"><div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div></span></li>
-          <li class="our-service__item"><span class="our-service__item-number">04</span> SEo <span class="ms-auto"><div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div></span></li>
-          
+          <li class="our-service__item active"><span class="our-service__item-number">01</span> Google Ads <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+          <li class="our-service__item"><span class="our-service__item-number">02</span> Web Development <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+          <li class="our-service__item"><span class="our-service__item-number">03</span> CRm <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+          <li class="our-service__item"><span class="our-service__item-number">04</span> SEo <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+
         </ul>
       </div>
       <div class="col-lg-6 mt-5 mt-lg-0">
@@ -104,15 +117,15 @@
 
 <!-- ===================achieve list start============== -->
 <section class="container d-flex justify-content-center my-0 my-md-5">
-	<div class="cta-section d-flex flex-column align-items-center">
-		<h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
-		<a href="#" class="primary-btn primary-btn-white">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></a>
-	</div>
+  <div class="cta-section d-flex flex-column align-items-center">
+    <h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
+    <a href="#" class="primary-btn primary-btn-white">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></a>
+  </div>
 </section>
 <!-- ===================achieve list end============== -->
 
 <!-- ===================we-do section start============== -->
- <section class="we-do-section">
+<section class="we-do-section">
   <div class="container">
     <div class="d-flex justify-content-between align-items-end">
       <h2>How we do it, <br> Strategy</h2>
@@ -163,14 +176,14 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </div>
- </section>
+</section>
 <!-- ===================we-do section end============== -->
 
 <!-- ===================blog section start============== -->
- <section class="blog-section-bg">
+<section class="blog-section-bg">
   <div class="container g-0">
     <div class="blog-section">
       <div class="d-flex justify-content-between align-items-center mb-3 mb-md-5 mt-2">
@@ -180,55 +193,47 @@
         </div>
       </div>
       <div class="d-flex gap-4">
-        
-        <div class="blog-card">
-          <img src="./img/blog-img1.webp" alt="" class="blog-card__img">
-          <div class="d-flex gap-2">
-            <div class="blog-card__category">Digital Marketing</div>
-            <div class="blog-card__date">
-              <span><img src="./icons/calendar.svg" alt=""></span>Oct 17,2024
-            </div>
-          </div>
-          <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
-          <div class="d-flex">
-            <a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
-          </div>
-          <div class="blog-card__cutout"></div>
-        </div>
-			
-        <div class="blog-card d-none d-md-block">
-          <img src="./img/blog-img2.webp" alt="" class="blog-card__img">
-          <div class="d-flex gap-2">
-            <div class="blog-card__category">Digital Marketing</div>
-            <div class="blog-card__date">
-              <span><img src="./icons/calendar.svg" alt=""></span>Oct 17,2024
-            </div>
-          </div>
-          <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
-          <div class="d-flex">
-            <a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
-          </div>
-          <div class="blog-card__cutout"></div>
-        </div>
+        <?php
+        $sql_latest = 'SELECT title, category, blog_image, blog_image_alt, slug, published_date, published_status  FROM blogs WHERE published_status = 1 ORDER BY published_date DESC LIMIT 3';
+        $query_latest = mysqli_query($connection, $sql_latest);
 
-        <div class="blog-card d-none d-md-block">
-          <img src="./img/blog-img3.webp" alt="" class="blog-card__img">
-          <div class="d-flex gap-2">
-            <div class="blog-card__category">Digital Marketing</div>
-            <div class="blog-card__date">
-              <span><img src="./icons/calendar.svg" alt=""></span>Oct 17,2024
+        if (mysqli_num_rows($query_latest) == 0) {
+          echo "<b style='color:brown;'>Sorry there are no posts Yet :( We will be uploading new content soon! </b> ";
+        } else {
+
+          while ($row = mysqli_fetch_array($query_latest)) {
+            //publish date
+            $date = explode("-", $row['published_date']);
+            $monthNum  = $date[1];
+            $dateObj   = DateTime::createFromFormat('!m', $monthNum);
+            $monthName = $dateObj->format('F'); // Month name
+        ?>
+            <div class="blog-card">
+              <img src="./uploads/blog/<?php echo $row['blog_image'] ?>" alt="<?php echo $row['blog_image_alt'] ?>" class="blog-card__img">
+              <div class="d-flex gap-2">
+                <div class="blog-card__category"><?php echo $row['category'] ?></div>
+                <div class="blog-card__date">
+                  <span><img src="./icons/calendar.svg" alt=""></span><?php echo substr($monthName, 0, 3) . " " . $date[2] . ", " . $date[0]  ?>
+                </div>
+              </div>
+              <h3 class="blog-card__title">
+                <!-- <a href="<?php echo '/flewny/blog/' . $row['slug'] ?>" class="" target="_blank"> -->
+                <?php echo $row['title'] ?>
+                <!-- </a> -->
+              </h3>
+              <div class="d-flex">
+                <a href="<?php echo '/flewny/blog/' . $row['slug'] ?>" class="blog-btn" target="_blank"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
+              </div>
+              <div class="blog-card__cutout"></div>
             </div>
-          </div>
-          <h3 class="blog-card__title">Digital Marketing Company for Doctors in Kolkata </h3>
-          <div class="d-flex">
-            <a href="#" class="blog-btn"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
-          </div>
-          <div class="blog-card__cutout"></div>
-        </div>
+        <?php
+          }
+        }
+        ?>
       </div>
-    </div>  
+    </div>
   </div>
- </section>
+</section>
 <!-- ===================blog section end============== -->
 
 <!-- ===================review section start============== -->
@@ -302,7 +307,7 @@
 <!-- ===================review section end============== -->
 
 <!-- =================== connection section start============== -->
- 
+
 <section class="mb-3 mb-md-5">
   <div class="container connection-section g-0">
     <div class="connection-block">
@@ -311,24 +316,24 @@
       <div class="row my-3 my-md-5">
         <div class="connection-block__card-wrapper ">
           <div class="connection-block__card">
-            <h3 class="connection-block__card-title">New Business</h3>  
+            <h3 class="connection-block__card-title">New Business</h3>
             <div class="connection-block__card-content">
               <h4 class="connection-block__card-name">Bijan Mondal <br class="d-block d-md-none"><span>(Chief Executive Officer)</span></h4>
               <a href="mailto:bijanmondal1432@gmail.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>bijanmondal1432@gmail.com</a>
             </div>
-          </div> 
+          </div>
           <div class="connection-block__card">
             <h3 class="connection-block__card-title">New Business</h3>
             <div class="connection-block__card-content">
               <h4 class="connection-block__card-name">Benjamin Frank <br class="d-block d-md-none"><span>(Chief Operating Officer)</span></h4>
               <a href="mailto:info@flewny.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>info@flewny.com</a>
             </div>
-          </div> 
+          </div>
         </div>
-        
+
       </div>
 
-      <form class="row connection-block__form " >
+      <form class="row connection-block__form ">
         <div class="col-lg-6 mb-3 mb-md-0">
           <h3>Let’s Connect</h3>
           <div class="d-flex gap-3 mt-3">

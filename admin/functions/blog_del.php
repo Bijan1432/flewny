@@ -11,7 +11,7 @@ if (isset($_GET["id"])) {
     //fetch blog data
     $blog = mysqli_fetch_array($query);
 
-    $file_path = "../../asset/image/blog/" . $blog['blog_image'];
+    $file_path = "../../uploads/blog/" . $blog['blog_image'];
 
     // Check if the image file exists
     if (file_exists($file_path)) {

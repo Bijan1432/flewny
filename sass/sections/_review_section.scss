@@ -91,6 +91,9 @@
     }
   }
 }
+.review-section .swiper-wrapper {
+  height: auto;
+}
 
 .swiper-slide.swiper-slide-active .review-card {
   background-color: $priamry-color;

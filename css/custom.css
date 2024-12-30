@@ -2383,6 +2383,10 @@ a {
   left: -20px;
 }
 
+.review-section .swiper-wrapper {
+  height: auto;
+}
+
 .swiper-slide.swiper-slide-active .review-card {
   background-color: #aeea17;
   border-color: transparent;
@@ -2815,45 +2819,54 @@ a {
   height: 100vh;
   max-height: 460px;
   margin-top: 110px;
-  background-color: #0f0f0f;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  background-color: #757575;
   border-radius: 20px;
 }
 .blog-single__heading {
+  font-family: "Chandler Mountain", sans-serif !important;
   font-size: 38px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   max-width: 700px;
   margin-top: 20px;
 }
-.blog-single__body {
+.blog-single__wrapper {
   margin-block: 50px;
+  background-color: #ededed;
+  border-radius: 24px;
+  padding-block: 48px;
 }
-.blog-single__body__contents {
+.blog-single__table-contents {
   position: sticky;
   top: 10px;
   max-width: 100%;
   height: auto;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f2f2f3;
+  background-color: #ffffff;
 }
-.blog-single__body__contents h5 {
-  font-size: 18px;
+.blog-single__table-contents__title {
+  font-family: "Chandler Mountain", sans-serif !important;
+  font-size: 20px;
   font-weight: 600;
 }
-.blog-single__body__contents__list {
+.blog-single__table-contents__list {
   color: #81818c;
   font-size: 14px;
   list-style: none;
   padding-left: 10px;
   margin-top: 15px;
 }
-.blog-single__body__contents__list li {
+.blog-single__table-contents__list li {
   margin-bottom: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #dadada;
 }
-.blog-single__body__contents__list li.active {
+.blog-single__table-contents__list li.active {
   color: #000;
 }
 

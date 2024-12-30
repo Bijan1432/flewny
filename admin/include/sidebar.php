@@ -29,6 +29,8 @@
                     <li><a href="blog-new.php" class="waves-effect">Post Blog</a></li>
                     <li><a href="category.php" class="waves-effect">Category</a>
                     </li>
+					<li><a href="author.php" class="waves-effect">Author</a>
+                    </li>
                 </ul>
             </li>
 

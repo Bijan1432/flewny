@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php  
+    // $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] ;
+    // $base = $url . '/flewny/';
+    $base = $_SERVER['HTTP_HOST']  == 'localhost' ? '/flewny/' : '/';
+?>
 
 <head>
     <meta charset="UTF-8" />
@@ -93,7 +96,7 @@
                     </button>
 
                     <div class="collapse navbar-collapse justify-content-md-between" id="navbarsExample04">
-                        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none logo-a" data-aos="fade-down" data-aos-delay="30">
+                        <a href="<?php echo $base ?>" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none logo-a" data-aos="fade-down" data-aos-delay="30">
                             <svg width="146" height="60.6163818130869" viewBox="0 0 300 102.7396831917325" class="css-1j8o68f">
                                 <defs id="SvgjsDefs1756"></defs>
                                 <g id="SvgjsG1757" featurekey="nameFeature-0" transform="matrix(3.659487556713002,0,0,3.659487556713002,-3.326657336880931,-43.737674045433316)" fill="#000">

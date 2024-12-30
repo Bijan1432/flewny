@@ -1,15 +1,40 @@
-<!--
-author: Ethredah
-author URL: http://ethredah.github.io
--->
-
 <?php
+
+// Get the current page from URL (or default to 1)
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+// Get the number of records per page from URL (or default to 10)
+$limit = isset($_GET['limit']) ? (int)$_GET['limit'] : 10;
+// Validate limit (must be at least 1 record per page)
+$limit = max(1, $limit);
+
+
+//db connection -> $connection
 require_once "../admin/functions/db.php";
 
-// Query to select all posts ordered by date in descending order
-$sql = 'SELECT * FROM posts ORDER BY date DESC';
-
+// total blogs
+$sql = 'SELECT COUNT(*) as total FROM blogs';
 $query = mysqli_query($connection, $sql);
+$row = mysqli_fetch_assoc($query);
+$total_blogs = $row['total'];
+
+// total blogs
+// $sql = 'SELECT id FROM blogs';
+// $query = mysqli_query($connection, $sql);
+// $total_blogs = mysqli_num_rows($query);
+
+// Calculate total pages
+$total_pages = ceil($total_blogs / $limit);
+
+// Ensure the current page is within valid range
+$page = max(1, min($page, $total_pages));
+
+// Calculate the offset for the SQL query
+$offset = ($page - 1) * $limit;
+
+// Fetch data from database
+$sql = "SELECT * FROM blogs WHERE published_status = 1 ORDER BY published_date DESC LIMIT $limit OFFSET $offset";
+$query = mysqli_query($connection, $sql);
+
 ?>
 
 

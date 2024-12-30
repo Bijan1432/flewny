@@ -24,7 +24,7 @@ $file_name = $_FILES['blog_image']['name'];
 
 if (!$file_name == '') {
   $temp_name = $_FILES['blog_image']['tmp_name'];
-  $folder = "../../asset/image/blog/" . $file_name; // change "...." with file path  
+  $folder = "../../asset/image/blog/" . basename($_FILES['blog_image']['name']); // change "...." with file path  
   move_uploaded_file($temp_name, $folder);
 
   // 
@@ -50,6 +50,8 @@ $published_date = $_POST['published_date'];
 $published_by = $_POST['published_by'];
 $published_status = $_POST['published_status'] == "1" ? true : false;
 
+// modify info
+$modified_date =  date("Y-m-d");
 
 //seo
 $meta_title = $_POST['meta_title'];
@@ -68,7 +70,7 @@ if (isset($_POST["submit"])) {
        blog_image = :blog_image, blog_image_alt = :blog_image_alt, content = :content, 
        meta_title = :meta_title, meta_keywords = :meta_keywords, 
        meta_description = :meta_description, meta_canonical = :meta_canonical, 
-       tags = :tags, published_date = :published_date, 
+       tags = :tags, published_date = :published_date, modified_date = :modified_date,
        published_by = :published_by, published_status = :published_status
    WHERE id = :id";
 
@@ -89,6 +91,7 @@ if (isset($_POST["submit"])) {
   $stmt->bindParam(':meta_canonical', $canonical_link);
   $stmt->bindParam(':tags', $tags);
   $stmt->bindParam(':published_date', $published_date);
+  $stmt->bindParam(':modified_date', $modified_date);
   $stmt->bindParam(':published_by', $published_by);
   $stmt->bindParam(':published_status', $published_status);
   $stmt->bindParam(':id', $blog_id, PDO::PARAM_INT); // Bind the blog ID as an integer

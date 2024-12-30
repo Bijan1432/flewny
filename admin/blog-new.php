@@ -22,6 +22,10 @@ $email = $_SESSION['email'];
 $category_sql = "SELECT * FROM blog_category";
 $category_query = mysqli_query($connection, $category_sql);
 
+// get Authors
+$author_sql = "SELECT * FROM blog_author";
+$author_query = mysqli_query($connection, $author_sql);
+
 ?>
 
 <!DOCTYPE html>
@@ -158,7 +162,8 @@ $category_query = mysqli_query($connection, $category_sql);
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <div class="input-group">
-                                                    <input type="file" name="blog_image" accept=".jpg, .jpeg, .png, .webp" class="form-control" id="exampleBlogImage" required="">
+                                                    <input type="file" name="blog_image" accept=".jpg, .jpeg, .png, .webp" class="form-control" id="exampleBlogImage"
+                                                        onchange="Filevalidation()" required="">
                                                 </div>
                                             </div>
                                         </div>
@@ -200,7 +205,18 @@ $category_query = mysqli_query($connection, $category_sql);
                                             <div class="form-group">
                                                 <label for="exampleInputEmail1">Published By</label>
                                                 <div class="input-group">
-                                                    <input type="text" name="published_by" class="form-control" id="exampleInputEmail1" placeholder="Marko & Brando" value="Marko & Brando" required="">
+                                                    <select name="published_by" id="exampleBlogCategory" class="custom-select w-100 py-0" style="height: calc(3.8rem);" required="">
+                                                        <?PHP while ($row = mysqli_fetch_array($author_query)) {
+                                                            if ($row['active_status']) {
+
+                                                        ?>
+                                                                <option value="<?PHP echo $row['name'] ?>"><?PHP echo $row['name'] ?></option>
+                                                        <?PHP
+                                                            }
+                                                        }
+                                                        ?>
+                                                    </select>
+                                                    <!-- <input type="text" name="published_by" class="form-control" id="exampleInputEmail1" placeholder="Marko & Brando" value="Marko & Brando" required=""> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -314,11 +330,58 @@ $category_query = mysqli_query($connection, $category_sql);
     <!-- <script src="./plugins/bower_components/styleswitcher/jQuery.style.switcher.js"></script> -->
     <!-- Import Trumbowyg -->
     <script src="trumbowyg/dist/trumbowyg.min.js"></script>
-    <!-- Custom Theme JavaScript -->
+    <!-- Import Trumbowyg plugins... -->
+    <script src="trumbowyg/dist/plugins/colors/trumbowyg.colors.min.js"></script>
+    <!-- Import Trumbowyg upload plugins... -->
+    <script src="trumbowyg/dist/plugins/upload/trumbowyg.upload.min.js"></script>
+    <!-- Import Trumbowyg base64 plugins... -->
+    <script src="trumbowyg/dist/plugins/base64/trumbowyg.base64.min.js"></script>
     <script src="js/custom.min.js"></script>
     <script type="text/javascript">
-        $('#editor').trumbowyg();
         // $('#editor').trumbowyg('html', "<p>Put your content here</p>");
+
+        // Extend Trumbowyg with custom buttons
+        $('#editor').trumbowyg({
+            btnsDef: {
+                // Create a new dropdown
+                image: {
+                    dropdown: ['insertImage', 'base64', 'upload'],
+                    ico: 'insertImage'
+                },
+                text_format: {
+                    dropdown: ['p', '|', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+                    ico: 'p'
+                },
+            },
+            btns: [
+                ['viewHTML'],
+                ['undo', 'redo'], // Only supported in Blink browsers
+                ['text_format', 'foreColor', 'backColor', ],
+                ['strong', 'em', 'del'],
+                ['superscript', 'subscript'],
+                ['link'],
+                ['image'],
+                ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+                ['unorderedList', 'orderedList'],
+                ['horizontalRule'],
+                ['removeformat'],
+                ['fullscreen']
+            ],
+            plugins: {
+                // Add imagur parameters to upload plugin for demo purposes
+                upload: {
+                    serverPath: 'https://api.imgur.com/3/image',
+                    fileFieldName: 'image',
+                    headers: {
+                        'Authorization': 'Client-ID xxxxxxxxxxxx'
+                    },
+                    urlPropertyName: 'data.link'
+                }
+            }
+
+        });
+
+
 
         // auto slug creation
         document.querySelector("#exampleBlogTitle").addEventListener('keyup', (event) => {
@@ -328,6 +391,25 @@ $category_query = mysqli_query($connection, $category_sql);
                 .replace(/^-+|-+$/g, "");
             document.querySelector("#exampleBlogSlug").setAttribute('value', cValue);
         })
+    </script>
+    <script>
+        Filevalidation = () => {
+            const fi = document.getElementById('exampleBlogImage');
+            // Check if any file is selected.
+            if (fi.files.length > 0) {
+                for (const i = 0; i <= fi.files.length - 1; i++) {
+
+                    const fsize = fi.files.item(i).size;
+                    const file = Math.round((fsize / 1024));
+                    // The size of the file.
+                    if (file >= 1024) {
+                        alert(
+                            "File too Big, please select a file less than 1mb");
+                        fi.value = "";
+                    }
+                }
+            }
+        }
     </script>
 </body>
 

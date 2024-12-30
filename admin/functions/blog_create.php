@@ -19,7 +19,7 @@ $intro = $_POST['intro'];
 //image upload
 $file_name = $_FILES['blog_image']['name'];
 $temp_name = $_FILES['blog_image']['tmp_name'];
-$folder = "../../asset/image/blog/" . $file_name; // change "...." with file path  
+$folder = "../../asset/image/blog/" . basename($_FILES['blog_image']['name']); // change "...." with file path  
 move_uploaded_file($temp_name, $folder);
 $image_alt = $_POST['blog_image_alt'];
 
@@ -33,6 +33,8 @@ $published_date = $_POST['published_date'];
 $published_by = $_POST['published_by'];
 $published_status = $_POST['published_status'] == "1" ? true : false;
 
+//publish info
+$modified_date = $_POST['published_date'];
 
 //seo
 $meta_title = $_POST['meta_title'];
@@ -46,14 +48,14 @@ $tags = $_POST['tags'];
 if (isset($_POST["submit"])) {
 
   // Add task to DB
-  $sql = "INSERT INTO blogs(title, slug, category, intro, blog_image, blog_image_alt, content, meta_title, meta_keywords,  meta_description, meta_canonical, tags, published_date, published_by, published_status)
-    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+  $sql = "INSERT INTO blogs(title, slug, category, intro, blog_image, blog_image_alt, content, meta_title, meta_keywords,  meta_description, meta_canonical, tags, published_date, published_by, published_status, modified_date)
+    VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
   $stmt = $db->prepare($sql);
 
 
   try {
-    $stmt->execute([$title, $slug, $category, $intro, $file_name, $image_alt, $content, $meta_title, $meta_keywords, $meta_description, $canonical_link, $tags, $published_date, $published_by, $published_status]);
+    $stmt->execute([$title, $slug, $category, $intro, $file_name, $image_alt, $content, $meta_title, $meta_keywords, $meta_description, $canonical_link, $tags, $published_date, $published_by, $published_status, $modified_date]);
     header('Location:../blogs.php?posted');
   } catch (Exception $e) {
     $e->getMessage();

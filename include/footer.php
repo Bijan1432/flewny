@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-9 border-right">
-                <img src="./icons/Lets-talk.svg" alt="" class="img-fluid mb-5 pe-md-5 pb-md-4">
+                <img src="<?php echo $base ?>/icons/Lets-talk.svg" alt="" class="img-fluid mb-5 pe-md-5 pb-md-4">
                 <div class="row pt-lg-5 border-top">
                     <div class="col-md-4 mb-4 mb-md-0">
                         <h2>FLEWNY</h2>
@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="col-3 d-flex">
-                <img src="./icons/star.svg" alt="" class="img-fluid mt-0 mt-lg-auto my-auto mx-auto">
+                <img src="<?php echo $base ?>/icons/star.svg" alt="" class="img-fluid mt-0 mt-lg-auto my-auto mx-auto">
             </div>
         </div>
     </div>
@@ -54,7 +54,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <img src="./img/modal.jpg" class="img-fluid" height="700" width="700" alt="Best Modern Website Design company" />
+                    <img src="<?php echo $base ?>/img/modal.jpg" class="img-fluid" height="700" width="700" alt="Best Modern Website Design company" />
                 </div>
                 <div class="col-md-6">
                     <div class="modal-right">
@@ -62,7 +62,7 @@
                             <span style="color: rgb(12, 65, 255)"> Warning: </span> Flewny
                             may cause extreme awesomeness.
                         </div>
-                        <form action="./mail.php" method="post">
+                        <form action="<?php echo $base ?>/mail.php" method="post">
                             <input type="text" name="name" id="" placeholder="Your Name*" required />
                             <input type="text" name="mobile" id="mobile" placeholder="Your Mobile Number*" required />
                             <input type="email" name="email" id="" placeholder="Your Email*" required />

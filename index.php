@@ -13,7 +13,7 @@
           </h1>
 
           <div class="d-flex gap-2 gap-md-5 flex-column justify-content-center align-items-center mt-3 mt-md-5 pt-2 pt-md-4">
-            <a href="#" class="primary-btn">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></a>
+            <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
             <a href="#" class="scroll-btn">Scroll<span><img src="./icons/scroll-btn-icon.svg" alt=""></span></a>
           </div>
 
@@ -119,7 +119,7 @@
 <section class="container d-flex justify-content-center my-0 my-md-5">
   <div class="cta-section d-flex flex-column align-items-center">
     <h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
-    <a href="#" class="primary-btn primary-btn-white">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></a>
+    <button class="primary-btn primary-btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
   </div>
 </section>
 <!-- ===================achieve list end============== -->
@@ -192,7 +192,7 @@
           <a href="./blog/" class="blog-section__load-more-btn d-none d-md-block">Load More</a>
         </div>
       </div>
-      <div class="d-flex gap-4">
+      <div class="blog-section__wrapper">
         <?php
         $sql_latest = 'SELECT title, category, blog_image, blog_image_alt, slug, published_date, published_status  FROM blogs WHERE published_status = 1 ORDER BY published_date DESC LIMIT 3';
         $query_latest = mysqli_query($connection, $sql_latest);

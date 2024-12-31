@@ -68,7 +68,7 @@ $query = mysqli_query($connection, $sql);
 	<div class="container blog-list-section">
 		<h2>Latest Post</h2>
 		<div class="blog-category-list">
-			<a href="#" class="blog-category active">All</a>
+			<a href="../blog" class="blog-category active">All</a>
 			<?php
 			$category_sql = 'SELECT name, slug, active_status  FROM blog_category WHERE active_status = 1';
 			$category_query = mysqli_query($connection, $category_sql);
@@ -77,11 +77,10 @@ $query = mysqli_query($connection, $sql);
 				echo "<b style='color:brown;'>Sorry there are no posts Yet :( We will be uploading new content soon! </b> ";
 			} else {
 
-
 				while ($row = mysqli_fetch_array($category_query)) {
 
 			?>
-					<a href="#" class="blog-category"><?php echo $row['name'] ?></a>
+					<a href="category/<?php echo $row['slug'] ?>" class="blog-category"><?php echo $row['name'] ?></a>
 			<?php
 				}
 			}
@@ -128,7 +127,7 @@ $query = mysqli_query($connection, $sql);
 			?>
 		</div>
 		<div class="d-flex justify-content-center mt-4 mt-md-5">
-			<a href="#" class="blog-list__load-more">Load More</a>
+			<a href="./page-<?php echo $page + 1; ?>" class="blog-list__load-more">Load More</a>
 		</div>
 	</div>
 </section>
@@ -136,15 +135,15 @@ $query = mysqli_query($connection, $sql);
 <section class="container d-flex justify-content-center my-3 my-md-5">
 	<div class="cta-section d-flex flex-column align-items-center">
 		<h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
-		<a href="#" class="primary-btn primary-btn-white">Explore Now<span><img src="../icons/primary-btn-arrow.svg" alt=""></span></a>
+		<button class="primary-btn primary-btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="../icons/primary-btn-arrow.svg" alt=""></span></button>
 	</div>
 </section>
 
 
 
 <!-- js -->
-<!-- <script src="../js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script> -->
+<script src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 
 <!-- ===========================main end================= -->

@@ -1,6 +1,7 @@
 RewriteEngine On
 
-RewriteBase /blog/category/
+# RewriteBase /blog/category/
+RewriteBase /flewny/blog/category/
 
 # Redirect requests with a slug to index.php
 RewriteCond %{REQUEST_FILENAME} !-f

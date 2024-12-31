@@ -103,7 +103,7 @@ if (isset($_GET['slug'])) {
                         <a href="./blog/" class="blog-section__load-more-btn d-none d-md-block">Load More</a>
                     </div>
                 </div>
-                <div class="d-flex flex-wrap flex-md-nowrap gap-4">
+                <div class="blog-section__wrapper">
                     <?php
                     $sql_latest = 'SELECT title, category, blog_image, blog_image_alt, slug, published_date, published_status  FROM blogs WHERE published_status = 1 ORDER BY published_date DESC LIMIT 3';
                     $query_latest = mysqli_query($connection, $sql_latest);
@@ -181,7 +181,7 @@ if (isset($_GET['slug'])) {
     <section class="container d-flex justify-content-center my-4 my-md-5">
         <div class="cta-section d-flex flex-column align-items-center">
             <h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
-            <a href="#" class="primary-btn primary-btn-white">Explore Now<span><img src="<?php echo $base ?>/icons/primary-btn-arrow.svg" alt=""></span></a>
+            <button class="primary-btn primary-btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="<?php echo $base ?>/icons/primary-btn-arrow.svg" alt=""></span></button>
         </div>
     </section>
     <!-- ===================achieve list end============== -->
@@ -190,4 +190,8 @@ if (isset($_GET['slug'])) {
 
 
 <!-- ===========================main contect end================= -->
+<!-- js -->
+<script src="../js/bootstrap.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
 <?php include("../include/footer.php") ?>

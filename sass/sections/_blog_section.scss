@@ -23,6 +23,12 @@
       color: #fff;
     }
   }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+
   .blog-card {
     &__cutout {
       background-color: #e8e9ef;
@@ -42,6 +48,9 @@
     padding: 12px;
     h2 {
       font-size: 32spx;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
     }
   }
 }

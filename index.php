@@ -1,5 +1,7 @@
-<?php require_once "./admin/functions/db.php"; ?>
-<?php include("./include/header.php") ?>
+<?php
+require_once "./admin/functions/db.php";
+include("./include/header.php")
+?>
 
 
 <!-- ===================hero banner start============== -->
@@ -9,7 +11,14 @@
       <div class="col-md-12">
         <div class="hero-banner__block">
           <h1 class="hero-banner__heading" data-aos="fade-right" data-aos-delay="100">
-            Crafting Seamless <span><img src="./img/heading-img1.png" alt="" class="hero-banner__heading-img1"></span><span class="d-none d-md-inline-block"><img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2"></span><span class="blue">Experiences</span> for The <span class="d-inline-block d-md-none"><img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2"></span><span class="blue">Digital</span> World <span class="small-text">Custom Software Development & Data-Driven Digital Marketing to Elevate Your Brand. Tailored solutions & targeted strategies for growth.</span>
+            Crafting Seamless
+            <span class="d-inline-flex">
+              <img src="./img/heading-img1.png" alt="" class="hero-banner__heading-img1">
+            </span>
+            <span class="d-none d-md-inline-flex">
+              <img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2">
+            </span>
+            <span class="blue">Experiences</span> for The <span class="d-inline-flex d-md-none"><img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2"></span><span class="blue">Digital</span> World <span class="small-text">Custom Software Development & Data-Driven Digital Marketing to Elevate Your Brand. Tailored solutions & targeted strategies for growth.</span>
           </h1>
 
           <div class="d-flex gap-2 gap-md-5 flex-column justify-content-center align-items-center mt-3 mt-md-5 pt-2 pt-md-4">
@@ -93,20 +102,26 @@
           <li class="our-service__item"><span class="our-service__item-number">02</span> Web Development <span class="ms-auto">
               <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
             </span></li>
-          <li class="our-service__item"><span class="our-service__item-number">03</span> CRm <span class="ms-auto">
+          <li class="our-service__item"><span class="our-service__item-number">03</span> CRM <span class="ms-auto">
               <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
             </span></li>
-          <li class="our-service__item"><span class="our-service__item-number">04</span> SEo <span class="ms-auto">
+          <li class="our-service__item"><span class="our-service__item-number">04</span> SEO <span class="ms-auto">
               <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
             </span></li>
-
+          <li class="our-service__item"><span class="our-service__item-number">05</span> ERP <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
         </ul>
       </div>
       <div class="col-lg-6 mt-5 mt-lg-0">
         <div class="our-service__card ms-lg-auto mx-auto mx-lg-0 ">
-          <img src="./img/service-card-img.png" alt="" class="our-service__card-img img-fluid">
+          <img src="./img/service-card-img1.webp" alt="" class="our-service__card-img img-fluid">
           <h3 class="our-service__card-title">Expertly crafted ads for measurable growth</h3>
-          <p class="our-service__card-txt"><b>At Flewny</b>, we offer a comprehensive suite of services designed to drive your business forward in the digital age. Our expertise spans across multiple domains to cater to all your digital needs.</p>
+          <div class="our-service__card-txt">
+            <p><b>At Flewny</b>, we offer a comprehensive suite of services designed to drive your business forward in the digital age. Our expertise spans across multiple domains to cater to all your digital needs.</p>
+            <button class="primary-btn mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
+          </div>
+
         </div>
 
       </div>
@@ -221,7 +236,7 @@
                 <?php echo $row['title'] ?>
                 <!-- </a> -->
               </h3>
-              <div class="d-flex">
+              <div class="d-flex mt-auto">
                 <a href="<?php echo '/flewny/blog/' . $row['slug'] ?>" class="blog-btn" target="_blank"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
               </div>
               <div class="blog-card__cutout"></div>
@@ -306,6 +321,185 @@
 </section>
 <!-- ===================review section end============== -->
 
+<!-- ===================people section start============== -->
+<section class="people-section-bg">
+  <div class="container g-0">
+    <div class="people-section">
+      <div class="mb-3 mb-md-5 mt-2">
+        <h2>The People <br>
+          Driving <span>Our Vision</span></h2>
+      </div>
+      <div class="people-section__wrapper">
+
+        <div class="people-card">
+          <div class="people-card__img-box">
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__img-wrapper">
+              <div class="people-card__img-wrapper__cutout"></div>
+              <div class="people-card__img-wrapper__cutout"></div>
+              <img src="./img/people-card1.png" alt="" class="people-card__img">
+            </div>
+          </div>
+          <div class="people-card__body">
+            <h3 class="people-card__name">Bijan Mondal</h3>
+            <h5 class="people-card__designation">Chief Executive Officer</h5>
+            <p class="people-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas risus magna, vitae aliquam neque ultricies eu. Vestibulum eget felis elementum.</p>
+          </div>
+        </div>
+
+        <div class="people-card">
+          <div class="people-card__img-box">
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__img-wrapper">
+              <div class="people-card__img-wrapper__cutout"></div>
+              <div class="people-card__img-wrapper__cutout"></div>
+              <img src="./img/people-card2.png" alt="" class="people-card__img">
+            </div>
+          </div>
+          <div class="people-card__body">
+            <h3 class="people-card__name">Bijan Mondal</h3>
+            <h5 class="people-card__designation">Chief Executive Officer</h5>
+            <p class="people-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas risus magna, vitae aliquam neque ultricies eu. Vestibulum eget felis elementum.</p>
+          </div>
+        </div>
+
+        <div class="people-card">
+          <div class="people-card__img-box">
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__img-wrapper">
+              <div class="people-card__img-wrapper__cutout"></div>
+              <div class="people-card__img-wrapper__cutout"></div>
+              <img src="./img/people-card3.png" alt="" class="people-card__img">
+            </div>
+          </div>
+          <div class="people-card__body">
+            <h3 class="people-card__name">Bijan Mondal</h3>
+            <h5 class="people-card__designation">Chief Executive Officer</h5>
+            <p class="people-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas risus magna, vitae aliquam neque ultricies eu. Vestibulum eget felis elementum.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===================people section end============== -->
+
+<!-- ===================trusted partners section start============== -->
+<section class="trusted-partners-section">
+  <div class="trusted-partners container">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column">
+        <h2 class="trusted-partners__heading">Trusted Partnerships, Shared Goals</h2>
+        <p class="trusted-partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas risus magna, vitae aliquam neque ultricies eu. Vestibulum eget felis elementum.</p>
+        <div class="d-flex mt-auto pt-4">
+          <div class="trusted-partners__number-wrapper">
+            <p class="trusted-partners__number">50+</p>
+            <p class="trusted-partners__number-text">Interested Clients</p>
+          </div>
+          <img src="./img/green-circle.png" alt="" class="trusted-partners__number-wheel rotating">
+        </div>
+
+      </div>
+      <div class="col-md-6 mt-md-0 mt-4">
+
+        <div class="trusted-partners__container">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="trusted-partners">
+
+  </div>
+</section>
+<!-- ===================trusted partners section end============== -->
+
+<!-- =================== faq section start============== -->
+<section class="faq-section-bg">
+  <div class="faq-section container">
+    <div class="row">
+      <div class="col-12">
+        <h2>FAQs: Quick <span>Answers</span><br> for You</h2>
+        <div class="accordion mt-4 mt-md-5" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Q: What services does your company offer?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Q: What services does your company offer?
+
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                A: We specialize in web development, UI/UX design, and CRM solutions tailored to meet diverse business needs.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Q: What services does your company offer?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Q: What services does your company offer?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Q: What services does your company offer?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =================== faq section end ============== -->
+
 <!-- =================== connection section start============== -->
 
 <section class="mb-3 mb-md-5">
@@ -351,92 +545,6 @@
 </section>
 
 <!-- =================== connection section  end============== -->
-<!-- <section class="m-top we-offer" id="strategy">
-  <div class="container">
-    <div class="row align-items-end">
-      <div class="col-md-6 col-12">
-        <h2 data-aos="fade-up" data-aos-delay="30">How we do it — Strategy</h2>
-      </div>
-    </div>
-    <div class="row services align-items-center">
-      <div class="col-md-4">
-        <div class="num" data-aos="fade-right" data-aos-delay="80">1</div>
-        <p class="large" data-aos="fade-right" data-aos-delay="80">Project <br />Meeting</p>
-      </div>
-      <div class="col-md-4">
-        <p class="m-0 mt-4" data-aos="fade-up" data-aos-delay="150">
-          We begin every project with a strategy meeting.The better we
-          understand your business, the better the outcome we can produce.
-        </p>
-      </div>
-      <div class="col-md-4" data-aos="fade-left" data-aos-delay="250">
-        <div class="oval" style="background: url(./img/meeting.webp) center/cover">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="arrow">-></button>
-        </div>
-      </div>
-    </div>
-    <div class="row services align-items-center">
-      <div class="col-md-4">
-        <div class="num" data-aos="fade-right" data-aos-delay="100">2</div>
-        <p class="large" data-aos="fade-right" data-aos-delay="100">Phase One <br />Delivery</p>
-      </div>
-      <div class="col-md-4">
-        <p class="m-0 mt-4" data-aos="fade-up" data-aos-delay="170">
-          At the forefront of our approach is a dedication to showcasing
-          results swiftly. Upon reaching this stage, we kindly request the
-          release of 20% of the full payment to proceed further in
-          delivering excellence.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <div class="oval" style="background: url(./img/phase1.webp) center/cover" data-aos="fade-left" data-aos-delay="280">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="arrow">-></button>
-        </div>
-      </div>
-    </div>
-    <div class="row services align-items-center">
-      <div class="col-md-4">
-        <div class="num" data-aos="fade-right" data-aos-delay="130">3</div>
-        <p class="large" data-aos="fade-right" data-aos-delay="130">
-          Phase two <br />
-          Delivery
-        </p>
-      </div>
-      <div class="col-md-4">
-        <p class="m-0 mt-4" data-aos="fade-up" data-aos-delay="180">
-          At this juncture, with 70% of the project completed, we kindly
-          request the release of the next 40% payment to continue
-          advancing towards the successful fulfillment of your project
-          requirements.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <div class="oval" data-aos="fade-left" data-aos-delay="280">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="arrow">-></button>
-        </div>
-      </div>
-    </div>
-    <div class="row services align-items-center">
-      <div class="col-md-4">
-        <div class="num" data-aos="fade-right" data-aos-delay="150">3</div>
-        <p class="large" data-aos="fade-right" data-aos-delay="150">Final <br />Delivery</p>
-      </div>
-      <div class="col-md-4">
-        <p class="m-0 mt-4" data-aos="fade-up" data-aos-delay="180">
-          Upon successful completion of the project and your complete
-          satisfaction, we kindly request the final release of the
-          remaining 40% payment, solidifying our commitment to delivering
-          a seamless and satisfactory outcome.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <div class="oval" style="background: url(./img/phasefinal.jpg) center/cover" data-aos="fade-left" data-aos-delay="300">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="arrow">-></button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
 
 
 <?php include("./include/footer.php") ?>

@@ -2694,14 +2694,15 @@ a {
 }
 .faq-section .accordion-button::after {
   content: "+";
+  font-size: 40px;
   text-align: center;
   line-height: 1;
   position: absolute;
   top: 50%;
   right: 22px;
   transform: translateY(-50%);
-  width: 34px;
-  height: 34px;
+  width: 44px;
+  height: 44px;
   border-radius: 8px;
   background-color: #aeea17;
   background-image: none;
@@ -2741,6 +2742,7 @@ a {
     padding-right: 60px;
   }
   .faq-section .accordion-button::after {
+    font-size: 22px;
     width: 24px;
     height: 24px;
   }

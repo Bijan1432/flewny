@@ -507,19 +507,19 @@ include("./include/header.php")
     <div class="connection-block">
       <h2>MAke a Connection</h2>
 
-      <div class="row my-3 my-md-5">
+      <div class="row mb-3 mb-md-5">
         <div class="connection-block__card-wrapper ">
           <div class="connection-block__card">
             <h3 class="connection-block__card-title">New Business</h3>
             <div class="connection-block__card-content">
-              <h4 class="connection-block__card-name">Bijan Mondal <br class="d-block d-md-none"><span>(Chief Executive Officer)</span></h4>
+              <h4 class="connection-block__card-name">Bijan Mondal <span>(Chief Executive Officer)</span></h4>
               <a href="mailto:bijanmondal1432@gmail.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>bijanmondal1432@gmail.com</a>
             </div>
           </div>
           <div class="connection-block__card">
             <h3 class="connection-block__card-title">New Business</h3>
             <div class="connection-block__card-content">
-              <h4 class="connection-block__card-name">Benjamin Frank <br class="d-block d-md-none"><span>(Chief Operating Officer)</span></h4>
+              <h4 class="connection-block__card-name">Benjamin Frank <span>(Chief Operating Officer)</span></h4>
               <a href="mailto:info@flewny.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>info@flewny.com</a>
             </div>
           </div>
@@ -530,7 +530,7 @@ include("./include/header.php")
       <form class="row connection-block__form ">
         <div class="col-lg-6 mb-3 mb-md-0">
           <h3>Let’s Connect</h3>
-          <div class="d-flex gap-3 mt-3">
+          <div class="d-flex gap-3 mt-1 mt-md-3">
             <input type="checkbox" name="" id="Confirmation">
             <label for="Confirmation">Yes, I would like to receive e-mail communications from Flewny. I can unsubscribe at any time.</label>
           </div>

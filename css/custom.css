@@ -2776,7 +2776,6 @@ a {
   text-align: center;
   font-family: "Chandler Mountain", sans-serif !important;
   font-weight: 600;
-  font-size: 60px;
   margin-top: 14px;
 }
 .connection-block__card-wrapper {
@@ -2867,18 +2866,39 @@ a {
     padding-block: 14px;
   }
   .connection-block h2 {
-    font-size: 36px;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    padding-inline: 20px;
   }
   .connection-block__card-wrapper {
     justify-content: start;
-    gap: 26px;
+    gap: 24px;
     margin-block: 24px;
   }
   .connection-block__card-title {
-    font-size: 20px;
+    font-size: 24px;
+    margin-bottom: 12px;
   }
   .connection-block__card-name {
     font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .connection-block__card-name span {
+    font-size: 12px;
+  }
+  .connection-block__form {
+    margin-top: 12px;
+  }
+  .connection-block__form h3 {
+    font-size: 24px;
+  }
+  .connection-block__form label {
+    font-size: 12px;
+  }
+  .connection-block__form input[type=text],
+  .connection-block__form button {
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
 }
 

@@ -34,22 +34,17 @@ $query = mysqli_query($connection, $sql);
 ?>
 
 <?php include("../include/header.php") ?>
+
+
 <!-- //custom-theme -->
-<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
-<!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
-<!-- font-awesome-icons -->
-<link href="css/font-awesome.css" rel="stylesheet">
-<!-- //font-awesome-icons -->
 <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../css/bootstrap.min.css" />
-<link rel="stylesheet" href="../css/bootstrap.rtl.min.css" />
+
 <link rel="stylesheet" href="../css/custom.css" />
-<link rel="stylesheet" href="../css/responsive.css" />
+
+
 <!-- ===========================main start================= -->
 
-
-<!-- <section class="about-banner"> -->
 <section class="blog-banner">
 	<div class="container">
 		<div class="row h-100">

@@ -1,7 +1,7 @@
-<?php  
-    // $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] ;
-    // $base = $url . '/flewny/';
-    $base = $_SERVER['HTTP_HOST']  == 'localhost' ? '/flewny/' : '/';
+<?php
+// $url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://') . $_SERVER['HTTP_HOST'] ;
+// $base = $_SERVER['HTTP_HOST']  == 'localhost' ? '/flewny/' : '/';
+$base =  '/flewny/';
 ?>
 
 <head>
@@ -30,11 +30,14 @@
 
     <!-- =======================swiper==================== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+
+    <!-- =======================bootatrap==================== -->
+    <link rel="stylesheet" href="<?php echo $base; ?>css/bootstrap.min.css" />
+
+
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="stylesheet" href="<?php echo $base; ?>css/custom.css" />
 </head>
 
 <body>

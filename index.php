@@ -10,16 +10,20 @@ include("./include/header.php")
     <div class="row">
       <div class="col-md-12">
         <div class="hero-banner__block">
-          <h1 class="hero-banner__heading" data-aos="fade-right" data-aos-delay="100">
-            Crafting Seamless
-            <span class="d-inline-flex">
-              <img src="./img/heading-img1.png" alt="" class="hero-banner__heading-img1">
-            </span>
-            <span class="d-none d-md-inline-flex">
-              <img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2">
-            </span>
-            <span class="blue">Experiences</span> for The <span class="d-inline-flex d-md-none"><img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2"></span><span class="blue">Digital</span> World <span class="small-text">Custom Software Development & Data-Driven Digital Marketing to Elevate Your Brand. Tailored solutions & targeted strategies for growth.</span>
-          </h1>
+          <div class="position-relative">
+            <h1 class="hero-banner__heading" data-aos="fade-right" data-aos-delay="100">
+              Crafting Seamless
+              <span class="d-inline-flex">
+                <img src="./img/heading-img1.png" alt="" class="hero-banner__heading-img1">
+              </span>
+              <span class="d-none d-md-inline-flex">
+                <img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2">
+              </span>
+              <span class="blue">Experiences</span> for The <span class="d-inline-flex d-md-none"><img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2"></span><span class="blue">Digital</span> World
+            </h1>
+            <p class="small-text pt-1 ">Custom Software Development & Data-Driven Digital Marketing to Elevate Your Brand. Tailored solutions & targeted strategies for growth.</p>
+
+          </div>
 
           <div class="d-flex gap-2 gap-md-5 flex-column justify-content-center align-items-center mt-3 mt-md-5 pt-2 pt-md-4">
             <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>

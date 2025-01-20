@@ -1934,6 +1934,10 @@ a {
 
 .hero-banner {
   margin-bottom: 80px;
+  background-image: url("../img/blog-banner-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-banner__block {
   position: relative;
@@ -1950,14 +1954,6 @@ a {
   line-height: 1.15;
   text-transform: uppercase;
 }
-.hero-banner__heading .small-text {
-  display: inline-block;
-  font-family: "Inter", sans-serif !important;
-  font-size: 14px;
-  font-weight: normal;
-  text-transform: capitalize;
-  max-width: 190px;
-}
 .hero-banner__heading .blue {
   color: #2e12ef;
 }
@@ -1968,6 +1964,17 @@ a {
 .hero-banner__heading-img2 {
   height: clamp(3.4rem, 9.5vw, 7.5rem);
   aspect-ratio: 437/161;
+}
+.hero-banner .small-text {
+  display: inline-block;
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px;
+  font-weight: normal;
+  text-transform: capitalize;
+  max-width: 170px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 .hero-banner .scroll-btn {
   font-size: 16px;
@@ -1985,11 +1992,13 @@ a {
     margin-bottom: 16px;
   }
   .hero-banner .small-text {
+    position: static;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
     max-width: 260px;
-    margin-top: 10px;
+    margin: 0px;
+    margin-bottom: 20px;
   }
 }
 

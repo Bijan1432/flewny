@@ -2,6 +2,10 @@
 .hero-banner {
   // height: calc(100vh - 100px);
   margin-bottom: 80px;
+  background-image: url('../img/blog-banner-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   &__block {
     position: relative;
@@ -16,14 +20,7 @@
     font-weight: 600;
     line-height: 1.15;
     text-transform: uppercase;
-    .small-text {
-      display: inline-block;
-      font-family: $priamry-font;
-      font-size: 14px;
-      font-weight: normal;
-      text-transform: capitalize;
-      max-width: 190px;
-    }
+
     .blue {
       color: $secondary-color-deep2;
     }
@@ -36,6 +33,17 @@
       height: clamp(3.4rem, 9.5vw, 7.5rem);
       aspect-ratio: 437/161;
     }
+  }
+  .small-text {
+    display: inline-block;
+    font-family: $priamry-font;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+    max-width: 170px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
   .scroll-btn {
     font-size: 16px;
@@ -63,11 +71,13 @@
     //     height: auto;
     //   }
     .small-text {
+      position: static;
       font-size: 14px;
       font-weight: 400;
       line-height: 18px;
       max-width: 260px;
-      margin-top: 10px;
+      margin: 0px;
+      margin-bottom: 20px;
     }
   }
 }

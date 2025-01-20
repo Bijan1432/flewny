@@ -34,14 +34,14 @@
                 </div>
             </div>
             <div class="col-3 d-flex">
-                <img src="<?php echo $base ?>/icons/star.svg" alt="" class="img-fluid mt-0 mt-lg-auto my-auto mx-auto">
+                <img src="<?php echo $base ?>/icons/star.svg" alt="" class="img-fluid mt-0 mt-lg-auto my-auto mx-auto rotating">
             </div>
         </div>
     </div>
     <!-- <a href="https://sayanwebwork.site/" class="credit">Developed by sayanwebwork</a> -->
 </footer>
 <!-- ==================footers end============== -->
- 
+
 </div>
 <!-- ===========outer box end================= -->
 
@@ -89,7 +89,7 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
- <!-- Swiper JS -->
+<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
@@ -98,56 +98,56 @@
     });
     // Initialize Swiper
     var swiper = new Swiper(".reviewSwiper", {
-    spaceBetween: 10,
-    centerslides: true,
-    slidesPerView: 1.1,
-    initialSlide: 0,
-    // loop: true,
-    navigation: {
-      nextEl: '.reviewBtn-next',
-      prevEl: '.reviewBtn-prev',
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 1   
-      },
-      768: {
-        slidesPerView: 3
-      },
-      900: {
-        slidesPerView: 3.5
-      },
-      1200: {
-        slidesPerView: 3.5
-      }
-    }
+        spaceBetween: 10,
+        centerslides: true,
+        slidesPerView: 1.1,
+        initialSlide: 0,
+        // loop: true,
+        navigation: {
+            nextEl: '.reviewBtn-next',
+            prevEl: '.reviewBtn-prev',
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 3
+            },
+            900: {
+                slidesPerView: 3.5
+            },
+            1200: {
+                slidesPerView: 3.5
+            }
+        }
     });
     // Initialize Swiper
     var weDoSwiper = new Swiper(".weDoSwiper", {
-    spaceBetween: 10,
-    slidesPerView: 1.1,
-    initialSlide: 1,
-    centeredSlides: true,
-    // loop: true,
-    navigation: {
-      nextEl: '.weDoBtn-next',
-      prevEl: '.weDoBtn-prev',
-    },
-    breakpoints: {
-      576: {
-        slidesPerView: 1   
-      },
-      768: {
-        slidesPerView: 1
-      },
-      900: {
-        slidesPerView: 1.5
-      },
-      1200: {
-        spaceBetween: 60,
-        slidesPerView: 1.8
-      }
-    }
+        spaceBetween: 10,
+        slidesPerView: 1.1,
+        initialSlide: 1,
+        centeredSlides: true,
+        // loop: true,
+        navigation: {
+            nextEl: '.weDoBtn-next',
+            prevEl: '.weDoBtn-prev',
+        },
+        breakpoints: {
+            576: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 1
+            },
+            900: {
+                slidesPerView: 1.5
+            },
+            1200: {
+                spaceBetween: 60,
+                slidesPerView: 1.8
+            }
+        }
     });
 </script>
 <script src="js/custom.js"></script>

@@ -1,0 +1,7 @@
+
+<IfModule mod_rewrite.c>
+
+# Disable rewrite rule in subfolder
+RewriteEngine Off
+
+</IfModule>

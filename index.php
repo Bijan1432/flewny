@@ -1,331 +1,554 @@
-<?php include("./include/header.php") ?>
+<?php
+require_once "./admin/functions/db.php";
+include("./include/header.php")
+?>
 
 
 <!-- ===================hero banner start============== -->
-
 <section class="hero-banner" id="home">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="banner-block">
-          <div class="big-txt">
-            <h1 data-aos="fade-right" data-aos-delay="100">
-              Crafting Digital <br /> Solutions: From<span> Websites </span> <br />to<span> Marketing</span> Success
+        <div class="hero-banner__block">
+          <div class="position-relative">
+            <h1 class="hero-banner__heading" data-aos="fade-right" data-aos-delay="100">
+              Crafting Seamless
+              <span class="d-inline-flex">
+                <img src="./img/heading-img1.png" alt="" class="hero-banner__heading-img1">
+              </span>
+              <span class="d-none d-md-inline-flex">
+                <img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2">
+              </span>
+              <span class="blue">Experiences</span> for The <span class="d-inline-flex d-md-none"><img src="./img/heading-img2.png" alt="" class="hero-banner__heading-img2"></span><span class="blue">Digital</span> World
             </h1>
-            <p data-aos="fade-up" data-aos-delay="200">
-              Custom Software, Website Development, and Data-Driven Digital Marketing to Elevate Your Brand.
-            </p>
+            <p class="small-text pt-1 ">Custom Software Development & Data-Driven Digital Marketing to Elevate Your Brand. Tailored solutions & targeted strategies for growth.</p>
+
           </div>
-          <div class="video-box">
-            <button class="round" data-bs-toggle="modal" data-bs-target="#exampleModal" data-aos="flip-left" data-aos-delay="300">
-              <- </button>
-                <iframe width="100%" height="500" src="https://www.youtube.com/embed/h6MntF4OxCk?si=tHmxZCl3AnUmiYsU&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-in" data-aos-delay="450"></iframe>
+
+          <div class="d-flex gap-2 gap-md-5 flex-column justify-content-center align-items-center mt-3 mt-md-5 pt-2 pt-md-4">
+            <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
+            <a href="#" class="scroll-btn">Scroll<span><img src="./icons/scroll-btn-icon.svg" alt=""></span></a>
           </div>
+
         </div>
       </div>
     </div>
   </div>
 </section>
-
 <!-- ===================hero banner end============== -->
+
+<!-- =================== video start============== -->
+<section class="video-section" id="videoSection">
+  <div class="container">
+    <div class="video-box">
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/h6MntF4OxCk?si=tHmxZCl3AnUmiYsU&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-in" data-aos-delay="450"></iframe>
+    </div>
+  </div>
+</section>
+<!-- =================== video end============== -->
+
 <!-- ===================about start============== -->
-<section class="m-top p-top p-bot about-us" id="about">
+<section class="about-us" id="about">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h2 data-aos="fade-up" data-aos-delay="30">
-          Crafting digital success. Software, websites, apps, SEO, ads—our
-          expertise speaks for itself. Elevate your brand with us.
-        </h2>
+      <div class="col-xl-5 d-flex justify-content-center">
+        <img src="./img/about-img.png" alt="" class="img-fluid">
       </div>
-
-      <div class="col-md-6">
-        <div class="points">
-          <div class="point" data-aos="fade-down" data-aos-delay="30">
-            <div class="bold">
-              24+
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 32 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 5 6 L 5 19.5625 L 2.71875 21.876953 C 2.26575 22.328953 2 22.95275 2 23.59375 C 2 24.91375 3.08625 26 4.40625 26 L 27.59375 26 C 28.91375 26 30 24.91375 30 23.59375 C 30 22.95275 29.73425 22.328 29.28125 21.875 L 27 19.5625 L 27 6 L 5 6 z M 7 8 L 25 8 L 25 19 L 7 19 L 7 8 z M 16 9 L 14.5 18 L 16 18 L 17.5 9 L 16 9 z M 12.085938 11 L 10.367188 13.068359 L 10 13.5 L 10.367188 13.931641 L 12.085938 16 L 13.171875 15.136719 L 11.810547 13.5 L 13.171875 11.863281 L 12.085938 11 z M 19.914062 11 L 18.828125 11.863281 L 20.189453 13.5 L 18.828125 15.136719 L 19.914062 16 L 21.632812 13.931641 L 22 13.5 L 21.632812 13.068359 L 19.914062 11 z M 6.4375 21 L 25.5625 21 L 27.875 23.28125 C 27.953 23.35925 28 23.48375 28 23.59375 C 28 23.83575 27.83575 24 27.59375 24 L 4.40625 24 C 4.16425 24 4 23.83575 4 23.59375 C 4 23.48475 4.047 23.36025 4.125 23.28125 L 6.4375 21 z"></path>
-              </svg>
-            </div>
-            <p>Technology stack</p>
+      <div class="col-xl-7">
+        <div class="row mb-2 mb-md-4">
+          <div class="col-md-6 d-flex align-items-center overflow-hidden mt-3 mb-4 mb-md-0 mt-md-0">
+            <h2><span>
+                <marquee behavior="" direction="">About The Company</marquee>
+              </span></h2>
           </div>
-          <div class="point" data-aos="fade-left" data-aos-delay="80">
-            <div class="bold">
-              4.8+
-              <svg <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M239.37,70.1A13.16,13.16,0,0,0,227.9,61l-37.22-3.15L176.16,24a13.24,13.24,0,0,0-24.31,0L137.33,57.86,100.1,61a13.13,13.13,0,0,0-7.49,23.06l28.16,24-8.43,35.73a13.1,13.1,0,0,0,5,13.58,13.25,13.25,0,0,0,14.63.7l32-19,32,19a13.25,13.25,0,0,0,14.63-.7,13.09,13.09,0,0,0,5-13.58l-8.43-35.73,28.15-24A13.07,13.07,0,0,0,239.37,70.1Zm-43.86,27a13.06,13.06,0,0,0-4.26,13l7.31,31-27.78-16.51a13.24,13.24,0,0,0-13.56,0L129.44,141l7.31-31a13,13,0,0,0-4.25-13L108.24,76.38l32.09-2.72a13.16,13.16,0,0,0,11-7.94L164,36.24l12.64,29.48a13.18,13.18,0,0,0,11,7.94l32.09,2.72ZM85.66,125.66l-56,56a8,8,0,0,1-11.32-11.32l56-56a8,8,0,0,1,11.32,11.32Zm16,56-56,56a8,8,0,0,1-11.32-11.32l56-56a8,8,0,0,1,11.32,11.32Zm72-11.32a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32-11.32l56-56A8,8,0,0,1,173.66,170.34Z"></path>
-              </svg>
-            </div>
-            <p>Top Rated in Google</p>
-          </div>
-          <div class="point" data-aos="fade-right" data-aos-delay="150">
-            <div class="bold">
-              68%
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M176 416v64M80 32h192a32 32 0 0132 32v412a4 4 0 01-4 4H48h0V64a32 32 0 0132-32zm240 160h112a32 32 0 0132 32v256h0-160 0V208a16 16 0 0116-16z"></path>
-                <path d="M98.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm80 240a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm80 320a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zm0-80a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79z"></path>
-                <ellipse cx="256" cy="176" rx="15.95" ry="16.03" transform="rotate(-45 255.99 175.996)"></ellipse>
-                <path d="M258.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM400 400a16 16 0 1016 16 16 16 0 00-16-16zm0-80a16 16 0 1016 16 16 16 0 00-16-16zm0-80a16 16 0 1016 16 16 16 0 00-16-16zm-64 160a16 16 0 1016 16 16 16 0 00-16-16zm0-80a16 16 0 1016 16 16 16 0 00-16-16zm0-80a16 16 0 1016 16 16 16 0 00-16-16z"></path>
-              </svg>
-            </div>
-            <p>Business Growth</p>
-          </div>
-          <div class="point" data-aos="fade-up" data-aos-delay="200">
-            <div class="bold">
-              10K+
-              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"></path>
-              </svg>
-            </div>
-            <p>Intersted People</p>
+          <div class="col-md-6">
+            <p class="about-us__text">Crafting Digital Success: We specialize in creating custom software, stunning websites, seamless apps, and powerful SEO strategies that drive results. Our expertise in digital marketing and targeted ads ensures your brand stands out in a crowded marketplace. Let us help you elevate your brand, boost visibility, and achieve long-term growth with our comprehensive solutions tailored to your unique business needs.</p>
           </div>
         </div>
-        <button class="round" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <- </button>
+        <div class="about-us__counter-block">
+          <div class="about-us__counter">
+            <h4 class="about-us__counter-number">68%</h4>
+            <p class="about-us__counter-txt">Business Growth</p>
+          </div>
+          <div class="about-us__counter">
+            <h4 class="about-us__counter-number">10k+</h4>
+            <p class="about-us__counter-txt">Interested People</p>
+          </div>
+          <div class="about-us__counter">
+            <h4 class="about-us__counter-number">20+</h4>
+            <p class="about-us__counter-txt">Technology Stack</p>
+          </div>
+          <div class="about-us__counter">
+            <h4 class="about-us__counter-number">4.8+</h4>
+            <p class="about-us__counter-txt">Top Rated in Google</p>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </div>
 </section>
 <!-- ===================about end============== -->
+
 <!-- ========================our servives====================== -->
-<section class="m-top service" id="services">
+<section class="our-service" id="services">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <h2 data-aos="fade-up" data-aos-delay="30">
-          Our Service is not limited. Simply reach out, and we'll tailor a
-          precise solution to meet your unique needs
+          Our <span>Services</span>
         </h2>
+        <ul class="our-service-list">
+          <li class="our-service__item active"><span class="our-service__item-number">01</span> Google Ads <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+          <li class="our-service__item"><span class="our-service__item-number">02</span> Web Development <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+          <li class="our-service__item"><span class="our-service__item-number">03</span> CRM <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+          <li class="our-service__item"><span class="our-service__item-number">04</span> SEO <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+          <li class="our-service__item"><span class="our-service__item-number">05</span> ERP <span class="ms-auto">
+              <div class="arrow-btn"><img src="./icons/btn-arrow.svg" alt=""></div>
+            </span></li>
+        </ul>
       </div>
-      <div class="col-md-6">
-        <div class="slider" data-aos="fade-left" data-aos-delay="130">
-          <div class="slider-service">
-            <div class="slid-card">
-              <div class="img-card">
-                <img data-lazy="./img/modal.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-head">Web Development</div>
-                <div class="card-text">
-                  From Classic desgin to advance aniamtion.
-                </div>
-              </div>
-            </div>
-            <div class="slid-card">
-              <div class="img-card">
-                <img data-lazy="./img/crm.png" class="img-fluid" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-head">CRM Development</div>
-                <div class="card-text">
-                  Our Experts are the Best in Maing CRM or ERP
-                </div>
-              </div>
-            </div>
-            <div class="slid-card">
-              <div class="img-card">
-                <img data-lazy="./img/seo.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-head">SEO Optimizaiton</div>
-                <div class="card-text">
-                  From Website desgin to SEO we have every solotuion.
-                </div>
-              </div>
-            </div>
-            <div class="slid-card">
-              <div class="img-card">
-                <img data-lazy="./img/ads.jpg" class="img-fluid" alt="" />
-              </div>
-              <div class="card-body">
-                <div class="card-head">Google Ads</div>
-                <div class="card-text">
-                  We run all kinds of ads.From Facebook to Reddit.
-                </div>
-              </div>
-            </div>
+      <div class="col-lg-6 mt-5 mt-lg-0">
+        <div class="our-service__card ms-lg-auto mx-auto mx-lg-0 ">
+          <img src="./img/service-card-img1.webp" alt="" class="our-service__card-img img-fluid">
+          <h3 class="our-service__card-title">Expertly crafted ads for measurable growth</h3>
+          <div class="our-service__card-txt">
+            <p><b>At Flewny</b>, we offer a comprehensive suite of services designed to drive your business forward in the digital age. Our expertise spans across multiple domains to cater to all your digital needs.</p>
+            <button class="primary-btn mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
           </div>
+
         </div>
+
       </div>
     </div>
   </div>
 </section>
 <!-- ========================our servives====================== -->
+
 <!-- ===================achieve list start============== -->
-<section class="achieve m-top m-bot">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-10">
-        <p class="mid-txt" data-aos="fade-in" data-aos-delay="30">
-          Unleashing Solutions, Mastering Challenges — Our Goal: Adding
-          Value to Your Business!
-        </p>
-      </div>
-      <div class="col-md-2 text-end">
-        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-          <path d="M253.8 15.56l-79.9 84.11 2.3 58.83 50.6 36.2 31.9 182 10.8-26.9 11.8-235.4 18.7 1-9.1 181 28.3-70.8 8.2-108 .9-17.93zm139 50.57l-46.6 50.77-3.9 51.1 10.6-26.2 30.4-13.7c3.2-20.6 6.3-41.3 9.5-61.97zm60.3 51.17l-85.7 38.4-102.6 255.9 14.6 83.3h7.8l147.6-293.1 16.7 8.4-143.4 284.7h24.4l146.6-291.8zm-340.2 18.9l-54.11 99.1 69.11 259.6h93.6l-51.1-274.8 18.3-3.4 51.8 278.2h19.9l-50.7-289.4zm358.3 260.4l-65.8-5.2-49.8 99.2 69.8-36.7zm-435.96-28l42.47 126.7h30.99L80.6 389.9z"></path>
-        </svg>
-      </div>
-      <!-- <div class="col-md-6">
-                    <ul>
-                      <li>
-                        <div class="number">563</div>
-                        <div class="txt">successfull sales</div>
-                      </li>
-                      <li>
-                        <div class="number">563</div>
-                        <div class="txt">successfull sales</div>
-                      </li>
-                      <li>
-                        <div class="number">563</div>
-                        <div class="txt">successfull sales</div>
-                      </li>
-                    </ul>
-                  </div> -->
-    </div>
+<section class="container d-flex justify-content-center my-0 my-md-5">
+  <div class="cta-section d-flex flex-column align-items-center">
+    <h2>Unleashing Solutions, Mastering Challenges — Our Goal: Adding Value to Your Business!</h2>
+    <button class="primary-btn primary-btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
   </div>
 </section>
 <!-- ===================achieve list end============== -->
-<!-- ===================we offer start============== -->
 
-<section class="m-top we-offer" id="strategy">
+<!-- ===================we-do section start============== -->
+<section class="we-do-section">
   <div class="container">
-    <div class="row align-items-end">
-      <div class="col-md-6 col-12">
-        <h2 data-aos="fade-up" data-aos-delay="30">How we do it — Strategy</h2>
+    <div class="d-flex justify-content-between align-items-end">
+      <h2>How we do it, <br> Strategy</h2>
+      <div class="d-flex review-section__btns">
+        <button class="swiper-btn-prev weDoBtn-prev"><img src="./icons/primary-btn-arrow.svg" alt=""></button>
+        <button class="swiper-btn-next weDoBtn-next"><img src="./icons/primary-btn-arrow.svg" alt=""></button>
       </div>
-      <!-- <div class="col-md-3 offset-md-3">
-              <div class="text-end">
-                <div class="btn btn-primary">PREVIOUS</div>
-                <div class="btn btn-primary">NEXT</div>
+    </div>
+  </div>
+  <div class="container-fluid g-0 mt-3 mt-md-5">
+    <div class="swiper mt-3 mt-md-5s weDoSwiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="we-do-card">
+            <div class="we-do-card__left-col">
+              <h3 class="we-do-card__title">Phase One Delivery</h3>
+              <p class="we-do-card__number">01</p>
+              <p class="we-do-card__content">At the forefront of our approach is a dedication to showcasing results swiftly. Upon reaching this stage, we kindly request the release of 20% of the full payment to proceed further in delivering excellence.</p>
+            </div>
+            <div class="we-do-card__right-col">
+              <img src="./img/we-do-img1.png" alt="" class="we-do-card__img">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="we-do-card">
+            <div class="we-do-card__left-col">
+              <h3 class="we-do-card__title">Phase One Delivery</h3>
+              <p class="we-do-card__number">02</p>
+              <p class="we-do-card__content">At the forefront of our approach is a dedication to showcasing results swiftly. Upon reaching this stage, we kindly request the release of 20% of the full payment to proceed further in delivering excellence.</p>
+            </div>
+            <div class="we-do-card__right-col">
+              <img src="./img/we-do-img1.png" alt="" class="we-do-card__img">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="we-do-card">
+            <div class="we-do-card__left-col">
+              <h3 class="we-do-card__title">Phase One Delivery</h3>
+              <p class="we-do-card__number">03</p>
+              <p class="we-do-card__content">At the forefront of our approach is a dedication to showcasing results swiftly. Upon reaching this stage, we kindly request the release of 20% of the full payment to proceed further in delivering excellence.</p>
+            </div>
+            <div class="we-do-card__right-col">
+              <img src="./img/we-do-img1.png" alt="" class="we-do-card__img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ===================we-do section end============== -->
+
+<!-- ===================blog section start============== -->
+<section class="blog-section-bg">
+  <div class="container g-0">
+    <div class="blog-section">
+      <div class="d-flex justify-content-between align-items-center mb-3 mb-md-5 mt-2">
+        <h2>Recent blogs</h2>
+        <div class="d-flex">
+          <a href="./blog/" class="blog-section__load-more-btn d-none d-md-block">Load More</a>
+        </div>
+      </div>
+      <div class="blog-section__wrapper">
+        <?php
+        $sql_latest = 'SELECT title, category, blog_image, blog_image_alt, slug, published_date, published_status  FROM blogs WHERE published_status = 1 ORDER BY published_date DESC LIMIT 3';
+        $query_latest = mysqli_query($connection, $sql_latest);
+
+        if (mysqli_num_rows($query_latest) == 0) {
+          echo "<b style='color:brown;'>Sorry there are no posts Yet :( We will be uploading new content soon! </b> ";
+        } else {
+
+          while ($row = mysqli_fetch_array($query_latest)) {
+            //publish date
+            $date = explode("-", $row['published_date']);
+            $monthNum  = $date[1];
+            $dateObj   = DateTime::createFromFormat('!m', $monthNum);
+            $monthName = $dateObj->format('F'); // Month name
+        ?>
+            <div class="blog-card">
+              <img src="./uploads/blog/<?php echo $row['blog_image'] ?>" alt="<?php echo $row['blog_image_alt'] ?>" class="blog-card__img">
+              <div class="d-flex gap-2">
+                <div class="blog-card__category"><?php echo $row['category'] ?></div>
+                <div class="blog-card__date">
+                  <span><img src="./icons/calendar.svg" alt=""></span><?php echo substr($monthName, 0, 3) . " " . $date[2] . ", " . $date[0]  ?>
+                </div>
               </div>
-            </div> -->
+              <h3 class="blog-card__title">
+                <!-- <a href="<?php echo '/flewny/blog/' . $row['slug'] ?>" class="" target="_blank"> -->
+                <?php echo $row['title'] ?>
+                <!-- </a> -->
+              </h3>
+              <div class="d-flex mt-auto">
+                <a href="<?php echo '/flewny/blog/' . $row['slug'] ?>" class="blog-btn" target="_blank"><span class="blog-btn-txt">Read More </span><span class="blog-btn-icon"><img src="./icons/btn-arrow.svg" alt=""></span></a>
+              </div>
+              <div class="blog-card__cutout"></div>
+            </div>
+        <?php
+          }
+        }
+        ?>
+      </div>
     </div>
-    <div class="row services align-items-center">
-      <div class="col-md-4">
-        <div class="num" data-aos="fade-right" data-aos-delay="80">1</div>
-        <p class="large" data-aos="fade-right" data-aos-delay="80">Project <br />Meeting</p>
+  </div>
+</section>
+<!-- ===================blog section end============== -->
+
+<!-- ===================review section start============== -->
+<section class="review-section">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end">
+      <h2>Real Stories, <br>Real <span>Results</span></h2>
+      <div class="d-flex review-section__btns">
+        <button class="swiper-btn-prev reviewBtn-prev"><img src="./icons/primary-btn-arrow.svg" alt=""></button>
+        <button class="swiper-btn-next reviewBtn-next"><img src="./icons/primary-btn-arrow.svg" alt=""></button>
       </div>
-      <div class="col-md-4">
-        <p class="m-0 mt-4" data-aos="fade-up" data-aos-delay="150">
-          We begin every project with a strategy meeting.The better we
-          understand your business, the better the outcome we can produce.
-        </p>
-      </div>
-      <div class="col-md-4" data-aos="fade-left" data-aos-delay="250">
-        <div class="oval" style="background: url(./img/meeting.webp) center/cover">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="arrow">-></button>
+    </div>
+    <div class="swiper mt-3 mt-md-5s reviewSwiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="review-card active">
+            <p class="review-card-message ">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">01</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row services align-items-center">
-      <div class="col-md-4">
-        <div class="num" data-aos="fade-right" data-aos-delay="100">2</div>
-        <p class="large" data-aos="fade-right" data-aos-delay="100">Phase One <br />Delivery</p>
-      </div>
-      <div class="col-md-4">
-        <p class="m-0 mt-4" data-aos="fade-up" data-aos-delay="170">
-          At the forefront of our approach is a dedication to showcasing
-          results swiftly. Upon reaching this stage, we kindly request the
-          release of 20% of the full payment to proceed further in
-          delivering excellence.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <div class="oval" style="background: url(./img/phase1.webp) center/cover" data-aos="fade-left" data-aos-delay="280">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="arrow">-></button>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-card-message">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">02</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row services align-items-center">
-      <div class="col-md-4">
-        <div class="num" data-aos="fade-right" data-aos-delay="130">3</div>
-        <p class="large" data-aos="fade-right" data-aos-delay="130">
-          Phase two <br />
-          Delivery
-        </p>
-      </div>
-      <div class="col-md-4">
-        <p class="m-0 mt-4" data-aos="fade-up" data-aos-delay="180">
-          At this juncture, with 70% of the project completed, we kindly
-          request the release of the next 40% payment to continue
-          advancing towards the successful fulfillment of your project
-          requirements.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <div class="oval" data-aos="fade-left" data-aos-delay="280">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="arrow">-></button>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-card-message">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">03</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="row services align-items-center">
-      <div class="col-md-4">
-        <div class="num" data-aos="fade-right" data-aos-delay="150">3</div>
-        <p class="large" data-aos="fade-right" data-aos-delay="150">Final <br />Delivery</p>
-      </div>
-      <div class="col-md-4">
-        <p class="m-0 mt-4" data-aos="fade-up" data-aos-delay="180">
-          Upon successful completion of the project and your complete
-          satisfaction, we kindly request the final release of the
-          remaining 40% payment, solidifying our commitment to delivering
-          a seamless and satisfactory outcome.
-        </p>
-      </div>
-      <div class="col-md-4">
-        <div class="oval" style="background: url(./img/phasefinal.jpg) center/cover" data-aos="fade-left" data-aos-delay="300">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="arrow">-></button>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-card-message">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">04</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="review-card">
+            <p class="review-card-message">
+              Working with Flewny has been a complete game-changer for our business. Their expertise in web development and SEO not only boosted our online presence but also significantly improved our customer engagement. They took the time to understand our goals and delivered solutions that exceeded our expectations. We couldn’t be happier with the results.
+            </p>
+            <p class="review-card-user">– Samantha R., Marketing Manager</p>
+            <p class="review-card-number">05</p>
+            <div class="review-card__cutout"><img src="./icons/quote.svg" alt="" class="img-fluid"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- ===================review section end============== -->
 
-<!-- ===================we offer  end============== -->
-<!-- =================== punch line start ============== -->
-<!-- <section class="punch m-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="punch-block">
-                <p>
-                  ACCEPT <br />NEW <br />
-                  CHALLENGES
-                </p>
+<!-- ===================people section start============== -->
+<section class="people-section-bg">
+  <div class="container g-0">
+    <div class="people-section">
+      <div class="mb-3 mb-md-5 mt-2">
+        <h2>The People <br>
+          Driving <span>Our Vision</span></h2>
+      </div>
+      <div class="people-section__wrapper">
+
+        <div class="people-card">
+          <div class="people-card__img-box">
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__img-wrapper">
+              <div class="people-card__img-wrapper__cutout"></div>
+              <div class="people-card__img-wrapper__cutout"></div>
+              <img src="./img/people-card1.png" alt="" class="people-card__img">
+            </div>
+          </div>
+          <div class="people-card__body">
+            <h3 class="people-card__name">Bijan Mondal</h3>
+            <h5 class="people-card__designation">Chief Executive Officer</h5>
+            <p class="people-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas risus magna, vitae aliquam neque ultricies eu. Vestibulum eget felis elementum.</p>
+          </div>
+        </div>
+
+        <div class="people-card">
+          <div class="people-card__img-box">
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__img-wrapper">
+              <div class="people-card__img-wrapper__cutout"></div>
+              <div class="people-card__img-wrapper__cutout"></div>
+              <img src="./img/people-card2.png" alt="" class="people-card__img">
+            </div>
+          </div>
+          <div class="people-card__body">
+            <h3 class="people-card__name">Bijan Mondal</h3>
+            <h5 class="people-card__designation">Chief Executive Officer</h5>
+            <p class="people-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas risus magna, vitae aliquam neque ultricies eu. Vestibulum eget felis elementum.</p>
+          </div>
+        </div>
+
+        <div class="people-card">
+          <div class="people-card__img-box">
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__line"></div>
+            <div class="people-card__img-wrapper">
+              <div class="people-card__img-wrapper__cutout"></div>
+              <div class="people-card__img-wrapper__cutout"></div>
+              <img src="./img/people-card3.png" alt="" class="people-card__img">
+            </div>
+          </div>
+          <div class="people-card__body">
+            <h3 class="people-card__name">Bijan Mondal</h3>
+            <h5 class="people-card__designation">Chief Executive Officer</h5>
+            <p class="people-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas risus magna, vitae aliquam neque ultricies eu. Vestibulum eget felis elementum.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===================people section end============== -->
+
+<!-- ===================trusted partners section start============== -->
+<section class="trusted-partners-section">
+  <div class="trusted-partners container">
+    <div class="row">
+      <div class="col-md-6 d-flex flex-column">
+        <h2 class="trusted-partners__heading">Trusted Partnerships, Shared Goals</h2>
+        <p class="trusted-partners__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce egestas risus magna, vitae aliquam neque ultricies eu. Vestibulum eget felis elementum.</p>
+        <div class="d-flex mt-auto pt-4">
+          <div class="trusted-partners__number-wrapper">
+            <p class="trusted-partners__number">50+</p>
+            <p class="trusted-partners__number-text">Interested Clients</p>
+          </div>
+          <img src="./img/green-circle.png" alt="" class="trusted-partners__number-wheel rotating">
+        </div>
+
+      </div>
+      <div class="col-md-6 mt-md-0 mt-4">
+
+        <div class="trusted-partners__container">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="trusted-partners">
+
+  </div>
+</section>
+<!-- ===================trusted partners section end============== -->
+
+<!-- =================== faq section start============== -->
+<section class="faq-section-bg">
+  <div class="faq-section container">
+    <div class="row">
+      <div class="col-12">
+        <h2>FAQs: Quick <span>Answers</span><br> for You</h2>
+        <div class="accordion mt-4 mt-md-5" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Q: What services does your company offer?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Q: What services does your company offer?
+
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                A: We specialize in web development, UI/UX design, and CRM solutions tailored to meet diverse business needs.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Q: What services does your company offer?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Q: What services does your company offer?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                Q: What services does your company offer?
+              </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
         </div>
-      </section> -->
-<!-- ===================punch line end============== -->
-
-<!-- =======================contact form start================= -->
-<section class="m-top contact-big" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 data-aos="fade-up" data-aos-delay="30">We're here in so many ways</h2>
-        <form action="./mail.php" method="post" data-aos="fade-up" data-aos-delay="150">
-          <div class="texts">
-            I am
-            <input type="text" name="name" placeholder="Your Name*" id="" />.
-            My email is
-            <input type="text" name="email" id="" placeholder="Your Email*" />
-            and my phone number is
-            <input type="tel" name="mobile" placeholder="Your Phone Number*" id="" />
-            . And Now tell Us about Your requirements or that crazy idea
-            in your mind ;)
-          </div>
-          <textarea name="message" id="" cols="30" rows="5" placeholder="Your message goes here ....."></textarea>
-          <button type="submit" class="mb-5 mt-5 btn btn-primary d-block">
-            Submit
-          </button>
-        </form>
       </div>
     </div>
   </div>
 </section>
-<!-- =======================contact form end ================= -->
+<!-- =================== faq section end ============== -->
+
+<!-- =================== connection section start============== -->
+
+<section class="mb-3 mb-md-5">
+  <div class="container connection-section g-0">
+    <div class="connection-block">
+      <h2>MAke a Connection</h2>
+
+      <div class="row mb-3 mb-md-5">
+        <div class="connection-block__card-wrapper ">
+          <div class="connection-block__card">
+            <h3 class="connection-block__card-title">New Business</h3>
+            <div class="connection-block__card-content">
+              <h4 class="connection-block__card-name">Bijan Mondal <span>(Chief Executive Officer)</span></h4>
+              <a href="mailto:bijanmondal1432@gmail.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>bijanmondal1432@gmail.com</a>
+            </div>
+          </div>
+          <div class="connection-block__card">
+            <h3 class="connection-block__card-title">New Business</h3>
+            <div class="connection-block__card-content">
+              <h4 class="connection-block__card-name">Benjamin Frank <span>(Chief Operating Officer)</span></h4>
+              <a href="mailto:info@flewny.com" class="connection-block__card-link"><span><img src="./icons/envelop.svg" alt=""></span>info@flewny.com</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <form class="row connection-block__form ">
+        <div class="col-lg-6 mb-3 mb-md-0">
+          <h3>Let’s Connect</h3>
+          <div class="d-flex gap-3 mt-1 mt-md-3">
+            <input type="checkbox" name="" id="Confirmation">
+            <label for="Confirmation">Yes, I would like to receive e-mail communications from Flewny. I can unsubscribe at any time.</label>
+          </div>
+        </div>
+        <div class="col-lg-6 px-2 px-lg-4">
+          <input type="text" name="" id="" placeholder="Your Email">
+          <button type="submit">Submit <span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =================== connection section  end============== -->
+
 
 <?php include("./include/footer.php") ?>

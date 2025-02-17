@@ -1,0 +1,323 @@
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Bold.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Black.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-BlackSlanted.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-BlackSlanted.woff')
+      format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family Slant';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-BoldSlanted.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-BoldSlanted.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family Black Slant';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-BlackSlanted.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-BlackSlanted.woff')
+      format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-BoldSlanted.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-BoldSlanted.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Black.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Bold.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family ExtBd Slant';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-ExtBdSlant.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-ExtBdSlant.woff')
+      format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-ExtraLight.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-ExtraLight.woff')
+      format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family Med';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Medium.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Medium.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Medium.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Medium.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family Light Slant';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-LightSlanted.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-LightSlanted.woff')
+      format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family ExtBd';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-ExtraBold.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-ExtraBold.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family ExtLt';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-ExtraLight.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-ExtraLight.woff')
+      format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-LightSlanted.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-LightSlanted.woff')
+      format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family Med Slant';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-MedSlant.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-MedSlant.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-MedSlant.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-MedSlant.woff')
+      format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-ExtBdSlant.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-ExtBdSlant.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-ExtLtSlant.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-ExtLtSlant.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-ExtraBold.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-ExtraBold.woff')
+      format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Light.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Regular.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Regular.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family ExtLt Slant';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-ExtLtSlant.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-ExtLtSlant.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Thin.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-SemBdSlant.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-SemBdSlant.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-Slanted.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-Slanted.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family SemBd';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-SemiBold.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-SemiBold.woff')
+      format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mega Family SemBd Slant';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-SemBdSlant.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-SemBdSlant.woff')
+      format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Chandler Mountain';
+  src: url('../fonts/chandler-mountain/ChandlerMountain-SemiBold.woff2')
+      format('woff2'),
+    url('../fonts/chandler-mountain/ChandlerMountain-SemiBold.woff')
+      format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

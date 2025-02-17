@@ -1,0 +1,131 @@
+// ===========================hero banner start=====================
+.hero-banner {
+  // height: calc(100vh - 100px);
+  margin-bottom: 80px;
+  background-image: url('../img/blog-banner-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__block {
+    position: relative;
+    margin-top: 140px;
+  }
+  &__heading {
+    display: inline-flex;
+    flex-wrap: wrap;
+    column-gap: 0.7rem;
+    font-family: $secondary-font;
+    font-size: clamp(3.5rem, 9.5vw, 7.5rem);
+    font-weight: 600;
+    line-height: 1.15;
+    text-transform: uppercase;
+
+    .blue {
+      color: $secondary-color-deep2;
+    }
+
+    &-img1 {
+      height: clamp(3.5rem, 9.5vw, 7.5rem);
+      aspect-ratio: 256/161;
+    }
+    &-img2 {
+      height: clamp(3.4rem, 9.5vw, 7.5rem);
+      aspect-ratio: 437/161;
+    }
+  }
+  .small-text {
+    display: inline-block;
+    font-family: $priamry-font;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+    max-width: 170px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .scroll-btn {
+    font-size: 16px;
+    color: #949497;
+    padding: 8px;
+    span {
+      margin-left: 3px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    &__block {
+      margin-top: 120px;
+    }
+    &__heading {
+      margin-bottom: 16px;
+    }
+    //   &-img1 {
+    //     // width: 100%;
+    //     aspect-ratio: 256/161;
+    //     height: auto;
+    //   }
+    //   &-img2 {
+    //     // width: 100%;
+    //     aspect-ratio: 437/161;
+    //     height: auto;
+    //   }
+    .small-text {
+      position: static;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18px;
+      max-width: 260px;
+      margin: 0px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// ===========================hero banner end=====================
+
+.video-box {
+  position: relative;
+  margin-bottom: 80px;
+
+  iframe {
+    border-radius: 18px;
+
+    @media only screen and (max-width: 520px) {
+      height: 238px;
+    }
+  }
+
+  .round {
+    background-color: $secondary-color-deep2;
+    color: $secondary-color-deep3;
+    border: none;
+    font-size: 6rem;
+    font-weight: 700;
+    height: 200px;
+    line-height: 0;
+    width: 200px;
+    position: absolute;
+    z-index: 100;
+    top: -16%;
+    transform: rotate(319deg);
+    right: 3%;
+    border-radius: 50pc;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: 520px) {
+      font-weight: 700;
+      height: 139px;
+      line-height: 0;
+      width: 140px;
+      position: absolute;
+      z-index: 100;
+      top: -9%;
+    }
+
+    &:hover {
+      background-color: $priamry-color;
+      color: $priamry-text-color;
+    }
+  }
+}

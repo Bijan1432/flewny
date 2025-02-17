@@ -1,0 +1,174 @@
+.people-section {
+  background-color: #e8e9ef;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 80px;
+
+  h2 {
+    font-family: $secondary-font;
+    font-weight: 600;
+    margin: 0;
+    span {
+      color: $secondary-color-deep2;
+    }
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 12px;
+    h2 {
+      font-size: 32px;
+    }
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+.people-card {
+  --spaceing: 23px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+  &__img-box {
+    position: relative;
+    padding: calc(var(--spaceing) + 2px);
+    padding-bottom: 0;
+    overflow: hidden;
+  }
+  &__line {
+    --linewidth: 2px;
+
+    position: absolute;
+    z-index: 11;
+    background-color: #2b2b3050;
+    &:nth-child(1) {
+      width: 100%;
+      height: var(--linewidth);
+      top: var(--spaceing);
+      left: 0;
+    }
+    &:nth-child(2) {
+      height: 100%;
+      width: var(--linewidth);
+      top: 0;
+      right: var(--spaceing);
+    }
+    &:nth-child(3) {
+      width: 100%;
+      height: var(--linewidth);
+      bottom: 0;
+      left: 0;
+    }
+    &:nth-child(4) {
+      height: 100%;
+      width: var(--linewidth);
+      top: 0;
+      left: var(--spaceing);
+    }
+  }
+  &__img-wrapper {
+    position: relative;
+    overflow: hidden;
+    &__cutout {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-color: #ffffff;
+      &::after,
+      &::before {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: radial-gradient(
+          circle at 0% 0%,
+          rgba(255, 255, 255, 0) 69%,
+          #ffffff 71%
+        );
+      }
+      &:nth-child(1) {
+        border-radius: 0 0 20px 0;
+        top: 0;
+        left: 0;
+        &::after,
+        &::before {
+          transform: rotate(180deg);
+        }
+        &::after {
+          right: -20px;
+          top: 0;
+        }
+        &::before {
+          bottom: -20px;
+          left: 0;
+        }
+      }
+      &:nth-child(2) {
+        border-radius: 20px 0 0 0;
+        right: 0;
+        bottom: 0;
+        &::after {
+          top: -20px;
+          right: 0;
+        }
+        &::before {
+          left: -20px;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    background-color: #6b6b6d;
+    border-radius: 20px;
+  }
+
+  // card body-----
+
+  &__body {
+    padding: 24px;
+  }
+  &__name {
+    font-family: $secondary-font;
+    font-size: 38px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 8px;
+  }
+  &__designation {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #949497;
+    margin: 0;
+  }
+  &__text {
+    color: #2b2b30;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 16px;
+  }
+  @media screen and (max-width: 576px) {
+    &__name {
+      font-size: 28px;
+    }
+    &__designation {
+      font-size: 18px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

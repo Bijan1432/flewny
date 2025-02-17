@@ -1,0 +1,73 @@
+// ===========================about us start=====================
+.about-us {
+  position: relative;
+  padding-block: 60px;
+  background-color: #000;
+
+  h2 {
+    width: 100%;
+    padding-top: 16px;
+    font-family: $secondary-font;
+    font-weight: 600;
+    margin-bottom: 0;
+    background-color: $priamry-color;
+    display: inline-block;
+  }
+  &__text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  &__counter-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    margin-top: 60px;
+  }
+  &__counter {
+    color: #fff;
+    padding-inline: 18px;
+    padding-top: 30px;
+    padding-bottom: 14px;
+    &-number {
+      font-size: 68px;
+      font-family: $secondary-font;
+    }
+    &-txt {
+      font-size: 13px;
+      font-weight: 400;
+      margin-bottom: 0;
+    }
+    &:nth-child(2) {
+      border-right: 3px solid rgba(255, 255, 255, 0.5);
+      padding-right: 10px;
+    }
+    &:nth-child(3) {
+      padding-left: 40px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    padding-bottom: 20px;
+
+    &__counter-block {
+      grid-template-columns: repeat(2, 1fr);
+      border-top: 0;
+      margin-top: 12px;
+    }
+    &__counter {
+      padding-top: 20px;
+      &-number {
+        font-size: 48px;
+      }
+      &:nth-child(2) {
+        border-right: 0;
+      }
+      &:nth-child(3) {
+        padding-left: 18px;
+      }
+    }
+  }
+}
+
+// ===========================about us end=====================`

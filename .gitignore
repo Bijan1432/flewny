@@ -17,7 +17,7 @@ build/
 
 # Cache directories
 .cache/
-.vscode/
+# .vscode/
 .idea/
 *.eslintcache
 *.prettiercache

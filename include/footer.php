@@ -149,6 +149,38 @@
             }
         }
     });
+    // Initialize Swiper
+    var weDoSwiper = new Swiper(".proSwiper", {
+        spaceBetween: 10,
+        centerslides: true,
+        slidesPerView: 1.1,
+        initialSlide: 0,
+        // loop: true,
+        navigation: {
+            nextEl: '.reviewBtn-next',
+            prevEl: '.reviewBtn-prev',
+        },
+        breakpoints: {
+            450: {
+                slidesPerView: 1.3
+            },
+            576: {
+                slidesPerView: 1.5
+            },
+            768: {
+                slidesPerView: 2
+            },
+            900: {
+                slidesPerView: 2.1
+            },
+            1100: {
+                slidesPerView: 2.8
+            },
+            1200: {
+                slidesPerView: 3.5
+            }
+        }
+    });
 </script>
 <script src="js/custom.js"></script>
 </body>

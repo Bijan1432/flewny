@@ -3,7 +3,7 @@
 
 <section class="portfoliosingle p-top">
     <div class="container">
-        <div class="row">
+        <div class="row">   
             <div class="col-md-8 mx-auto text-center">
                 <h1>
                     OUR WORK

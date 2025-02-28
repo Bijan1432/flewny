@@ -3,7 +3,6 @@ require_once "./admin/functions/db.php";
 include("./include/header.php")
 ?>
 
-
 <!-- ===================hero banner start============== -->
 <section class="hero-banner" id="home">
   <div class="container">
@@ -29,7 +28,6 @@ include("./include/header.php")
             <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Explore Now<span><img src="./icons/primary-btn-arrow.svg" alt=""></span></button>
             <a href="#" class="scroll-btn">Scroll<span><img src="./icons/scroll-btn-icon.svg" alt=""></span></a>
           </div>
-
         </div>
       </div>
     </div>
@@ -83,8 +81,6 @@ include("./include/header.php")
             <p class="about-us__counter-txt">Top Rated in Google</p>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
@@ -412,19 +408,14 @@ include("./include/header.php")
           </div>
           <img src="./img/green-circle.png" alt="" class="trusted-partners__number-wheel rotating">
         </div>
-
       </div>
       <div class="col-md-6 mt-md-0 mt-4">
-
         <div class="trusted-partners__container">
-
         </div>
       </div>
-
     </div>
   </div>
   <div class="trusted-partners">
-
   </div>
 </section>
 <!-- ===================trusted partners section end============== -->

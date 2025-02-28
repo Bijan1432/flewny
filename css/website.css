@@ -1,0 +1,546 @@
+/* Home.hero banner section */
+
+.circle{
+	position: relative;
+}
+
+.circle::before{
+	position: absolute;
+}
+
+
+.hero {
+	text-align: left;
+	padding: 200px 0px;
+}
+
+strong {
+	font-size: 340%;
+	font-family: Chandler Mountain;
+	font-weight: 600;
+}
+
+.hero2 {
+	font-family: inter;
+	font-weight: 400;
+	font-size: 15px;
+	justify-content: space-between;
+	justify-items: auto;
+}
+
+/* Our service section */
+
+.title {
+	font-family: "Chandler Mountain", sans-serif;
+	font-size: 3.8rem;
+	font-weight: 600;
+	margin-bottom: 4rem;
+}
+
+.title-dark {
+	color: #18181b;
+}
+
+.title-purple {
+	color: #2e12ef;
+}
+
+.service-card {
+	position: relative;
+	background-color: white;
+	border-radius: 1.5rem;
+	padding: 0.8rem;
+	transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+	background-color: #aeea17 !important;
+	transform: translateY(-5px);
+}
+
+.service-number {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 74px;
+	height: 74px;
+	display: grid;
+	place-items: center;
+	z-index: 2;
+	background-color: #000000;
+	border-radius: 29%;
+	color: #ededed;
+	border: 9px solid #ededed;
+	font-family: "Chandler Mountain", sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.service-icon {
+	height: 24px;
+}
+
+.service-icon img {
+	margin-top: 1rem;
+	height: 300%;
+	justify-content: baseline;
+}
+
+.service-title {
+	font-family: Chandler Mountain !important;
+	font-size: 30px;
+	font-weight: 600;
+	color: #18181b;
+	justify-self: revert;
+	height: 72px;
+}
+
+.service-description {
+	font-family: Inter;
+	color: #52525b;
+	line-height: 1.5;
+	font-size: 14px;
+	margin-top: 50%;
+}
+
+.service-number::before {
+	bottom: 36px;
+	right: 65px;
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: radial-gradient(
+		circle at 0% 100%,
+		#ffffff00 69%,
+		#ededed 71%,
+		#ededed 76%
+	);
+}
+
+.service-number::after {
+	top: 63px;
+	left: 36px;
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: radial-gradient(
+		circle at 0% 100%,
+		#ffffff00 69%,
+		#ededed 71%,
+		#ededed 76%
+	);
+}
+
+.service-card::before {
+	top: 44px;
+	right: -1px;
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: radial-gradient(
+		circle at 0% 0%,
+		#ffffff00 69%,
+		#ededed 71%,
+		#ededed 76%
+	);
+}
+
+.service-card::after {
+	top: -5px;
+	right: 44px;
+	position: absolute;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: radial-gradient(
+		circle at 92% 93%,
+		#ffffff00 69%,
+		#ededed 71%,
+		#ededed 76%
+	);
+}
+
+/* Why Choose Flewny Section */
+
+.choose-section {
+	padding-block: 15px;
+}
+.choose-section h2 {
+	width: auto;
+	font-family: "Chandler Mountain", sans-serif !important;
+	font-weight: 600;
+}
+.choose-section h2 span {
+	color: #2e12ef;
+}
+.choose-section__btns {
+	display: flex;
+	gap: 16px;
+	margin-top: 20px;
+}
+.choose-section__btns button {
+	border: 1px solid #000;
+}
+@media screen and (max-width: 576px) {
+	.choose-section {
+		padding-block: 40px;
+	}
+	.choose-section__btns {
+		gap: 8px;
+	}
+}	
+
+.choose-card {
+	position: relative;
+	border-radius: 15px;
+	overflow: hidden;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.choose-card:hover {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+		rgba(0, 0, 0, 0.3) 0px 2px 3px -3px;
+	transition: 0.4s;
+}
+
+.choose-card .card-body {
+	text-align: left;
+}
+.choose-card .card-image {
+	width: 100%;
+	height: 200px;
+}
+
+.choose-card:not(:has(.first)) .card-image img {
+	width: auto;
+	height: 200px;
+}
+
+.choose-card .card-image {
+	display: flex;
+	justify-content: end;
+}
+.choose-card.first .card-image img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	max-width: 130px;
+	height: auto;
+}
+
+.choose-card .card-title {
+	font-family: inter !important;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.choose-card .card-text {
+	font-family: inter !important;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.plus-icon {
+	position: absolute;
+	bottom: 24px;
+	right: 24px;
+	background: #000;
+	color: #fff;
+	font-size: 40px;
+	width: 45px;
+	height: 45px;
+	display: grid;
+	place-items: center;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+}
+
+.plus-icon p {
+	height: auto;
+	margin: 0;
+	display: inline-block;
+	font-size: 40px;
+	line-height: 1;
+	color: #fff;
+}
+.plus-icon:hover {
+	background: #444;
+}
+
+/* counter section */
+
+.stats-container {
+	background-image: url("https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Frame%2085-SjPpTruXAmEy2YMaataA6AHvIax59K.png");
+	background-size: cover;
+	background-position: center;
+	border-radius: 1.5rem;
+	color: white;
+	font-family: system-ui, -apple-system, sans-serif;
+	padding: 1rem;
+	margin: 5rem 0;
+}
+
+.stats-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	gap: 1rem;
+}
+
+.stat-item {
+	position: relative;
+	padding: 1rem;
+}
+
+@media (min-width: 768px) {
+	.stat-item:not(:last-child)::after {
+		content: "";
+		position: absolute;
+		right: -30px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 2px;
+		height: 100%;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+}
+
+.stat-number {
+	font-size: clamp(2rem, 5vw, 3.5rem);
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+}
+
+.stat-label {
+	font-size: clamp(0.875rem, 2vw, 1rem);
+	opacity: 0.9;
+	margin-top: 0.5rem;
+}
+
+@media (max-width: 767px) {
+	.stat-item {
+		margin-bottom: 1.5rem;
+	}
+
+	.stat-item:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/* TECHNOLOGY WE USE Section */
+
+.cont {
+	max-width: 1280px;
+	border-radius: 20px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2%;
+	align-items: stretch;
+	justify-content: space-between;
+}
+
+.buttons-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	margin-top: 5px;
+	margin-left: 37px;
+}
+
+.buttons-wrapper h1 {
+	color: #000000;
+	font-size: 55px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	font-family: Chandler Mountain;
+}
+
+.buttons-wrapper p {
+	color: #333;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.primary-btn1 {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+	padding: 5px;
+	border-radius: 10rem;
+	overflow: hidden;
+	justify-content: center;
+	border: 0px;
+	margin-top: 70px;
+}
+
+.primary-btn1 span {
+	display: grid;
+	place-items: center;
+	width: 30px;
+    height: 30px;
+	margin-left: 14px;
+	border-radius: 50%;
+	background-color: #aeea17;
+	transition: 0.4s;
+}
+.primary-btn1:hover {
+	color: #000;
+}
+.primary-btn1:hover span {
+	background-color: #000;
+	transform: rotate(-45deg);
+}
+.primary-btn1:hover span img {
+	filter: invert(1);
+}
+.primary-btn1-white {
+	border: 0;
+	background-color: #fff;
+}
+@media screen and (max-width: 576px) {
+	.primary-btn1 {
+		padding: 5px;
+		padding-left: 18px;
+	}
+	.primary-btn1 span {
+		width: 26px;
+		height: 26px;
+		margin-left: 10px;
+	}
+}
+
+.button-container {
+	width: 165px;
+	height: 56px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.icon-container {
+	width: 40px;
+	height: 40px;
+	background-color: #222;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	padding: 8.5px;
+}
+
+.icon-container img {
+	width: 23px;
+	height: 23px;
+	color: #ffffff;
+}
+
+.button-text {
+	font-size: 18px;
+	font-weight: bold;
+	color: black;
+	font-family: inter, sans-serif;
+}
+
+/* Our Project Section */
+
+.pro {
+	border-radius: 20px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	width: 305px !important;
+	height: 100%;
+	background-color: #fff;
+}
+
+.pro-message {
+	font-size: 14px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.pro-title {
+	font-family: inter;
+	font-weight: bold;
+	font-size: 20px;
+	color: #000000;
+}
+
+.pro-image-box {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding-top: 0px;
+}
+
+.pro-image-box img {
+	width: 500px !important;
+	height: 500px !important;
+	object-fit: cover !important;
+	border-radius: -3px;
+	position: relative;
+	bottom: -10px;
+	right: -10px;
+}
+
+.first-card .pro-image-box img {
+	width: 256px !important;
+	height: 268px !important;
+	position: relative;
+	bottom: -20px;
+	right: -20px;
+}
+
+.pro:not(.first-card) .pro-image-box img {
+	width: 210px !important;
+	height: 215px !important;
+	transform: rotate(-1deg);
+}
+
+.pl-icon {
+	position: absolute;
+	bottom: 6px;
+	right: 5px;
+	background: #000;
+	color: #fff;
+	font-size: 40px;
+	/* font-weight: bold; */
+	width: 45px;
+	height: 45px;
+	display: grid;
+	place-items: center;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	clip-path: polygon(30% 0, 100% 0, 100% 70%, 70% 100%, 0 100%, 0 30%);
+}
+
+.pl-icon p {
+	height: auto;
+	margin: 0;
+	display: inline-block;
+	font-size: 40px;
+	line-height: 1;
+	color: #fff;
+}
+.pl-icon:hover {
+	background: #444;
+}

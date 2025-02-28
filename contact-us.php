@@ -4,12 +4,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1>Contact us</h1>
+                <h2>Contact us</h2>
                 <p>We're here to bring your digital ideas to life. Reach out to Flewny, and let's start building your success together.</p>
             </div>
         </div>
     </div>
 </section>
+
 <div class="contact-form-home contact-form">
     <div class="container">
         <div class="row justify-content-center">
@@ -42,27 +43,41 @@
                             </p>
                         </div>
                         <div class="form">
-                            <form action="./mail.php" method="post">
+                            <form action="./mail.php" method="post" class="form_box">
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Your Name*" name="name" required></input>
+                                        <div class="input-group">
+                                            <i class="fas fa-user input-icon"></i>
+                                            <input type="text" class="form-control" placeholder="Your Name*" name="name" required></input>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="mail" class="form-control" placeholder="Email Address*" name="email" required></input>
+                                        <div class="input-group">
+                                            <i class="fas fa-envelope input-icon"></i>
+                                            <input type="email" class="form-control" placeholder="Email Address*" name="email" required></input>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <input type="tel" class="form-control" placeholder="Contact Number*" name="mobile" required></input>
+                                        <div class="input-group">
+                                            <i class="fas fa-phone input-icon"></i>
+                                            <input type="tel" class="form-control" placeholder="Contact Number*" name="mobile" required></input>
+                                        </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Subject" name="subject" required></input>
+                                        <div class="input-group">
+                                            <i class="fas fa-tag input-icon"></i>
+                                            <input type="text" class="form-control" placeholder="Subject" name="subject" required></input>
+                                        </div>
                                     </div>
                                 </div>
-
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <textarea class="form-control ex-mar" rows="3" placeholder="Your Message" name="message"></textarea>
+                                        <div class="input-group">
+                                            <i class="fas fa-comment input-icon textarea-icon"></i>
+                                            <textarea class="form-control ex-mar" rows="4" placeholder="Your Message" name="message"></textarea>
+                                        </div>
                                     </div>
                                 </div>
                                 <button class="btn btn-primary" type="submit" data-aos="fade-up" data-aos-delay="300">Submit<span><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
@@ -77,6 +92,8 @@
         </div>
     </div>
 </div>
+
+
 <div class="line"></div>
 <section class="address p-bot">
     <div class="container">
